@@ -13,14 +13,14 @@ openAIFineTuneMessage[user_String, assistant_String]:=
 			<|"role"->"assistant", "content"->assistant|>}|>
 
 (* create a training example if there is only one recipe provided *)
-formatExample[{target_String}->{precursors_List}]:= With[
+formatExample[target_String->{precursors_List}]:= With[
 	{user = "synthesize "<>target,
 	assistant = formatResponse[target,precursors]},
 	openAIFineTuneMessage[user, assistant]]
 
 (* create a training example with multiple synthesis plans *)
 (* the idea is that this should teach both the probabilities how to handle multiple requests *)
-formatExample[{target_String}->multiplePrecursors_List]:= With[
+formatExample[target_String->multiplePrecursors_List]:= With[
 	{userMessageTemplate = StringTemplate["provide `` synthesis plans for target: ``"],
 	 nRecipes = Length[multiplePrecursors],
 	 assistant = StringRiffle[#, "\n"]&@ Map[formatResponse[target, #]&]@ multiplePrecursors},

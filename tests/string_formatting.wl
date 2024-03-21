@@ -2,8 +2,8 @@
 
 (* ::Input:: *)
 (*TestReport[ (*string handling*)*)
-(*{VerificationTest[*)
-(*productStrings["Ba2MgGe2O7 <- BaCO3 + MgO + GeO2"],*)
+(*	{VerificationTest[*)
+(*		productStrings["Ba2MgGe2O7 <- BaCO3 + MgO + GeO2"],*)
 (*{"BaCO3 + MgO + GeO2"}],*)
 (**)
 (*VerificationTest[*)
@@ -30,7 +30,6 @@
 
 (* ::Input:: *)
 (**)
-(**)
 
 
 (* ::Input:: *)
@@ -42,8 +41,3 @@
 (*precursorMatchQ[{{"Y(NO3)3","Fe(NO3)3"}},*)
 (*precursorList["YFeO3 <- Y2O3 + Fe2O3\n\nYFeO3 <- Y(NO3)3 + Fe(NO3)3\n\nYFeO3 <- Y2O3 + Fe3O4\n\nYFeO3 <- Y(NO3)3 + Fe2O3\n\nYFeO3 <- Y2O3 + FeO"]]]}*)
 (*]*)
-
-
-(* ::Input:: *)
-(**)
-(**)
