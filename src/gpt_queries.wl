@@ -16,7 +16,7 @@ ChatEvaluate["synthesize Ba2MgGe2O7"]@session;
 evaluatePrediction[
 	session_ChatObject,
 	question_TemplateObject:StringTemplate["synthesize ``"]
-	][{target_String}->precursors_List]:= With[
+	][target_String->precursors_List]:= With[
 	{prediction = ChatEvaluate[session,question[target], ProgressReporting->False]},
 	<|"correct" -> precursorMatchQ[precursors, prediction],
 	  "input" -> prediction["Messages"][[-2, "Content"]],

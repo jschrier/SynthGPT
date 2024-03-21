@@ -1,0 +1,3209 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    170362,       3201]
+NotebookOptionsPosition[    168478,       3163]
+NotebookOutlinePosition[    168876,       3179]
+CellTagsIndexPosition[    168833,       3176]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "@", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"<<", "\"\<./src/gpt_queries.wl\>\""}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"train", ",", "test"}], "}"}], "=", 
+    RowBox[{"Values", "@", 
+     RowBox[{"Import", "[", "\"\<./data/cv_random1.json\>\"", "]"}]}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.919997405262746*^9, 3.919997462212017*^9}, {
+  3.919997502273839*^9, 3.919997509179207*^9}, {3.9199975553624153`*^9, 
+  3.91999760658515*^9}, {3.9199980001593313`*^9, 
+  3.919998016816422*^9}},ExpressionUUID->"e4765749-8419-47f1-8e14-\
+ea8436c3ec79"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"prompt", "=", "\[IndentingNewLine]", 
+   RowBox[{"With", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"allowedPrecursors", "=", 
+       RowBox[{"StringRiffle", "@", 
+        RowBox[{"Keys", "@", 
+         RowBox[{"Import", "[", 
+          RowBox[{"\"\<./data/precursors.json\>\"", ",", "\"\<RawJSON\>\""}], 
+          "]"}]}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"StringReplace", "[", 
+       RowBox[{"\"\<[[ALLOWED PRECURSORS]]\>\"", "->", "allowedPrecursors"}], 
+       "]"}], "@", "\[IndentingNewLine]", 
+      RowBox[{"Import", "[", "\"\<./prompts/base_prompt.txt\>\"", "]"}]}]}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.9199974867012167`*^9, 3.919997542877858*^9}, {
+   3.919998089751286*^9, 3.919998139193233*^9}, 3.919998219649865*^9},
+ CellLabel->
+  "In[1544]:=",ExpressionUUID->"f75d4e9f-d1ea-4861-8cdb-f7ef15092eb7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"session", "=", 
+    RowBox[{"setupChat", "[", 
+     RowBox[{
+     "prompt", ",", " ", "0", ",", " ", "\"\<gpt-3.5-turbo-0125\>\""}], 
+     "]"}]}], ";"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.919998222579814*^9, 3.919998276081944*^9}},
+ CellLabel->
+  "In[1546]:=",ExpressionUUID->"21820c26-0dfd-4628-8850-3b79c8f940ef"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"o", "=", 
+  RowBox[{"ChatEvaluate", "[", 
+   RowBox[{"session", ",", "\"\<synthesize LaMnO4\>\"", ",", " ", 
+    RowBox[{"ProgressReporting", "->", "False"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9199993872025967`*^9, 3.919999400375321*^9}},
+ CellLabel->
+  "In[1551]:=",ExpressionUUID->"fb5cad9d-4347-4447-89fd-287a54005c0f"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["ChatObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GridBox[{{
+               TagBox[
+                TagBox[
+                 PaneBox[
+                  FrameBox[
+                   TagBox[
+                    GridBox[{{
+                    FrameBox[
+                    StyleBox[
+                    "\"system\"", "InformationTitleText", StripOnInput -> 
+                    False], ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    StyleBox[
+                    TagBox[
+                    "\"You are an expert solid-state chemist planning a \
+material synthesis. \\n- You are provided with a target compound and must \
+select the precursor reagents needed to synthesize the target.  Typically two \
+or more precursors are needed.\\n- The precursor reagents must provide all of \
+the elements in the target. However, because the reactions are performed in \
+an open system where gases can escape, it is acceptable for some non-metal \
+elements (e.g., H, C, N, O, F, Cl, Br) present in the precursors to be absent \
+in the final target product.\\n- Your synthesis task is only to identify the \
+correct precursor to use.  Do not provide stoichiometry.\\n- Only use \
+precursors from the following candidates: Ag Ag2CO3 Ag2O Ag2S AgF AgI Al \
+Al2O3 AlF3 AlH3 AlN Al(OH)3 AmO2 As As2O5 Au B B2O3 Ba Ba2CO3 BaBr2 BaCl2 \
+BaCO3 BaCuO2 BaF2 BaO BaO2 BaS BaSe BaTiO3 Be BeO Bi Bi2(CO3)3 Bi2O3 Bi2S3 \
+BiOCl B(OH)3 C Ca Ca2CuO3 Ca2P2O7 Ca3N2 CaCl2 CaCO3 CaF2 CaO Ca(OH)2 Cd CdCO3 \
+CdO CdS Ce Ce2(CO3)3 CeF3 Ce(NH4)2(NO3)6 CeO2 Co Co2(C2O4)3 Co2O3 Co3O4 \
+CoC2O4 CoCO3 CoMoO4 CoO Co(OH)2 Cr Cr2O3 CrN CrO2 CrO3 Cs Cs2CO3 CsBr CsCl \
+CsF Cu Cu2O Cu2O3 Cu2S Cu2Se CuCO3 CuO Dy2O3 Er Er2O3 Eu Eu2O3 EuS Fe Fe2O3 \
+Fe3O4 FeAs FeC2O4 FeNbO4 FeO FePO4 Ga Ga2O3 Ga2S3 Ga2Se3 Gd Gd2O3 GdF3 Ge \
+GeO2 GeS2 H2MoO4 H2O H2SiO3 H2WO4 H3BO3 H3PO4 Hf HfO2 HgO Ho2O3 In In2O3 \
+In2S3 Ir IrO2 K2CO3 K2MoO4 K2SO4 KCl KH2PO4 KNbO3 La La2O3 La2S3 LaAs LaF3 \
+LaMgNi4 LaNi4.3 La(OH)3 Li Li2CO3 Li2O Li2O2 Li2O3 Li2S Li2SiO3 Li2SO4 Li3PO4 \
+LiCO3 LiCoPO4 LiF LiH LiH2PO4 LiOH Lu2O3 Mg Mg2Si MgB2 MgCO3 MgF2 MgH2 MgNi2 \
+MgO Mg(OH)2 Mn Mn2(CO3)7 Mn2N Mn2O3 Mn2O7 Mn3O4 MnCO3 MnO MnO2 MnOOH MnS Mo \
+MoO2 MoO3 MoS2 Na Na2CO3 Na2Mo2O7 Na2O Na2O2 Na2SO4 Na2Ti3O7 Na3PO4 Na4P2O7 \
+NaCl NaCO3 NaF NaH NaH2PO4 NaNbO3 NaOH Nb Nb2O3 Nb2O5 Nb3W14O47 Nd Nd2O3 \
+(NH4)2HPO4 NH4F (NH4)H2PO4 NH4H2PO4 NH4ReO4 NH4VO3 Ni Ni2(CO3)3 Ni2O3 NiCO3 \
+NiO NiO2 Ni(OH)2 O2 Os OsO2 P P2O5 P2S5 Pb Pb3O4 PbCl2 PbCO3 PbF2 PbO PbO2 \
+PbS Pd PdO Pr2O3 Pr6O11 Pt PuO2 Rb2CO3 RbF Re2O3 Re2O7 ReO3 Rh Rh2O3 Ru RuO2 \
+S Sb Sb2O3 Sb2O4 Sb2O5 Sc2O3 Se SeO2 Si Si3N4 SiC SiO2 Sm Sm2O3 Sn SnF2 SnO \
+SnO2 SnS2 Sr Sr2CO3 Sr3N2 SrCl2 SrCO3 Sr(CO3)2 SrCoO3 SrF2 SrNb2O6 SrO SrO2 \
+SrTiO3 Ta Ta2O5 TaON Tb2O3 Tb4O7 Te TeO2 TeO3 ThO2 Ti Ti2AlC Ti2O3 TiC TiO2 \
+TiS2 Tl2O3 TlCo2S2 TlCo2Se2 Tm2O3 U3O8 UO2 UO3 V V2O3 V2O5 VO2 W W2O3 WO3 Y \
+Y2O3 Y2Ti2O5S2 Yb Yb2O3 YF3 Zn ZnO ZnS ZnSe Zr ZrF4 ZrO2\\n- If asked to \
+generate more than one reaction recommendation for a target, each \
+recommendation should be different, and be separated with a newline.\\n- \
+Return only output of the following format for each recommendation: [Target] \
+<- [Precursor] + [Precursor] + [Precursor]\"", BoxForm`Undeploy, 
+                    DefaultBaseStyle -> {Deployed -> False}], LineIndent -> 0,
+                     LinebreakAdjustments -> {1, 10, 1, 0, 10}, Editable -> 
+                    False, StripOnInput -> False], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    ButtonBox[
+                    
+                    DynamicModuleBox[{
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$ = False, 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$ = False}, 
+                    TagBox[
+                    PaneSelectorBox[{"Default" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0, 0], 
+                    StripOnInput -> False], "Hover" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.08], 
+                    StripOnInput -> False], "Pressed" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.15], 
+                    StripOnInput -> False]}, 
+                    Dynamic[
+                    FEPrivate`Which[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, "Pressed", 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, "Hover", 
+                    True, "Default"]]], 
+                    
+                    EventHandlerTag[{
+                    "MouseDown" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, True], 
+                    "MouseUp" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, False], 
+                    "MouseEntered" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, True], 
+                    "MouseExited" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, False], 
+                    PassEventsDown -> True, Method -> "Preemptive", 
+                    PassEventsUp -> True}]], DynamicModuleValues :> {}], 
+                    ButtonFunction :> 
+                    CopyToClipboard[
+                    "You are an expert solid-state chemist planning a \
+material synthesis. \n- You are provided with a target compound and must \
+select the precursor reagents needed to synthesize the target.  Typically two \
+or more precursors are needed.\n- The precursor reagents must provide all of \
+the elements in the target. However, because the reactions are performed in \
+an open system where gases can escape, it is acceptable for some non-metal \
+elements (e.g., H, C, N, O, F, Cl, Br) present in the precursors to be absent \
+in the final target product.\n- Your synthesis task is only to identify the \
+correct precursor to use.  Do not provide stoichiometry.\n- Only use \
+precursors from the following candidates: Ag Ag2CO3 Ag2O Ag2S AgF AgI Al \
+Al2O3 AlF3 AlH3 AlN Al(OH)3 AmO2 As As2O5 Au B B2O3 Ba Ba2CO3 BaBr2 BaCl2 \
+BaCO3 BaCuO2 BaF2 BaO BaO2 BaS BaSe BaTiO3 Be BeO Bi Bi2(CO3)3 Bi2O3 Bi2S3 \
+BiOCl B(OH)3 C Ca Ca2CuO3 Ca2P2O7 Ca3N2 CaCl2 CaCO3 CaF2 CaO Ca(OH)2 Cd CdCO3 \
+CdO CdS Ce Ce2(CO3)3 CeF3 Ce(NH4)2(NO3)6 CeO2 Co Co2(C2O4)3 Co2O3 Co3O4 \
+CoC2O4 CoCO3 CoMoO4 CoO Co(OH)2 Cr Cr2O3 CrN CrO2 CrO3 Cs Cs2CO3 CsBr CsCl \
+CsF Cu Cu2O Cu2O3 Cu2S Cu2Se CuCO3 CuO Dy2O3 Er Er2O3 Eu Eu2O3 EuS Fe Fe2O3 \
+Fe3O4 FeAs FeC2O4 FeNbO4 FeO FePO4 Ga Ga2O3 Ga2S3 Ga2Se3 Gd Gd2O3 GdF3 Ge \
+GeO2 GeS2 H2MoO4 H2O H2SiO3 H2WO4 H3BO3 H3PO4 Hf HfO2 HgO Ho2O3 In In2O3 \
+In2S3 Ir IrO2 K2CO3 K2MoO4 K2SO4 KCl KH2PO4 KNbO3 La La2O3 La2S3 LaAs LaF3 \
+LaMgNi4 LaNi4.3 La(OH)3 Li Li2CO3 Li2O Li2O2 Li2O3 Li2S Li2SiO3 Li2SO4 Li3PO4 \
+LiCO3 LiCoPO4 LiF LiH LiH2PO4 LiOH Lu2O3 Mg Mg2Si MgB2 MgCO3 MgF2 MgH2 MgNi2 \
+MgO Mg(OH)2 Mn Mn2(CO3)7 Mn2N Mn2O3 Mn2O7 Mn3O4 MnCO3 MnO MnO2 MnOOH MnS Mo \
+MoO2 MoO3 MoS2 Na Na2CO3 Na2Mo2O7 Na2O Na2O2 Na2SO4 Na2Ti3O7 Na3PO4 Na4P2O7 \
+NaCl NaCO3 NaF NaH NaH2PO4 NaNbO3 NaOH Nb Nb2O3 Nb2O5 Nb3W14O47 Nd Nd2O3 \
+(NH4)2HPO4 NH4F (NH4)H2PO4 NH4H2PO4 NH4ReO4 NH4VO3 Ni Ni2(CO3)3 Ni2O3 NiCO3 \
+NiO NiO2 Ni(OH)2 O2 Os OsO2 P P2O5 P2S5 Pb Pb3O4 PbCl2 PbCO3 PbF2 PbO PbO2 \
+PbS Pd PdO Pr2O3 Pr6O11 Pt PuO2 Rb2CO3 RbF Re2O3 Re2O7 ReO3 Rh Rh2O3 Ru RuO2 \
+S Sb Sb2O3 Sb2O4 Sb2O5 Sc2O3 Se SeO2 Si Si3N4 SiC SiO2 Sm Sm2O3 Sn SnF2 SnO \
+SnO2 SnS2 Sr Sr2CO3 Sr3N2 SrCl2 SrCO3 Sr(CO3)2 SrCoO3 SrF2 SrNb2O6 SrO SrO2 \
+SrTiO3 Ta Ta2O5 TaON Tb2O3 Tb4O7 Te TeO2 TeO3 ThO2 Ti Ti2AlC Ti2O3 TiC TiO2 \
+TiS2 Tl2O3 TlCo2S2 TlCo2Se2 Tm2O3 U3O8 UO2 UO3 V V2O3 V2O5 VO2 W W2O3 WO3 Y \
+Y2O3 Y2Ti2O5S2 Yb Yb2O3 YF3 Zn ZnO ZnS ZnSe Zr ZrF4 ZrO2\n- If asked to \
+generate more than one reaction recommendation for a target, each \
+recommendation should be different, and be separated with a newline.\n- \
+Return only output of the following format for each recommendation: [Target] \
+<- [Precursor] + [Precursor] + [Precursor] "], 
+                    Appearance -> {
+                    "Default" -> 
+                    FrontEnd`FileName[{"Misc"}, "TransparentBG.9.png"]}, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False]}, {
+                    FrameBox[
+                    StyleBox[
+                    GraphicsBox[{
+                    Thickness[0.038461538461538464`], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGIRIGZigIIGBQcUmkEEmV8gECGEJi8Iol26dRSR+UCg
+hMY3ReZ/+J1pimreAZi8CBrfFJkP04eQxyWOqu9dzX9FZL4RB8S9CH1w/6Dw
+F3y8pIkqD6UbRYUwxAFRLy5n
+                    "]]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.49019607843137253`, 0.8235294117647058, 1., 1.]]}, 
+                    StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {1, 3, 3}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {CompressedData["
+1:eJxTTMoPSmViYGAQAWIQDQGmDhDaDEqLIPMbDpwSRJMXANIN9/17TZH4yObA
++ErIfIeEpwpo5img2adAgIaZq4UmborMR3IXTB7sboW7T1D4D2r+K6L5Czkc
+4P5DMg9THQC6JyON
+                    "], CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQGmDmCqAUx/WO6GwsctjqrvQc1/RWR+QspuEL9B
+YUMRmO/wsAosv39+FJjfcMALzL/s6wTmH5gvBeIfuOSrBDNfEdUeOF8LmZ+Q
+tkwTmd/gmADhrzuugKLvm4YImjkKaHxc4qj6Ep4KocmD+Q4bilD4QKCExjdF
+5sPDE24ePFxF0PiIcAYAYyg58Q==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.18823529411764706`, 0.49411764705882355`, 
+                    0.6549019607843137, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{27., 27.}, {27., 27.}}, 
+                    PlotRange -> {{-0.5, 26.5}, {-0.5, 26.5}}, AspectRatio -> 
+                    Automatic], "InformationTitleText", StripOnInput -> 
+                    False], ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    StyleBox[
+                    TagBox[
+                    "\"synthesize LaMnO4\"", BoxForm`Undeploy, 
+                    DefaultBaseStyle -> {Deployed -> False}], LineIndent -> 0,
+                     LinebreakAdjustments -> {1, 10, 1, 0, 10}, Editable -> 
+                    False, StripOnInput -> False], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    ButtonBox[
+                    
+                    DynamicModuleBox[{
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$ = False, 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$ = False}, 
+                    TagBox[
+                    PaneSelectorBox[{"Default" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0, 0], 
+                    StripOnInput -> False], "Hover" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.08], 
+                    StripOnInput -> False], "Pressed" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.15], 
+                    StripOnInput -> False]}, 
+                    Dynamic[
+                    FEPrivate`Which[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, "Pressed", 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, "Hover", 
+                    True, "Default"]]], 
+                    
+                    EventHandlerTag[{
+                    "MouseDown" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, True], 
+                    "MouseUp" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, False], 
+                    "MouseEntered" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, True], 
+                    "MouseExited" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, False], 
+                    PassEventsDown -> True, Method -> "Preemptive", 
+                    PassEventsUp -> True}]], DynamicModuleValues :> {}], 
+                    ButtonFunction :> CopyToClipboard["synthesize LaMnO4"], 
+                    Appearance -> {
+                    "Default" -> 
+                    FrontEnd`FileName[{"Misc"}, "TransparentBG.9.png"]}, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False]}, {
+                    FrameBox[
+                    StyleBox[
+                    GraphicsBox[{
+                    Thickness[0.038461538461538464`], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGIRIGZigAFFB1RaBJmfkPZMCE0ezDc2LkbhA4ESGt8U
+mf9guZspqnkNMHkRNL4pMj8hzc0UVR5Cw8zDpe9dzX9FJH6DwoYiRVTz4P5B
+4Sc8XqqJJg+mD3zVEMEQBwCRvSeH
+                    "]]}, {
+                    FaceForm[
+                    RGBColor[1., 1., 1., 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {CompressedData["
+1:eJxTTMoPSmViYGAQAWIQDQQOUgymDhCmGZjOZBBB5jdonhZEkxcA0g33/XtN
+kfgggM5XQuY7JDxVQDNPAc0+iLwJVByTLwDlayHLI7kfzJfP6jVFkwe7W+Hu
+ExT+g5r/ish8mPuhfLj/kMwzQ7PPzAEA5oooHw==
+                    "], {{21.00040054321289, 21.}, {21.00040054321289, 9.}, {
+                    13.00040054321289, 9.}, {12.649399757385254`, 9.}, {
+                    12.375399589538574`, 8.781000137329102}, {
+                    9.00040054321289, 6.081000328063965}, {9.00040054321289, 
+                    8.}, {9.00040054321289, 9.}, {8.00040054321289, 9.}, {
+                    5.000400543212891, 9.}, {5.000400543212891, 21.}, {
+                    21.00040054321289, 21.}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{27., 27.}, {27., 27.}}, 
+                    PlotRange -> {{-0.5, 26.5}, {-0.5, 26.5}}, AspectRatio -> 
+                    Automatic], "InformationTitleText", StripOnInput -> 
+                    False], ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    StyleBox[
+                    TagBox[
+                    "\"LaMnO4 <- La2O3 + MnO2 + O2\"", BoxForm`Undeploy, 
+                    DefaultBaseStyle -> {Deployed -> False}], LineIndent -> 0,
+                     LinebreakAdjustments -> {1, 10, 1, 0, 10}, Editable -> 
+                    False, StripOnInput -> False], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    ButtonBox[
+                    
+                    DynamicModuleBox[{
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$ = False, 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$ = False}, 
+                    TagBox[
+                    PaneSelectorBox[{"Default" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0, 0], 
+                    StripOnInput -> False], "Hover" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.08], 
+                    StripOnInput -> False], "Pressed" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.15], 
+                    StripOnInput -> False]}, 
+                    Dynamic[
+                    FEPrivate`Which[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, "Pressed", 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, "Hover", 
+                    True, "Default"]]], 
+                    
+                    EventHandlerTag[{
+                    "MouseDown" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, True], 
+                    "MouseUp" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, False], 
+                    "MouseEntered" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, True], 
+                    "MouseExited" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, False], 
+                    PassEventsDown -> True, Method -> "Preemptive", 
+                    PassEventsUp -> True}]], DynamicModuleValues :> {}], 
+                    ButtonFunction :> 
+                    CopyToClipboard["LaMnO4 <- La2O3 + MnO2 + O2"], 
+                    Appearance -> {
+                    "Default" -> 
+                    FrontEnd`FileName[{"Misc"}, "TransparentBG.9.png"]}, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxBackground -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{
+                    GrayLevel[1], Null}}}, 
+                    GridBoxDividers -> {
+                    "Columns" -> {{None}}, "Rows" -> {None, {
+                    GrayLevel[0, 0.05]}, None}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}, "Rows" -> {{0}}}, 
+                    BaseStyle -> "Text"], "Grid"], FrameMargins -> 0, 
+                   FrameStyle -> GrayLevel[0, 0.05], RoundingRadius -> 1.5, 
+                   StripOnInput -> False], AppearanceElements -> None, 
+                  Scrollbars -> {False, Automatic}, 
+                  ImageSize -> {{20, 600}, {20, 400}}, ContentPadding -> 
+                  False], Deploy, DefaultBaseStyle -> "Deploy"], 
+                "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GridBox[{{
+               TagBox[
+                TagBox[
+                 PaneBox[
+                  FrameBox[
+                   TagBox[
+                    GridBox[{{
+                    FrameBox[
+                    StyleBox[
+                    "\"system\"", "InformationTitleText", StripOnInput -> 
+                    False], ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    StyleBox[
+                    TagBox[
+                    "\"You are an expert solid-state chemist planning a \
+material synthesis. \\n- You are provided with a target compound and must \
+select the precursor reagents needed to synthesize the target.  Typically two \
+or more precursors are needed.\\n- The precursor reagents must provide all of \
+the elements in the target. However, because the reactions are performed in \
+an open system where gases can escape, it is acceptable for some non-metal \
+elements (e.g., H, C, N, O, F, Cl, Br) present in the precursors to be absent \
+in the final target product.\\n- Your synthesis task is only to identify the \
+correct precursor to use.  Do not provide stoichiometry.\\n- Only use \
+precursors from the following candidates: Ag Ag2CO3 Ag2O Ag2S AgF AgI Al \
+Al2O3 AlF3 AlH3 AlN Al(OH)3 AmO2 As As2O5 Au B B2O3 Ba Ba2CO3 BaBr2 BaCl2 \
+BaCO3 BaCuO2 BaF2 BaO BaO2 BaS BaSe BaTiO3 Be BeO Bi Bi2(CO3)3 Bi2O3 Bi2S3 \
+BiOCl B(OH)3 C Ca Ca2CuO3 Ca2P2O7 Ca3N2 CaCl2 CaCO3 CaF2 CaO Ca(OH)2 Cd CdCO3 \
+CdO CdS Ce Ce2(CO3)3 CeF3 Ce(NH4)2(NO3)6 CeO2 Co Co2(C2O4)3 Co2O3 Co3O4 \
+CoC2O4 CoCO3 CoMoO4 CoO Co(OH)2 Cr Cr2O3 CrN CrO2 CrO3 Cs Cs2CO3 CsBr CsCl \
+CsF Cu Cu2O Cu2O3 Cu2S Cu2Se CuCO3 CuO Dy2O3 Er Er2O3 Eu Eu2O3 EuS Fe Fe2O3 \
+Fe3O4 FeAs FeC2O4 FeNbO4 FeO FePO4 Ga Ga2O3 Ga2S3 Ga2Se3 Gd Gd2O3 GdF3 Ge \
+GeO2 GeS2 H2MoO4 H2O H2SiO3 H2WO4 H3BO3 H3PO4 Hf HfO2 HgO Ho2O3 In In2O3 \
+In2S3 Ir IrO2 K2CO3 K2MoO4 K2SO4 KCl KH2PO4 KNbO3 La La2O3 La2S3 LaAs LaF3 \
+LaMgNi4 LaNi4.3 La(OH)3 Li Li2CO3 Li2O Li2O2 Li2O3 Li2S Li2SiO3 Li2SO4 Li3PO4 \
+LiCO3 LiCoPO4 LiF LiH LiH2PO4 LiOH Lu2O3 Mg Mg2Si MgB2 MgCO3 MgF2 MgH2 MgNi2 \
+MgO Mg(OH)2 Mn Mn2(CO3)7 Mn2N Mn2O3 Mn2O7 Mn3O4 MnCO3 MnO MnO2 MnOOH MnS Mo \
+MoO2 MoO3 MoS2 Na Na2CO3 Na2Mo2O7 Na2O Na2O2 Na2SO4 Na2Ti3O7 Na3PO4 Na4P2O7 \
+NaCl NaCO3 NaF NaH NaH2PO4 NaNbO3 NaOH Nb Nb2O3 Nb2O5 Nb3W14O47 Nd Nd2O3 \
+(NH4)2HPO4 NH4F (NH4)H2PO4 NH4H2PO4 NH4ReO4 NH4VO3 Ni Ni2(CO3)3 Ni2O3 NiCO3 \
+NiO NiO2 Ni(OH)2 O2 Os OsO2 P P2O5 P2S5 Pb Pb3O4 PbCl2 PbCO3 PbF2 PbO PbO2 \
+PbS Pd PdO Pr2O3 Pr6O11 Pt PuO2 Rb2CO3 RbF Re2O3 Re2O7 ReO3 Rh Rh2O3 Ru RuO2 \
+S Sb Sb2O3 Sb2O4 Sb2O5 Sc2O3 Se SeO2 Si Si3N4 SiC SiO2 Sm Sm2O3 Sn SnF2 SnO \
+SnO2 SnS2 Sr Sr2CO3 Sr3N2 SrCl2 SrCO3 Sr(CO3)2 SrCoO3 SrF2 SrNb2O6 SrO SrO2 \
+SrTiO3 Ta Ta2O5 TaON Tb2O3 Tb4O7 Te TeO2 TeO3 ThO2 Ti Ti2AlC Ti2O3 TiC TiO2 \
+TiS2 Tl2O3 TlCo2S2 TlCo2Se2 Tm2O3 U3O8 UO2 UO3 V V2O3 V2O5 VO2 W W2O3 WO3 Y \
+Y2O3 Y2Ti2O5S2 Yb Yb2O3 YF3 Zn ZnO ZnS ZnSe Zr ZrF4 ZrO2\\n- If asked to \
+generate more than one reaction recommendation for a target, each \
+recommendation should be different, and be separated with a newline.\\n- \
+Return only output of the following format for each recommendation: [Target] \
+<- [Precursor] + [Precursor] + [Precursor]\"", BoxForm`Undeploy, 
+                    DefaultBaseStyle -> {Deployed -> False}], LineIndent -> 0,
+                     LinebreakAdjustments -> {1, 10, 1, 0, 10}, Editable -> 
+                    False, StripOnInput -> False], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    ButtonBox[
+                    
+                    DynamicModuleBox[{
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$ = False, 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$ = False}, 
+                    TagBox[
+                    PaneSelectorBox[{"Default" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0, 0], 
+                    StripOnInput -> False], "Hover" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.08], 
+                    StripOnInput -> False], "Pressed" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.15], 
+                    StripOnInput -> False]}, 
+                    Dynamic[
+                    FEPrivate`Which[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, "Pressed", 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, "Hover", 
+                    True, "Default"]]], 
+                    
+                    EventHandlerTag[{
+                    "MouseDown" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, True], 
+                    "MouseUp" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, False], 
+                    "MouseEntered" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, True], 
+                    "MouseExited" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, False], 
+                    PassEventsDown -> True, Method -> "Preemptive", 
+                    PassEventsUp -> True}]], DynamicModuleValues :> {}], 
+                    ButtonFunction :> 
+                    CopyToClipboard[
+                    "You are an expert solid-state chemist planning a \
+material synthesis. \n- You are provided with a target compound and must \
+select the precursor reagents needed to synthesize the target.  Typically two \
+or more precursors are needed.\n- The precursor reagents must provide all of \
+the elements in the target. However, because the reactions are performed in \
+an open system where gases can escape, it is acceptable for some non-metal \
+elements (e.g., H, C, N, O, F, Cl, Br) present in the precursors to be absent \
+in the final target product.\n- Your synthesis task is only to identify the \
+correct precursor to use.  Do not provide stoichiometry.\n- Only use \
+precursors from the following candidates: Ag Ag2CO3 Ag2O Ag2S AgF AgI Al \
+Al2O3 AlF3 AlH3 AlN Al(OH)3 AmO2 As As2O5 Au B B2O3 Ba Ba2CO3 BaBr2 BaCl2 \
+BaCO3 BaCuO2 BaF2 BaO BaO2 BaS BaSe BaTiO3 Be BeO Bi Bi2(CO3)3 Bi2O3 Bi2S3 \
+BiOCl B(OH)3 C Ca Ca2CuO3 Ca2P2O7 Ca3N2 CaCl2 CaCO3 CaF2 CaO Ca(OH)2 Cd CdCO3 \
+CdO CdS Ce Ce2(CO3)3 CeF3 Ce(NH4)2(NO3)6 CeO2 Co Co2(C2O4)3 Co2O3 Co3O4 \
+CoC2O4 CoCO3 CoMoO4 CoO Co(OH)2 Cr Cr2O3 CrN CrO2 CrO3 Cs Cs2CO3 CsBr CsCl \
+CsF Cu Cu2O Cu2O3 Cu2S Cu2Se CuCO3 CuO Dy2O3 Er Er2O3 Eu Eu2O3 EuS Fe Fe2O3 \
+Fe3O4 FeAs FeC2O4 FeNbO4 FeO FePO4 Ga Ga2O3 Ga2S3 Ga2Se3 Gd Gd2O3 GdF3 Ge \
+GeO2 GeS2 H2MoO4 H2O H2SiO3 H2WO4 H3BO3 H3PO4 Hf HfO2 HgO Ho2O3 In In2O3 \
+In2S3 Ir IrO2 K2CO3 K2MoO4 K2SO4 KCl KH2PO4 KNbO3 La La2O3 La2S3 LaAs LaF3 \
+LaMgNi4 LaNi4.3 La(OH)3 Li Li2CO3 Li2O Li2O2 Li2O3 Li2S Li2SiO3 Li2SO4 Li3PO4 \
+LiCO3 LiCoPO4 LiF LiH LiH2PO4 LiOH Lu2O3 Mg Mg2Si MgB2 MgCO3 MgF2 MgH2 MgNi2 \
+MgO Mg(OH)2 Mn Mn2(CO3)7 Mn2N Mn2O3 Mn2O7 Mn3O4 MnCO3 MnO MnO2 MnOOH MnS Mo \
+MoO2 MoO3 MoS2 Na Na2CO3 Na2Mo2O7 Na2O Na2O2 Na2SO4 Na2Ti3O7 Na3PO4 Na4P2O7 \
+NaCl NaCO3 NaF NaH NaH2PO4 NaNbO3 NaOH Nb Nb2O3 Nb2O5 Nb3W14O47 Nd Nd2O3 \
+(NH4)2HPO4 NH4F (NH4)H2PO4 NH4H2PO4 NH4ReO4 NH4VO3 Ni Ni2(CO3)3 Ni2O3 NiCO3 \
+NiO NiO2 Ni(OH)2 O2 Os OsO2 P P2O5 P2S5 Pb Pb3O4 PbCl2 PbCO3 PbF2 PbO PbO2 \
+PbS Pd PdO Pr2O3 Pr6O11 Pt PuO2 Rb2CO3 RbF Re2O3 Re2O7 ReO3 Rh Rh2O3 Ru RuO2 \
+S Sb Sb2O3 Sb2O4 Sb2O5 Sc2O3 Se SeO2 Si Si3N4 SiC SiO2 Sm Sm2O3 Sn SnF2 SnO \
+SnO2 SnS2 Sr Sr2CO3 Sr3N2 SrCl2 SrCO3 Sr(CO3)2 SrCoO3 SrF2 SrNb2O6 SrO SrO2 \
+SrTiO3 Ta Ta2O5 TaON Tb2O3 Tb4O7 Te TeO2 TeO3 ThO2 Ti Ti2AlC Ti2O3 TiC TiO2 \
+TiS2 Tl2O3 TlCo2S2 TlCo2Se2 Tm2O3 U3O8 UO2 UO3 V V2O3 V2O5 VO2 W W2O3 WO3 Y \
+Y2O3 Y2Ti2O5S2 Yb Yb2O3 YF3 Zn ZnO ZnS ZnSe Zr ZrF4 ZrO2\n- If asked to \
+generate more than one reaction recommendation for a target, each \
+recommendation should be different, and be separated with a newline.\n- \
+Return only output of the following format for each recommendation: [Target] \
+<- [Precursor] + [Precursor] + [Precursor] "], 
+                    Appearance -> {
+                    "Default" -> 
+                    FrontEnd`FileName[{"Misc"}, "TransparentBG.9.png"]}, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False]}, {
+                    FrameBox[
+                    StyleBox[
+                    GraphicsBox[{
+                    Thickness[0.038461538461538464`], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGIRIGZigIIGBQcUmkEEmV8gECGEJi8Iol26dRSR+UCg
+hMY3ReZ/+J1pimreAZi8CBrfFJkP04eQxyWOqu9dzX9FZL4RB8S9CH1w/6Dw
+F3y8pIkqD6UbRYUwxAFRLy5n
+                    "]]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.49019607843137253`, 0.8235294117647058, 1., 1.]]}, 
+                    StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {1, 3, 3}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}}}, {CompressedData["
+1:eJxTTMoPSmViYGAQAWIQDQGmDhDaDEqLIPMbDpwSRJMXANIN9/17TZH4yObA
++ErIfIeEpwpo5img2adAgIaZq4UmborMR3IXTB7sboW7T1D4D2r+K6L5Czkc
+4P5DMg9THQC6JyON
+                    "], CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQGmDmCqAUx/WO6GwsctjqrvQc1/RWR+QspuEL9B
+YUMRmO/wsAosv39+FJjfcMALzL/s6wTmH5gvBeIfuOSrBDNfEdUeOF8LmZ+Q
+tkwTmd/gmADhrzuugKLvm4YImjkKaHxc4qj6Ep4KocmD+Q4bilD4QKCExjdF
+5sPDE24ePFxF0PiIcAYAYyg58Q==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.18823529411764706`, 0.49411764705882355`, 
+                    0.6549019607843137, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{27., 27.}, {27., 27.}}, 
+                    PlotRange -> {{-0.5, 26.5}, {-0.5, 26.5}}, AspectRatio -> 
+                    Automatic], "InformationTitleText", StripOnInput -> 
+                    False], ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    StyleBox[
+                    TagBox[
+                    "\"synthesize LaMnO4\"", BoxForm`Undeploy, 
+                    DefaultBaseStyle -> {Deployed -> False}], LineIndent -> 0,
+                     LinebreakAdjustments -> {1, 10, 1, 0, 10}, Editable -> 
+                    False, StripOnInput -> False], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    ButtonBox[
+                    
+                    DynamicModuleBox[{
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$ = False, 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$ = False}, 
+                    TagBox[
+                    PaneSelectorBox[{"Default" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0, 0], 
+                    StripOnInput -> False], "Hover" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.08], 
+                    StripOnInput -> False], "Pressed" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.15], 
+                    StripOnInput -> False]}, 
+                    Dynamic[
+                    FEPrivate`Which[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, "Pressed", 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, "Hover", 
+                    True, "Default"]]], 
+                    
+                    EventHandlerTag[{
+                    "MouseDown" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, True], 
+                    "MouseUp" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, False], 
+                    "MouseEntered" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, True], 
+                    "MouseExited" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, False], 
+                    PassEventsDown -> True, Method -> "Preemptive", 
+                    PassEventsUp -> True}]], DynamicModuleValues :> {}], 
+                    ButtonFunction :> CopyToClipboard["synthesize LaMnO4"], 
+                    Appearance -> {
+                    "Default" -> 
+                    FrontEnd`FileName[{"Misc"}, "TransparentBG.9.png"]}, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False]}, {
+                    FrameBox[
+                    StyleBox[
+                    GraphicsBox[{
+                    Thickness[0.038461538461538464`], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGIRIGZigAFFB1RaBJmfkPZMCE0ezDc2LkbhA4ESGt8U
+mf9guZspqnkNMHkRNL4pMj8hzc0UVR5Cw8zDpe9dzX9FJH6DwoYiRVTz4P5B
+4Sc8XqqJJg+mD3zVEMEQBwCRvSeH
+                    "]]}, {
+                    FaceForm[
+                    RGBColor[1., 1., 1., 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 
+                    3}, {0, 1, 0}, {1, 3, 3}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {CompressedData["
+1:eJxTTMoPSmViYGAQAWIQDQQOUgymDhCmGZjOZBBB5jdonhZEkxcA0g33/XtN
+kfgggM5XQuY7JDxVQDNPAc0+iLwJVByTLwDlayHLI7kfzJfP6jVFkwe7W+Hu
+ExT+g5r/ish8mPuhfLj/kMwzQ7PPzAEA5oooHw==
+                    "], {{21.00040054321289, 21.}, {21.00040054321289, 9.}, {
+                    13.00040054321289, 9.}, {12.649399757385254`, 9.}, {
+                    12.375399589538574`, 8.781000137329102}, {
+                    9.00040054321289, 6.081000328063965}, {9.00040054321289, 
+                    8.}, {9.00040054321289, 9.}, {8.00040054321289, 9.}, {
+                    5.000400543212891, 9.}, {5.000400543212891, 21.}, {
+                    21.00040054321289, 21.}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{27., 27.}, {27., 27.}}, 
+                    PlotRange -> {{-0.5, 26.5}, {-0.5, 26.5}}, AspectRatio -> 
+                    Automatic], "InformationTitleText", StripOnInput -> 
+                    False], ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    StyleBox[
+                    TagBox[
+                    "\"LaMnO4 <- La2O3 + MnO2 + O2\"", BoxForm`Undeploy, 
+                    DefaultBaseStyle -> {Deployed -> False}], LineIndent -> 0,
+                     LinebreakAdjustments -> {1, 10, 1, 0, 10}, Editable -> 
+                    False, StripOnInput -> False], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False], 
+                    FrameBox[
+                    ButtonBox[
+                    
+                    DynamicModuleBox[{
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$ = False, 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$ = False}, 
+                    TagBox[
+                    PaneSelectorBox[{"Default" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0, 0], 
+                    StripOnInput -> False], "Hover" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.08], 
+                    StripOnInput -> False], "Pressed" -> FrameBox[
+                    GraphicsBox[{
+                    Thickness[0.1], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 7.186999797821045}, {7.000999927520752, 
+                    7.186999797821045}, {7.000999927520752, 7.875}, {3., 
+                    7.875}, {3., 7.186999797821045}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 5.313000202178955}, {7.000999927520752, 
+                    5.313000202178955}, {7.000999927520752, 
+                    6.00100040435791}, {3., 6.00100040435791}, {3., 
+                    5.313000202178955}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}}, {{{3., 3.437000036239624}, {7.000999927520752, 
+                    3.437000036239624}, {7.000999927520752, 4.125}, {3., 
+                    4.125}, {3., 3.437000036239624}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
+                    7.667099952697754, 10.62540054321289}, {7.667099952697754,
+                     9.93740051984787}, {8.333099961280823, 
+                    9.93740051984787}, {8.333099961280823, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    1.6874008178710938`}, {1.667099952697754, 
+                    9.93740051984787}, {2.334099769592285, 
+                    9.93740051984787}, {2.334099769592285, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    10.62540054321289}, {1.0001001358032227`, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    0.9994001388549805}, {9.000099897384644, 
+                    10.62540054321289}, {7.667099952697754, 
+                    10.62540054321289}}}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False], 
+                    StyleBox[{
+                    
+                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+                    0}}, {{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 
+                    0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+                    0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{
+                    3.6673998832702637`, 9.937499046325684}, {
+                    6.332399845123291, 9.937499046325684}, {5.999399900436401,
+                     10.624499082565308`}, {4.000399887561798, 
+                    10.624499082565308`}, {3.6673998832702637`, 
+                    9.937499046325684}}, CompressedData["
+1:eJxTTMoPSmViYGCQBmIQDQQF885yOADpR1rqyiA64PBldhCdO70PzH+gvxvM
+375YQAVEK1hNAqv/rVcL5rOY2XCD6JaCu6og2mmaIg+IjrEPVQPRIjv/8ILo
+L00LwPwrGQwCYHP/zwfzT6SFCmLjZzgyaIDoAymrxLDxYeo3JP0XR+Z/yGOU
+RLbP4ddbSWT3NGxIlALR0z5D3Ltgy3ZpZP84LImXAdIOk+aeB/v/Q841sPw1
+jT9KIHpCeytY/wy5pWC+go8amK/U3QPmL7i/TxLi3gYIPyEEhX/gahgvMt9i
+fy04/ML21YP5PrlHOUG00Y59YD5K/AAAzspraA==
+                    "]}]}, {
+                    FaceForm[
+                    RGBColor[
+                    0.5372549019607843, 0.5372549019607843, 
+                    0.5372549019607843, 1.]]}, StripOnInput -> False]}, 
+                    ImageSize -> {{11., 14.}, {11., 14.}}, 
+                    PlotRange -> {{-0.5, 10.5}, {-0.5, 13.5}}, AspectRatio -> 
+                    Automatic], FrameStyle -> None, RoundingRadius -> 5, 
+                    FrameMargins -> 5, Background -> GrayLevel[0., 0.15], 
+                    StripOnInput -> False]}, 
+                    Dynamic[
+                    FEPrivate`Which[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, "Pressed", 
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, "Hover", 
+                    True, "Default"]]], 
+                    
+                    EventHandlerTag[{
+                    "MouseDown" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, True], 
+                    "MouseUp" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseDown$$, False], 
+                    "MouseEntered" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, True], 
+                    "MouseExited" :> 
+                    FEPrivate`Set[
+                    Wolfram`LLMFunctions`Chat`Private`mouseHover$$, False], 
+                    PassEventsDown -> True, Method -> "Preemptive", 
+                    PassEventsUp -> True}]], DynamicModuleValues :> {}], 
+                    ButtonFunction :> 
+                    CopyToClipboard["LaMnO4 <- La2O3 + MnO2 + O2"], 
+                    Appearance -> {
+                    "Default" -> 
+                    FrontEnd`FileName[{"Misc"}, "TransparentBG.9.png"]}, 
+                    Evaluator -> Automatic, Method -> "Preemptive"], 
+                    ImageMargins -> {{0, 0}, {0, 0}}, 
+                    FrameMargins -> {{10, 10}, {10, 10}}, FrameStyle -> None, 
+                    Alignment -> {Left, Top}, BaselinePosition -> Baseline, 
+                    Background -> None, StripOnInput -> False]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
+                    AutoDelete -> False, 
+                    GridBoxBackground -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{
+                    GrayLevel[1], Null}}}, 
+                    GridBoxDividers -> {
+                    "Columns" -> {{None}}, "Rows" -> {None, {
+                    GrayLevel[0, 0.05]}, None}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {"Columns" -> {{0}}, "Rows" -> {{0}}}, 
+                    BaseStyle -> "Text"], "Grid"], FrameMargins -> 0, 
+                   FrameStyle -> GrayLevel[0, 0.05], RoundingRadius -> 1.5, 
+                   StripOnInput -> False], AppearanceElements -> None, 
+                  Scrollbars -> {False, Automatic}, 
+                  ImageSize -> {{20, 600}, {20, 400}}, ContentPadding -> 
+                  False], Deploy, DefaultBaseStyle -> "Deploy"], 
+                "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ChatObject[<|
+   "LLMEvaluator" -> 
+    LLMConfiguration[<|
+      "Model" -> <|"Service" -> "OpenAI", "Name" -> "gpt-3.5-turbo-0125"|>, 
+       "MaxTokens" -> Automatic, "Temperature" -> 0, "TotalProbabilityCutoff" -> 
+       Automatic, "Prompts" -> Automatic, "PromptDelimiter" -> "\n\n", 
+       "StopTokens" -> Automatic, "ToolMethod" -> Automatic, "Tools" -> 
+       Automatic|>], 
+    "Messages" -> {<|
+      "Role" -> "system", "Content" -> 
+       "You are an expert solid-state chemist planning a material synthesis. \
+\n- You are provided with a target compound and must select the precursor \
+reagents needed to synthesize the target.  Typically two or more precursors \
+are needed.\n- The precursor reagents must provide all of the elements in the \
+target. However, because the reactions are performed in an open system where \
+gases can escape, it is acceptable for some non-metal elements (e.g., H, C, \
+N, O, F, Cl, Br) present in the precursors to be absent in the final target \
+product.\n- Your synthesis task is only to identify the correct precursor to \
+use.  Do not provide stoichiometry.\n- Only use precursors from the following \
+candidates: Ag Ag2CO3 Ag2O Ag2S AgF AgI Al Al2O3 AlF3 AlH3 AlN Al(OH)3 AmO2 \
+As As2O5 Au B B2O3 Ba Ba2CO3 BaBr2 BaCl2 BaCO3 BaCuO2 BaF2 BaO BaO2 BaS BaSe \
+BaTiO3 Be BeO Bi Bi2(CO3)3 Bi2O3 Bi2S3 BiOCl B(OH)3 C Ca Ca2CuO3 Ca2P2O7 \
+Ca3N2 CaCl2 CaCO3 CaF2 CaO Ca(OH)2 Cd CdCO3 CdO CdS Ce Ce2(CO3)3 CeF3 \
+Ce(NH4)2(NO3)6 CeO2 Co Co2(C2O4)3 Co2O3 Co3O4 CoC2O4 CoCO3 CoMoO4 CoO Co(OH)2 \
+Cr Cr2O3 CrN CrO2 CrO3 Cs Cs2CO3 CsBr CsCl CsF Cu Cu2O Cu2O3 Cu2S Cu2Se CuCO3 \
+CuO Dy2O3 Er Er2O3 Eu Eu2O3 EuS Fe Fe2O3 Fe3O4 FeAs FeC2O4 FeNbO4 FeO FePO4 \
+Ga Ga2O3 Ga2S3 Ga2Se3 Gd Gd2O3 GdF3 Ge GeO2 GeS2 H2MoO4 H2O H2SiO3 H2WO4 \
+H3BO3 H3PO4 Hf HfO2 HgO Ho2O3 In In2O3 In2S3 Ir IrO2 K2CO3 K2MoO4 K2SO4 KCl \
+KH2PO4 KNbO3 La La2O3 La2S3 LaAs LaF3 LaMgNi4 LaNi4.3 La(OH)3 Li Li2CO3 Li2O \
+Li2O2 Li2O3 Li2S Li2SiO3 Li2SO4 Li3PO4 LiCO3 LiCoPO4 LiF LiH LiH2PO4 LiOH \
+Lu2O3 Mg Mg2Si MgB2 MgCO3 MgF2 MgH2 MgNi2 MgO Mg(OH)2 Mn Mn2(CO3)7 Mn2N Mn2O3 \
+Mn2O7 Mn3O4 MnCO3 MnO MnO2 MnOOH MnS Mo MoO2 MoO3 MoS2 Na Na2CO3 Na2Mo2O7 \
+Na2O Na2O2 Na2SO4 Na2Ti3O7 Na3PO4 Na4P2O7 NaCl NaCO3 NaF NaH NaH2PO4 NaNbO3 \
+NaOH Nb Nb2O3 Nb2O5 Nb3W14O47 Nd Nd2O3 (NH4)2HPO4 NH4F (NH4)H2PO4 NH4H2PO4 \
+NH4ReO4 NH4VO3 Ni Ni2(CO3)3 Ni2O3 NiCO3 NiO NiO2 Ni(OH)2 O2 Os OsO2 P P2O5 \
+P2S5 Pb Pb3O4 PbCl2 PbCO3 PbF2 PbO PbO2 PbS Pd PdO Pr2O3 Pr6O11 Pt PuO2 \
+Rb2CO3 RbF Re2O3 Re2O7 ReO3 Rh Rh2O3 Ru RuO2 S Sb Sb2O3 Sb2O4 Sb2O5 Sc2O3 Se \
+SeO2 Si Si3N4 SiC SiO2 Sm Sm2O3 Sn SnF2 SnO SnO2 SnS2 Sr Sr2CO3 Sr3N2 SrCl2 \
+SrCO3 Sr(CO3)2 SrCoO3 SrF2 SrNb2O6 SrO SrO2 SrTiO3 Ta Ta2O5 TaON Tb2O3 Tb4O7 \
+Te TeO2 TeO3 ThO2 Ti Ti2AlC Ti2O3 TiC TiO2 TiS2 Tl2O3 TlCo2S2 TlCo2Se2 Tm2O3 \
+U3O8 UO2 UO3 V V2O3 V2O5 VO2 W W2O3 WO3 Y Y2O3 Y2Ti2O5S2 Yb Yb2O3 YF3 Zn ZnO \
+ZnS ZnSe Zr ZrF4 ZrO2\n- If asked to generate more than one reaction \
+recommendation for a target, each recommendation should be different, and be \
+separated with a newline.\n- Return only output of the following format for \
+each recommendation: [Target] <- [Precursor] + [Precursor] + [Precursor] "|>, \
+<|"Role" -> "User", "Content" -> "synthesize LaMnO4", "Timestamp" -> 
+       DateObject[{2024, 3, 21, 17, 43, 23.029235`8.11485449441592}, 
+         "Instant", "Gregorian", 9.], 
+       "Annotations" -> <|{1, 17} -> "Prompt"|>|>, <|
+      "Role" -> "Assistant", "Content" -> "LaMnO4 <- La2O3 + MnO2 + O2", 
+       "Timestamp" -> 
+       DateObject[{2024, 3, 21, 17, 43, 24}, "Instant", "Gregorian", 9.], 
+       "Annotations" -> <|{1, 27} -> "Completion"|>|>}, "ChatID" -> 
+    "ade75e2b-eeee-45b9-b958-edcbf4ff4e07", 
+    "History" -> {<|
+      "Role" -> "Assistant", "Content" -> "LaMnO4 <- La2O3 + MnO2 + O2", 
+       "FinishReason" -> "stop", "Model" -> "gpt-3.5-turbo-0125", "Timestamp" -> 
+       DateObject[{2024, 3, 21, 17, 43, 24}, "Instant", "Gregorian", 9.], 
+       "Usage" -> <|
+        "History" -> Quantity[1228, "Tokens"], "Completion" -> 
+         Quantity[17, "Tokens"]|>, "CallID" -> 
+       "chatcmpl-958JAIjBW2Q825KIZmwrfJl1AXWaO", "RawResponseWXF" -> 
+       ByteArray[CompressedData["
+1:eJxFj8FOwkAQhkGraCIxcPVSL150CRSqxXipnEC00T1gvDTbdloWtztNd4j6
+jr6CT+HRi4vReJnJzHx//n+OE3xImo1GQ9oSXIYtxrdkxk/SpaC0rBQb+8Es
+nK6uF9594Pk306fypc5nahA+LkTE+C4mK0iJH24EvRStBEiiZryV1iAIMnn2
++QWM75SYgeLdoiI27PmM1nWCrD/w/A26RJmCyZvGmUtDoWN5qTN4nTTstQRj
+RAHhFuNOjQr4vjDGYkLTRouaQBM/motbHY3cK+bOhRcN3VPXzp5tkcf4nsKi
+qjExxrlbK8V4O5dammVsQxrU3DGElXVd/zht27uly4piwmfQZvVuI3X+3/td
+TzqMHxCSUH/ch+W65s0QlLF1KKCuamnTtfMqHuX95HzsiYvgG9pGejc=
+         "]], "Annotations" -> <|{1, 27} -> "Completion"|>|>}, "Usage" -> 
+    Quantity[1245, "Tokens"], "Icon" -> Graphics[{
+       Thickness[0.038461538461538464`], 
+       Style[{
+         FilledCurve[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+          0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+          0}}}, CompressedData["
+1:eJxTTMoPSmVmYGBgBGIRIGZigAFFB1RaBJmfkPZMCE0ezDc2LkbhA4ESGt8U
+mf9guZspqnkNMHkRNL4pMj8hzc0UVR5Cw8zDpe9dzX9FJH6DwoYiRVTz4P5B
+4Sc8XqqJJg+mD3zVEMEQBwCRvSeH
+          "]]}, 
+        FaceForm[
+         RGBColor[1., 1., 1., 1.]]], 
+       Style[{
+         FilledCurve[{{{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 
+          0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 
+          3}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+          0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
+          0}}}, {CompressedData["
+1:eJxTTMoPSmViYGAQAWIQDQQOUgymDhCmGZjOZBBB5jdonhZEkxcA0g33/XtN
+kfgggM5XQuY7JDxVQDNPAc0+iLwJVByTLwDlayHLI7kfzJfP6jVFkwe7W+Hu
+ExT+g5r/ish8mPuhfLj/kMwzQ7PPzAEA5oooHw==
+           "], {{21.00040054321289, 21.}, {21.00040054321289, 9.}, {
+           13.00040054321289, 9.}, {12.649399757385254`, 9.}, {
+           12.375399589538574`, 8.781000137329102}, {9.00040054321289, 
+           6.081000328063965}, {9.00040054321289, 8.}, {9.00040054321289, 
+           9.}, {8.00040054321289, 9.}, {5.000400543212891, 9.}, {
+           5.000400543212891, 21.}, {21.00040054321289, 21.}}}]}, 
+        FaceForm[
+         RGBColor[
+         0.5372549019607843, 0.5372549019607843, 0.5372549019607843, 1.]]]}, 
+      ImageSize -> {{27., 27.}, {27., 27.}}, 
+      PlotRange -> {{-0.5, 26.5}, {-0.5, 26.5}}, AspectRatio -> Automatic]|>],
+  
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.9199994049534683`*^9},
+ CellLabel->
+  "Out[1551]=",ExpressionUUID->"50b39deb-c6d8-4569-a2a2-46b18109f9cf"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"o", "[", "\"\<Messages\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.919999410695475*^9, 3.919999432510831*^9}},
+ CellLabel->
+  "In[1555]:=",ExpressionUUID->"ce122f05-aed0-40a4-8361-10c98bb437b3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"Role\"\>", "\[Rule]", "\<\"system\"\>"}], ",", 
+     RowBox[{"\<\"Content\"\>", 
+      "\[Rule]", "\<\"You are an expert solid-state chemist planning a \
+material synthesis. \\n- You are provided with a target compound and must \
+select the precursor reagents needed to synthesize the target.  Typically two \
+or more precursors are needed.\\n- The precursor reagents must provide all of \
+the elements in the target. However, because the reactions are performed in \
+an open system where gases can escape, it is acceptable for some non-metal \
+elements (e.g., H, C, N, O, F, Cl, Br) present in the precursors to be absent \
+in the final target product.\\n- Your synthesis task is only to identify the \
+correct precursor to use.  Do not provide stoichiometry.\\n- Only use \
+precursors from the following candidates: Ag Ag2CO3 Ag2O Ag2S AgF AgI Al \
+Al2O3 AlF3 AlH3 AlN Al(OH)3 AmO2 As As2O5 Au B B2O3 Ba Ba2CO3 BaBr2 BaCl2 \
+BaCO3 BaCuO2 BaF2 BaO BaO2 BaS BaSe BaTiO3 Be BeO Bi Bi2(CO3)3 Bi2O3 Bi2S3 \
+BiOCl B(OH)3 C Ca Ca2CuO3 Ca2P2O7 Ca3N2 CaCl2 CaCO3 CaF2 CaO Ca(OH)2 Cd CdCO3 \
+CdO CdS Ce Ce2(CO3)3 CeF3 Ce(NH4)2(NO3)6 CeO2 Co Co2(C2O4)3 Co2O3 Co3O4 \
+CoC2O4 CoCO3 CoMoO4 CoO Co(OH)2 Cr Cr2O3 CrN CrO2 CrO3 Cs Cs2CO3 CsBr CsCl \
+CsF Cu Cu2O Cu2O3 Cu2S Cu2Se CuCO3 CuO Dy2O3 Er Er2O3 Eu Eu2O3 EuS Fe Fe2O3 \
+Fe3O4 FeAs FeC2O4 FeNbO4 FeO FePO4 Ga Ga2O3 Ga2S3 Ga2Se3 Gd Gd2O3 GdF3 Ge \
+GeO2 GeS2 H2MoO4 H2O H2SiO3 H2WO4 H3BO3 H3PO4 Hf HfO2 HgO Ho2O3 In In2O3 \
+In2S3 Ir IrO2 K2CO3 K2MoO4 K2SO4 KCl KH2PO4 KNbO3 La La2O3 La2S3 LaAs LaF3 \
+LaMgNi4 LaNi4.3 La(OH)3 Li Li2CO3 Li2O Li2O2 Li2O3 Li2S Li2SiO3 Li2SO4 Li3PO4 \
+LiCO3 LiCoPO4 LiF LiH LiH2PO4 LiOH Lu2O3 Mg Mg2Si MgB2 MgCO3 MgF2 MgH2 MgNi2 \
+MgO Mg(OH)2 Mn Mn2(CO3)7 Mn2N Mn2O3 Mn2O7 Mn3O4 MnCO3 MnO MnO2 MnOOH MnS Mo \
+MoO2 MoO3 MoS2 Na Na2CO3 Na2Mo2O7 Na2O Na2O2 Na2SO4 Na2Ti3O7 Na3PO4 Na4P2O7 \
+NaCl NaCO3 NaF NaH NaH2PO4 NaNbO3 NaOH Nb Nb2O3 Nb2O5 Nb3W14O47 Nd Nd2O3 \
+(NH4)2HPO4 NH4F (NH4)H2PO4 NH4H2PO4 NH4ReO4 NH4VO3 Ni Ni2(CO3)3 Ni2O3 NiCO3 \
+NiO NiO2 Ni(OH)2 O2 Os OsO2 P P2O5 P2S5 Pb Pb3O4 PbCl2 PbCO3 PbF2 PbO PbO2 \
+PbS Pd PdO Pr2O3 Pr6O11 Pt PuO2 Rb2CO3 RbF Re2O3 Re2O7 ReO3 Rh Rh2O3 Ru RuO2 \
+S Sb Sb2O3 Sb2O4 Sb2O5 Sc2O3 Se SeO2 Si Si3N4 SiC SiO2 Sm Sm2O3 Sn SnF2 SnO \
+SnO2 SnS2 Sr Sr2CO3 Sr3N2 SrCl2 SrCO3 Sr(CO3)2 SrCoO3 SrF2 SrNb2O6 SrO SrO2 \
+SrTiO3 Ta Ta2O5 TaON Tb2O3 Tb4O7 Te TeO2 TeO3 ThO2 Ti Ti2AlC Ti2O3 TiC TiO2 \
+TiS2 Tl2O3 TlCo2S2 TlCo2Se2 Tm2O3 U3O8 UO2 UO3 V V2O3 V2O5 VO2 W W2O3 WO3 Y \
+Y2O3 Y2Ti2O5S2 Yb Yb2O3 YF3 Zn ZnO ZnS ZnSe Zr ZrF4 ZrO2\\n- If asked to \
+generate more than one reaction recommendation for a target, each \
+recommendation should be different, and be separated with a newline.\\n- \
+Return only output of the following format for each recommendation: [Target] \
+<- [Precursor] + [Precursor] + [Precursor] \"\>"}]}], "\[RightAssociation]"}],
+    ",", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"Role\"\>", "\[Rule]", "\<\"User\"\>"}], ",", 
+     RowBox[{"\<\"Content\"\>", "\[Rule]", "\<\"synthesize LaMnO4\"\>"}], ",", 
+     RowBox[{"\<\"Timestamp\"\>", "\[Rule]", 
+      TemplateBox[{
+        RowBox[{"\"Thu 21 Mar 2024 17:43:23\"", 
+          StyleBox[
+           RowBox[{"\"GMT\"", "\[InvisibleSpace]", "+", "\[InvisibleSpace]", 
+             StyleBox["9", NumberMarks -> False, StripOnInput -> False]}], 
+           FontColor -> GrayLevel[0.5]]}], 
+        RowBox[{"DateObject", "[", 
+          RowBox[{
+            RowBox[{"{", 
+              
+              RowBox[{"2024", ",", "3", ",", "21", ",", "17", ",", "43", ",", 
+                "23.029235`8.11485449441592"}], "}"}], ",", "\"Instant\"", 
+            ",", "\"Gregorian\"", ",", "9.`"}], "]"}]},
+       "DateObject",
+       Editable->False]}], ",", 
+     RowBox[{"\<\"Annotations\"\>", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "17"}], "}"}], "\[Rule]", "\<\"Prompt\"\>"}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}], ",", 
+   RowBox[{"\[LeftAssociation]", 
+    RowBox[{
+     RowBox[{"\<\"Role\"\>", "\[Rule]", "\<\"Assistant\"\>"}], ",", 
+     RowBox[{"\<\"Content\"\>", 
+      "\[Rule]", "\<\"LaMnO4 <- La2O3 + MnO2 + O2\"\>"}], ",", 
+     RowBox[{"\<\"Timestamp\"\>", "\[Rule]", 
+      TemplateBox[{
+        RowBox[{"\"Thu 21 Mar 2024 17:43:24\"", 
+          StyleBox[
+           RowBox[{"\"GMT\"", "\[InvisibleSpace]", "+", "\[InvisibleSpace]", 
+             StyleBox["9", NumberMarks -> False, StripOnInput -> False]}], 
+           FontColor -> GrayLevel[0.5]]}], 
+        RowBox[{"DateObject", "[", 
+          RowBox[{
+            RowBox[{"{", 
+              
+              RowBox[{"2024", ",", "3", ",", "21", ",", "17", ",", "43", ",", 
+                "24"}], "}"}], ",", "\"Instant\"", ",", "\"Gregorian\"", ",", 
+            "9.`"}], "]"}]},
+       "DateObject",
+       Editable->False]}], ",", 
+     RowBox[{"\<\"Annotations\"\>", "\[Rule]", 
+      RowBox[{"\[LeftAssociation]", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"1", ",", "27"}], "}"}], "\[Rule]", "\<\"Completion\"\>"}], 
+       "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.919999414169216*^9, 3.919999432909198*^9}},
+ CellLabel->
+  "Out[1555]=",ExpressionUUID->"6a22bc9f-1a95-4987-8dec-aede1f456fab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "ParallelMap"}]], "Input",
+ CellChangeTimes->{{3.9199998047790403`*^9, 3.919999807017795*^9}},
+ CellLabel->
+  "In[1559]:=",ExpressionUUID->"a08d1217-7b16-43d3-a2de-b17b01a945d0"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"]], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"]]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/ParallelMap",
+              ButtonNote->"paclet:ref/ParallelMap"],
+             "\"paclet:ref/ParallelMap\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"ParallelMap\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"expr\\\", \\\
+\"TI\\\"]}], \\\"]\\\"}]\\) applies \\!\\(\\*StyleBox[\\\"f\\\", \
+\\\"TI\\\"]\\) in parallel to each element on the first level in \
+\\!\\(\\*StyleBox[\\\"expr\\\", \
+\\\"TI\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"ParallelMap\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"expr\\\", \\\
+\"TI\\\"], \\\",\\\", StyleBox[\\\"levelspec\\\", \\\"TI\\\"]}], \
+\\\"]\\\"}]\\) applies \\!\\(\\*StyleBox[\\\"f\\\", \\\"TI\\\"]\\) in \
+parallel to parts of \\!\\(\\*StyleBox[\\\"expr\\\", \\\"TI\\\"]\\) specified \
+by \\!\\(\\*StyleBox[\\\"levelspec\\\", \\\"TI\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[
+           TagBox[GridBox[{
+              {
+               StyleBox[
+                TagBox[
+                 TooltipBox[
+                  StyleBox["\<\" Definitions\"\>", "InformationRowLabel",
+                   StripOnInput->False],
+                  "\"Definitions\"",
+                  TooltipStyle->"TextStyling"],
+                 Annotation[#, "Definitions", "Tooltip"]& ], "DialogStyle",
+                StripOnInput->False]},
+              {
+               TemplateBox[{"\"\[ThinSpace]\"", 
+                 GridBox[{{
+                    RowBox[{
+                    RowBox[{"ParallelMap", "[", 
+                    
+                    RowBox[{
+                    "Parallel`Combine`Private`f_", ",", 
+                    "Parallel`Combine`Private`expr_", ",", 
+                    "Parallel`Combine`Private`rest___"}], "]"}], ":=", 
+                    RowBox[{"Parallel`Protected`progressBlock", "[", 
+                    RowBox[{"\"ParallelMap\"", ",", 
+                    RowBox[{"Parallel`Combine`Private`parallelMap", "[", 
+                    RowBox[{"Parallel`Combine`Private`f", ",", 
+                    
+                    RowBox[{"Unevaluated", "[", 
+                    "Parallel`Combine`Private`expr", "]"}], ",", 
+                    "Parallel`Combine`Private`rest"}], "]"}]}], "]"}]}]}, {
+                   " "}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  DefaultBaseStyle -> "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+                "RowDefault"]}
+             },
+             DefaultBaseStyle->"Column",
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Column"],
+           FrameMargins->{{6, 0}, {3, 6}}], "\<\"\"\>"},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Documentation\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Documentation\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Documentation", "Tooltip"]& ], 
+                   TemplateBox[{
+                    
+                    TemplateBox[{
+                    "\"Local \[RightGuillemet]\"", "paclet:ref/ParallelMap", 
+                    "paclet:ref/ParallelMap", "Link", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"], "\"  \"", 
+                    StyleBox[
+                    "\"|\"", "InformationRowLabel", StripOnInput -> False], 
+                    "\"  \"", 
+                    TemplateBox[{"\"Web \[RightGuillemet]\"", {
+                    URL[
+                    "http://reference.wolfram.com/language/ref/ParallelMap.\
+html"], None}, "http://reference.wolfram.com/language/ref/ParallelMap.html", 
+                    "Hyperlink", {
+                    RGBColor[0.9686274509803922, 0.4666666666666667, 0.]}, 
+                    BaseStyle -> {
+                    RGBColor[0.0784313725490196, 0.1568627450980392, 0.6]}}, 
+                    "HyperlinkTemplate"]},
+                    "RowDefault"]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Options\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Options\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Options", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{
+                    "DistributedContexts", "\[RuleDelayed]", 
+                    "$DistributedContexts"}], ",", 
+                    RowBox[{"Method", "\[Rule]", "Automatic"}], ",", 
+                    RowBox[{
+                    "ProgressReporting", "\[RuleDelayed]", 
+                    "$ProgressReporting"}]}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Attributes\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"Attributes\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "Attributes", "Tooltip"]& ], 
+                   RowBox[{"{", 
+                    RowBox[{"HoldRest", ",", "Protected"}], "}"}]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"System`ParallelMap\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox[
+           PaneBox[
+            TooltipBox[
+             ButtonBox[
+              PaneSelectorBox[{False->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIcon"],
+                ImageSizeCache->{13., {4., 9.}}], True->
+               
+               DynamicBox[FEPrivate`FrontEndResource[
+                "FEBitmaps", "InformationHelpIconHot"],
+                ImageSizeCache->{13., {4., 9.}}]}, Dynamic[
+                CurrentValue["MouseOver"]]],
+              Appearance->None,
+              BaseStyle->"Link",
+              ButtonData->"paclet:ref/ParallelMap",
+              ButtonNote->"paclet:ref/ParallelMap"],
+             "\"paclet:ref/ParallelMap\""],
+            FrameMargins->{{0, 4}, {0, 2}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"\\!\\(\\*RowBox[{\\\"ParallelMap\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"expr\\\", \\\
+\"TI\\\"]}], \\\"]\\\"}]\\) applies \\!\\(\\*StyleBox[\\\"f\\\", \
+\\\"TI\\\"]\\) in parallel to each element on the first level in \
+\\!\\(\\*StyleBox[\\\"expr\\\", \
+\\\"TI\\\"]\\).\\n\\!\\(\\*RowBox[{\\\"ParallelMap\\\", \\\"[\\\", \
+RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"expr\\\", \\\
+\"TI\\\"], \\\",\\\", StyleBox[\\\"levelspec\\\", \\\"TI\\\"]}], \
+\\\"]\\\"}]\\) applies \\!\\(\\*StyleBox[\\\"f\\\", \\\"TI\\\"]\\) in \
+parallel to parts of \\!\\(\\*StyleBox[\\\"expr\\\", \\\"TI\\\"]\\) specified \
+by \\!\\(\\*StyleBox[\\\"levelspec\\\", \\\"TI\\\"]\\).\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {2., 8.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {2., 8.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "\!\(\*RowBox[{\"ParallelMap\", \"[\", RowBox[{StyleBox[\"f\", \"TI\"], \
+\",\", StyleBox[\"expr\", \"TI\"]}], \"]\"}]\) applies \!\(\*StyleBox[\"f\", \
+\"TI\"]\) in parallel to each element on the first level in \
+\!\(\*StyleBox[\"expr\", \"TI\"]\).\n\!\(\*RowBox[{\"ParallelMap\", \"[\", \
+RowBox[{StyleBox[\"f\", \"TI\"], \",\", StyleBox[\"expr\", \"TI\"], \",\", \
+StyleBox[\"levelspec\", \"TI\"]}], \"]\"}]\) applies \!\(\*StyleBox[\"f\", \
+\"TI\"]\) in parallel to parts of \!\(\*StyleBox[\"expr\", \"TI\"]\) \
+specified by \!\(\*StyleBox[\"levelspec\", \"TI\"]\).", 
+    "Documentation" -> <|
+     "Local" -> "paclet:ref/ParallelMap", "Web" -> 
+      "http://reference.wolfram.com/language/ref/ParallelMap.html"|>, 
+    "OwnValues" -> None, "UpValues" -> None, "DownValues" -> 
+    Information`InformationValueForm[DownValues, ParallelMap, {ParallelMap[
+         Pattern[Parallel`Combine`Private`f, 
+          Blank[]], 
+         Pattern[Parallel`Combine`Private`expr, 
+          Blank[]], 
+         Pattern[Parallel`Combine`Private`rest, 
+          BlankNullSequence[]]] :> 
+       Parallel`Protected`progressBlock["ParallelMap", 
+         Parallel`Combine`Private`parallelMap[Parallel`Combine`Private`f, 
+          Unevaluated[Parallel`Combine`Private`expr], 
+          Parallel`Combine`Private`rest]]}], "SubValues" -> None, 
+    "DefaultValues" -> None, "NValues" -> None, "FormatValues" -> None, 
+    "Options" -> {
+     DistributedContexts :> $DistributedContexts, Method -> Automatic, 
+      ProgressReporting :> $ProgressReporting}, 
+    "Attributes" -> {HoldRest, Protected}, "FullName" -> 
+    "System`ParallelMap"|>, False]]], "Output",
+ CellChangeTimes->{3.919999807382044*^9},
+ CellLabel->
+  "Out[1559]=",ExpressionUUID->"4b8cca0a-c910-4a15-8b5e-39a1433e899a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"ParallelMap", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Pause", "[", "1", "]"}], ";", "#"}], ")"}], "&"}], ",", 
+    RowBox[{"Range", "[", "16", "]"}]}], "]"}], "//", 
+  "AbsoluteTiming"}]], "Input",
+ CellChangeTimes->{{3.919999742275279*^9, 3.919999866481131*^9}},
+ CellLabel->
+  "In[1568]:=",ExpressionUUID->"ebc794bf-4e40-4c5e-b9f7-7bda3d948c59"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"4.142999`", ",", 
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7", ",", "8",
+      ",", "9", ",", "10", ",", "11", ",", "12", ",", "13", ",", "14", ",", 
+     "15", ",", "16"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.919999757801909*^9, 3.9199998722830133`*^9}},
+ CellLabel->
+  "Out[1568]=",ExpressionUUID->"8e74f099-1717-4767-ade7-fc703cf0a1c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"top1gpt35", "=", 
+   RowBox[{"ParallelMap", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Pause", "[", "1", "]"}], ";", 
+        RowBox[{
+         RowBox[{"evaluateTop1", "[", "session", "]"}], "[", "#", "]"}]}], 
+       ")"}], "&"}], ",", " ", 
+     RowBox[{"(*", 
+      RowBox[{
+      "insert", " ", "pause", " ", "to", " ", "avoid", " ", "rate", " ", 
+       "limit"}], "*)"}], "\[IndentingNewLine]", "test", ",", 
+     RowBox[{"ProgressReporting", "->", "True"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"N", "@", 
+  RowBox[{"Mean", "@", 
+   RowBox[{"Boole", "@", 
+    RowBox[{
+     RowBox[{"Lookup", "[", "\"\<correct\>\"", "]"}], "@", 
+     "%"}]}]}]}]}], "Input",
+ CellChangeTimes->{{3.91999839266705*^9, 3.919998407141405*^9}, {
+  3.9199998850888777`*^9, 3.9199999164563932`*^9}},
+ CellLabel->
+  "In[1569]:=",ExpressionUUID->"e42fe8a8-be52-44d5-a80d-66b5ef236b44"],
+
+Cell[BoxData[
+ DynamicModuleBox[{Progress`ProgressDump`forceRedraw$$ = {{}, {}}, 
+  Progress`ProgressDump`open$$ = True, Progress`ProgressDump`clock$$ = 116., 
+  Progress`ProgressDump`maxTime$$ = DirectedInfinity[1]}, 
+  OverlayBox[{
+   AnimatorBox[Dynamic[Progress`ProgressDump`clock$$], {2., 
+     DirectedInfinity[1], 1.},
+    AnimationRate->1,
+    AnimationRunTime->114.63747215270996`,
+    AnimationTimeIndex->114.63747215270996`,
+    AppearanceElements->None,
+    ImageSize->{1, 1}], 
+   DynamicWrapperBox[
+    DynamicBox[ToBoxes[
+      Progress`GenerateProgressPanel[{
+       "Progress" :> (Parallel`Combine`Private`nreceived + 
+          Min[4, 32 - Parallel`Combine`Private`nreceived]/2)/32, "Results" :> 
+        StringTemplate["`1`/`2` evaluations of `3` items each (`4` kernels)"][
+         Parallel`Combine`Private`nreceived, 32, 66, 4], "Times" :> 
+        With[{Parallel`Combine`Private`elapsed$ = 
+           AbsoluteTime[] - Parallel`Combine`Private`start}, {
+          Parallel`Combine`Private`remaining$ = 
+           If[Parallel`Combine`Private`nreceived === 0, 
+             Indeterminate, (
+              1./((Parallel`Combine`Private`nreceived + 
+                Min[4, 32 - Parallel`Combine`Private`nreceived]/2)/32) - 1) 
+             Parallel`Combine`Private`elapsed$]}, 
+          Parallel`Combine`Private`timeString[
+          Parallel`Combine`Private`elapsed$, 
+           Parallel`Combine`Private`remaining$]]}, <|{
+        "DelayedTask" -> ScheduledTaskObject[776, 
+           HoldForm[AppendTo[Progress`ProgressDump`this$state$5656346, 
+              Progress`ProgressDump`CreateProgressState[
+              Progress`ProgressDump`parameters$5656346, 
+               Progress`ProgressDump`info$5656346, ProgressReporting -> True, 
+               "Title" -> "ParallelMap", 
+               "Buttons" -> <|
+                "Stop" :> (Parallel`Protected`$progressStop = True)|>, 
+               UpdateInterval -> 1, "ConsoleSupport" -> False, "TimeEstimate" -> 
+               None]]; Progress`ProgressDump`ProgressInit[
+             Progress`ProgressDump`this$state$5656346]; Null], {2, 1}, 
+           Automatic, True, "AutoRemove" -> False, "EpilogFunction" :> Null, 
+           "TaskGroup" -> "Global`"], "State" :> 
+         Progress`ProgressDump`this$state$5656346, "Title" -> "ParallelMap", 
+         "Type" -> "Grid", "Environment" -> "Notebook", 
+         "Parameters" -> {
+          "Progress" :> (Parallel`Combine`Private`nreceived + 
+             Min[4, 32 - Parallel`Combine`Private`nreceived]/2)/32, "Results" :> 
+           StringTemplate[
+            "`1`/`2` evaluations of `3` items each (`4` kernels)"][
+            Parallel`Combine`Private`nreceived, 32, 66, 4], "Times" :> 
+           With[{Parallel`Combine`Private`elapsed$ = 
+              AbsoluteTime[] - Parallel`Combine`Private`start}, {
+             Parallel`Combine`Private`remaining$ = 
+              If[Parallel`Combine`Private`nreceived === 0, 
+                Indeterminate, (
+                 1./((Parallel`Combine`Private`nreceived + 
+                   Min[4, 32 - Parallel`Combine`Private`nreceived]/2)/32) - 1)
+                  Parallel`Combine`Private`elapsed$]}, 
+             Parallel`Combine`Private`timeString[
+             Parallel`Combine`Private`elapsed$, 
+              Parallel`Combine`Private`remaining$]]}, "PreemptibleQ" -> True, 
+         "ConsoleQ" -> False, "Evaluator" -> "Local", "EvaluationCell" -> 
+         CellObject[
+          "e42fe8a8-be52-44d5-a80d-66b5ef236b44", 
+           "1b51210f-7c97-4ee1-9a70-95ff46ec82ad"], "TimeStart" -> 
+         3.920032319433296`16.345864636816557*^9, "TimeStartLocal" -> 
+         3.920032319433296`16.345864636816557*^9, "InitialTimeEstimate" -> 
+         Indeterminate, "UpdateInterval" -> 1, "OuterUpdateInterval" -> 1, 
+         "Buttons" -> <|"Stop" :> (Parallel`Protected`$progressStop = True)|>,
+          "Optional" -> {}, "ContainerQ" -> False, "CreateContainerQ" -> 
+         False, "CurrentContainer" -> None, "PreviousContainer" -> None, 
+         "ContainerName" -> None, "Cell" -> 
+         Hold[Progress`ProgressDump`cell$5656962], "Clock" :> 
+         Dynamic[Progress`ProgressDump`clock$$], "Redraw" -> 
+         Progress`ProgressDump`forceRedraw$$, "Open" :> 
+         Dynamic[Progress`ProgressDump`open$$]}|>], StandardForm],
+     ImageSizeCache->{351., {44., 51.}},
+     TrackedSymbols:>{Progress`ProgressDump`forceRedraw$$}], Refresh[
+    Progress`ProgressDump`forceRedraw$$ = 
+     With[{Progress`ProgressDump`values = Quiet[
+          
+          Values[{"Progress" :> (Parallel`Combine`Private`nreceived + 
+              Min[4, 32 - Parallel`Combine`Private`nreceived]/2)/32, 
+            "Results" :> 
+            StringTemplate[
+             "`1`/`2` evaluations of `3` items each (`4` kernels)"][
+             Parallel`Combine`Private`nreceived, 32, 66, 4], "Times" :> 
+            With[{Parallel`Combine`Private`elapsed$ = 
+               AbsoluteTime[] - Parallel`Combine`Private`start}, {
+              Parallel`Combine`Private`remaining$ = 
+               If[Parallel`Combine`Private`nreceived === 0, 
+                 Indeterminate, (
+                  1./((Parallel`Combine`Private`nreceived + 
+                    Min[4, 32 - Parallel`Combine`Private`nreceived]/2)/32) - 
+                  1) Parallel`Combine`Private`elapsed$]}, 
+              Parallel`Combine`Private`timeString[
+              Parallel`Combine`Private`elapsed$, 
+               Parallel`Combine`Private`remaining$]]}]]}, 
+       Map[
+       Position[Progress`ProgressDump`values, #, Infinity]& , {
+        None, Automatic}]], UpdateInterval -> 
+     Lookup[<|"DelayedTask" -> ScheduledTaskObject[776, 
+          HoldForm[AppendTo[Progress`ProgressDump`this$state$5656346, 
+             Progress`ProgressDump`CreateProgressState[
+             Progress`ProgressDump`parameters$5656346, 
+              Progress`ProgressDump`info$5656346, ProgressReporting -> True, 
+              "Title" -> "ParallelMap", 
+              "Buttons" -> <|
+               "Stop" :> (Parallel`Protected`$progressStop = True)|>, 
+              UpdateInterval -> 1, "ConsoleSupport" -> False, "TimeEstimate" -> 
+              None]]; Progress`ProgressDump`ProgressInit[
+            Progress`ProgressDump`this$state$5656346]; Null], {2, 1}, 
+          Automatic, True, "AutoRemove" -> False, "EpilogFunction" :> Null, 
+          "TaskGroup" -> "Global`"], "State" :> 
+        Progress`ProgressDump`this$state$5656346, "Title" -> "ParallelMap", 
+        "Type" -> "Grid", "Environment" -> "Notebook", 
+        "Parameters" -> {
+         "Progress" :> (Parallel`Combine`Private`nreceived + 
+            Min[4, 32 - Parallel`Combine`Private`nreceived]/2)/32, "Results" :> 
+          StringTemplate[
+           "`1`/`2` evaluations of `3` items each (`4` kernels)"][
+           Parallel`Combine`Private`nreceived, 32, 66, 4], "Times" :> 
+          With[{Parallel`Combine`Private`elapsed$ = 
+             AbsoluteTime[] - Parallel`Combine`Private`start}, {
+            Parallel`Combine`Private`remaining$ = 
+             If[Parallel`Combine`Private`nreceived === 0, 
+               Indeterminate, (
+                1./((Parallel`Combine`Private`nreceived + 
+                  Min[4, 32 - Parallel`Combine`Private`nreceived]/2)/32) - 1) 
+               Parallel`Combine`Private`elapsed$]}, 
+            Parallel`Combine`Private`timeString[
+            Parallel`Combine`Private`elapsed$, 
+             Parallel`Combine`Private`remaining$]]}, "PreemptibleQ" -> True, 
+        "ConsoleQ" -> False, "Evaluator" -> "Local", "EvaluationCell" -> 
+        CellObject[
+         "e42fe8a8-be52-44d5-a80d-66b5ef236b44", 
+          "1b51210f-7c97-4ee1-9a70-95ff46ec82ad"], "TimeStart" -> 
+        3.920032319433296`16.345864636816557*^9, "TimeStartLocal" -> 
+        3.920032319433296`16.345864636816557*^9, "InitialTimeEstimate" -> 
+        Indeterminate, "UpdateInterval" -> 1, "OuterUpdateInterval" -> 1, 
+        "Buttons" -> <|"Stop" :> (Parallel`Protected`$progressStop = True)|>, 
+        "Optional" -> {}, "ContainerQ" -> False, "CreateContainerQ" -> False, 
+        "CurrentContainer" -> None, "PreviousContainer" -> None, 
+        "ContainerName" -> None, "Cell" -> 
+        Hold[Progress`ProgressDump`cell$5656962], "Clock" -> Dynamic[None]|>, 
+       "OuterUpdateInterval"], TrackedSymbols :> {}],
+    ImageSizeCache->{351., {44., 51.}}]}, All, 2],
+  DynamicModuleValues:>{}]], "PrintTemporary",
+ ShowCellLabel->True,
+ CellChangeTimes->{3.919999921461507*^9},
+ CellLabel->
+  "During evaluation of \
+In[1569]:=",ExpressionUUID->"737fd78d-4eee-44c7-b62c-d375165b9083"]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"top5gpt35", "=", 
+   RowBox[{"ParallelMap", "[", 
+    RowBox[{
+     RowBox[{"evaluateTop5", "[", "session", "]"}], ",", "test", ",", 
+     RowBox[{"ProgressReporting", "->", "True"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"N", "@", 
+  RowBox[{"Mean", "@", 
+   RowBox[{"Boole", "@", 
+    RowBox[{
+     RowBox[{"Lookup", "[", "\"\<correct\>\"", "]"}], "@", 
+     "%"}]}]}]}]}], "Input",
+ CellChangeTimes->{{3.9199984490732107`*^9, 
+  3.919998460014859*^9}},ExpressionUUID->"401681e7-b2ea-4c18-9e11-\
+74d819f91ddb"],
+
+Cell[BoxData[
+ RowBox[{"DumpSave", "[", 
+  RowBox[{"\"\<gpt35_checkpoint_cv1.mx\>\"", ",", 
+   RowBox[{"{", 
+    RowBox[{"top1gpt35", ",", "top5gpt35"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.9199984884898243`*^9, 
+  3.919998523101678*^9}},ExpressionUUID->"fb67afa0-ca4a-4198-bb78-\
+ebb4090e4b34"]
+},
+WindowSize->{808, 747},
+WindowMargins->{{Automatic, 64}, {-20, Automatic}},
+FrontEndVersion->"14.0 for Mac OS X x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"40ed4e51-b01a-470d-8ea1-d808f1c3c8e4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 813, 19, 157, "Input",ExpressionUUID->"e4765749-8419-47f1-8e14-ea8436c3ec79"],
+Cell[1374, 41, 936, 21, 115, "Input",ExpressionUUID->"f75d4e9f-d1ea-4861-8cdb-f7ef15092eb7"],
+Cell[2313, 64, 386, 10, 52, "Input",ExpressionUUID->"21820c26-0dfd-4628-8850-3b79c8f940ef"],
+Cell[CellGroupData[{
+Cell[2724, 78, 355, 7, 30, "Input",ExpressionUUID->"fb5cad9d-4347-4447-89fd-287a54005c0f"],
+Cell[3082, 87, 130517, 2303, 492, "Output",ExpressionUUID->"50b39deb-c6d8-4569-a2a2-46b18109f9cf"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[133636, 2395, 219, 4, 30, "Input",ExpressionUUID->"ce122f05-aed0-40a4-8361-10c98bb437b3"],
+Cell[133858, 2401, 5434, 100, 937, "Output",ExpressionUUID->"6a22bc9f-1a95-4987-8dec-aede1f456fab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[139329, 2506, 206, 4, 30, "Input",ExpressionUUID->"a08d1217-7b16-43d3-a2de-b17b01a945d0"],
+Cell[139538, 2512, 17504, 405, 132, "Output",ExpressionUUID->"4b8cca0a-c910-4a15-8b5e-39a1433e899a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[157079, 2922, 423, 12, 30, "Input",ExpressionUUID->"ebc794bf-4e40-4c5e-b9f7-7bda3d948c59"],
+Cell[157505, 2936, 446, 10, 48, "Output",ExpressionUUID->"8e74f099-1717-4767-ade7-fc703cf0a1c8"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[157988, 2951, 985, 27, 115, "Input",ExpressionUUID->"e42fe8a8-be52-44d5-a80d-66b5ef236b44"],
+Cell[158976, 2980, 8609, 153, 119, "PrintTemporary",ExpressionUUID->"737fd78d-4eee-44c7-b62c-d375165b9083"]
+}, Open  ]],
+Cell[167600, 3136, 564, 16, 52, "Input",ExpressionUUID->"401681e7-b2ea-4c18-9e11-74d819f91ddb"],
+Cell[168167, 3154, 307, 7, 30, "Input",ExpressionUUID->"fb67afa0-ca4a-4198-bb78-ebb4090e4b34"]
+}
+]
+*)
+
