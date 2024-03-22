@@ -1,0 +1,191 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6234,        183]
+NotebookOptionsPosition[      5166,        158]
+NotebookOutlinePosition[      5563,        174]
+CellTagsIndexPosition[      5520,        171]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "@", 
+   RowBox[{"NotebookDirectory", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"<<", "\"\<./src/gpt_queries.wl\>\""}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"train", ",", "test"}], "}"}], "=", 
+    RowBox[{"Values", "@", 
+     RowBox[{"Import", "[", "\"\<./data/cv_random1.json\>\"", "]"}]}]}], 
+   ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"prompt", "=", "\[IndentingNewLine]", 
+   RowBox[{"With", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"allowedPrecursors", "=", 
+       RowBox[{"StringRiffle", "@", 
+        RowBox[{"Keys", "@", 
+         RowBox[{"Import", "[", 
+          RowBox[{"\"\<./data/precursors.json\>\"", ",", "\"\<RawJSON\>\""}], 
+          "]"}]}]}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"StringReplace", "[", 
+       RowBox[{"\"\<[[ALLOWED PRECURSORS]]\>\"", "->", "allowedPrecursors"}], 
+       "]"}], "@", "\[IndentingNewLine]", 
+      RowBox[{"Import", "[", "\"\<./prompts/base_prompt.txt\>\"", "]"}]}]}], 
+    "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.920055244670385*^9, 
+  3.92005524494458*^9}},ExpressionUUID->"7a8f3794-ff61-4c12-aba1-\
+d6a447885550"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"session", "=", 
+   RowBox[{"setupChat", "[", 
+    RowBox[{
+    "prompt", ",", " ", "0", ",", " ", 
+     "\"\<ft:gpt-3.5-turbo-0125:fordham-university:synthgptcv1:95CPuI1K\>\""}]\
+, "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{3.920055360731628*^9},
+ CellLabel->
+  "In[1647]:=",ExpressionUUID->"b497e06f-01cc-409b-b7d3-adeaf874c0e7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"top1ft", "=", 
+   RowBox[{"ParallelMap", "[", " ", 
+    RowBox[{"(*", 
+     RowBox[{
+     "insert", " ", "pause", " ", "to", " ", "avoid", " ", "rate", " ", 
+      "limit"}], "*)"}], "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Pause", "[", "1", "]"}], ";", 
+        RowBox[{
+         RowBox[{"evaluateTop1", "[", "session", "]"}], "[", "#", "]"}]}], 
+       ")"}], "&"}], ",", "\[IndentingNewLine]", "test", ",", 
+     RowBox[{"ProgressReporting", "->", "True"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"N", "@", 
+  RowBox[{"Mean", "@", 
+   RowBox[{"Boole", "@", 
+    RowBox[{
+     RowBox[{"Lookup", "[", "\"\<correct\>\"", "]"}], "@", 
+     "%"}]}]}]}]}], "Input",
+ CellChangeTimes->{{3.920055375030403*^9, 3.920055384240191*^9}},
+ CellLabel->
+  "In[1648]:=",ExpressionUUID->"eb8ec91e-fd09-43ec-b406-502399066d4f"],
+
+Cell[BoxData["0.5898530109056425`"], "Output",
+ CellChangeTimes->{3.920056529266361*^9},
+ CellLabel->
+  "Out[1649]=",ExpressionUUID->"6459b3d9-51b8-4565-96ec-62fb8eb8ea46"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"top5ft", "=", 
+   RowBox[{"ParallelMap", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"Pause", "[", "0.8", "]"}], ";", 
+        RowBox[{
+         RowBox[{"evaluateTop5", "[", "session", "]"}], "[", "#", "]"}]}], 
+       ")"}], "&"}], ",", "\[IndentingNewLine]", "test", ",", 
+     RowBox[{"ProgressReporting", "->", "True"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"N", "@", 
+  RowBox[{"Mean", "@", 
+   RowBox[{"Boole", "@", 
+    RowBox[{
+     RowBox[{"Lookup", "[", "\"\<correct\>\"", "]"}], "@", 
+     "%"}]}]}]}]}], "Input",
+ CellChangeTimes->{{3.920055406074388*^9, 3.9200554072461576`*^9}},
+ CellLabel->
+  "In[1650]:=",ExpressionUUID->"88ac36fb-5c2f-4041-8fb0-68693624ad49"],
+
+Cell[BoxData["0.6495969653864391`"], "Output",
+ CellChangeTimes->{3.9200582569135313`*^9},
+ CellLabel->
+  "Out[1651]=",ExpressionUUID->"7fa8df7c-8de9-4493-9ab6-a67b3bbb29ac"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"DumpSave", "[", 
+   RowBox[{"\"\<ft_checkpoint_cv1.mx\>\"", ",", 
+    RowBox[{"{", 
+     RowBox[{"top1ft", ",", "top5ft"}], "}"}]}], "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.920055418072719*^9, 3.9200554280914993`*^9}, {
+  3.920056595689795*^9, 3.920056597010521*^9}},
+ CellLabel->
+  "In[1653]:=",ExpressionUUID->"a80c871e-5c41-49c5-8df2-1bfaae6a98e1"],
+
+Cell[TextData[{
+ StyleBox["Comment:  ",
+  FontWeight->"Bold"],
+ "Cost $15 to evaluate both sets.  Fine-tuning is definitely the winner so \
+far in terms of performance"
+}], "Text",
+ CellChangeTimes->{{3.920058311746784*^9, 3.9200583320454273`*^9}, {
+  3.9200583724413977`*^9, 
+  3.920058399274157*^9}},ExpressionUUID->"8b5219c1-0ccc-4740-be2e-\
+d63b5cc13448"]
+},
+WindowSize->{808, 747},
+WindowMargins->{{Automatic, 300}, {0, Automatic}},
+FrontEndVersion->"14.0 for Mac OS X x86 (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8f9bb0b8-8d86-4334-ac63-6833425e8968"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1332, 34, 220, "Input",ExpressionUUID->"7a8f3794-ff61-4c12-aba1-d6a447885550"],
+Cell[1893, 56, 367, 10, 52, "Input",ExpressionUUID->"b497e06f-01cc-409b-b7d3-adeaf874c0e7"],
+Cell[CellGroupData[{
+Cell[2285, 70, 926, 26, 94, "Input",ExpressionUUID->"eb8ec91e-fd09-43ec-b406-502399066d4f"],
+Cell[3214, 98, 172, 3, 48, "Output",ExpressionUUID->"6459b3d9-51b8-4565-96ec-62fb8eb8ea46"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3423, 106, 793, 22, 94, "Input",ExpressionUUID->"88ac36fb-5c2f-4041-8fb0-68693624ad49"],
+Cell[4219, 130, 174, 3, 48, "Output",ExpressionUUID->"7fa8df7c-8de9-4493-9ab6-a67b3bbb29ac"]
+}, Open  ]],
+Cell[4408, 136, 392, 9, 30, "Input",ExpressionUUID->"a80c871e-5c41-49c5-8df2-1bfaae6a98e1"],
+Cell[4803, 147, 359, 9, 35, "Text",ExpressionUUID->"8b5219c1-0ccc-4740-be2e-d63b5cc13448"]
+}
+]
+*)
+

@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      4217,        119]
-NotebookOptionsPosition[      3371,         98]
-NotebookOutlinePosition[      3769,        114]
-CellTagsIndexPosition[      3726,        111]
+NotebookDataLength[      4619,        130]
+NotebookOptionsPosition[      3682,        108]
+NotebookOutlinePosition[      4080,        124]
+CellTagsIndexPosition[      4037,        121]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -94,7 +94,17 @@ Cell[BoxData["\<\"./data/finetuning/cv1_validate.jsonl\"\>"], "Output",
 Cell["", "Text",
  CellChangeTimes->{{3.920007978533052*^9, 
   3.920007979951129*^9}},ExpressionUUID->"5dc3b7c0-e92b-426a-bae9-\
-c305ae8c302b"]
+c305ae8c302b"],
+
+Cell[TextData[{
+ StyleBox["Comment:  ",
+  FontWeight->"Bold"],
+ "The fine-tuning process takes ~1:20 and costs $11 USD"
+}], "Text",
+ CellChangeTimes->{{3.9200551505288477`*^9, 3.920055168607662*^9}, {
+  3.920055202513506*^9, 
+  3.920055209231667*^9}},ExpressionUUID->"6ce8d455-f5bd-442f-a5e5-\
+ad1dea00fd95"]
 },
 WindowSize->{808, 747},
 WindowMargins->{{307, Automatic}, {Automatic, 30}},
@@ -118,9 +128,10 @@ Cell[1237, 39, 177, 3, 30, "Input",ExpressionUUID->"e0612fde-ede4-436c-8610-895f
 Cell[CellGroupData[{
 Cell[1439, 46, 1172, 30, 115, "Input",ExpressionUUID->"019ad6bc-90f2-4662-88bf-d5a213e28123"],
 Cell[2614, 78, 295, 5, 48, "Output",ExpressionUUID->"b905bbbf-7fc4-4ab4-90de-b04d3b23c77d"],
-Cell[2912, 85, 298, 5, 96, "Output",ExpressionUUID->"b5928267-57c0-43b4-afa1-66399129abde"]
+Cell[2912, 85, 298, 5, 48, "Output",ExpressionUUID->"b5928267-57c0-43b4-afa1-66399129abde"]
 }, Open  ]],
-Cell[3225, 93, 142, 3, 35, "Text",ExpressionUUID->"5dc3b7c0-e92b-426a-bae9-c305ae8c302b"]
+Cell[3225, 93, 142, 3, 35, "Text",ExpressionUUID->"5dc3b7c0-e92b-426a-bae9-c305ae8c302b"],
+Cell[3370, 98, 308, 8, 35, "Text",ExpressionUUID->"6ce8d455-f5bd-442f-a5e5-ad1dea00fd95"]
 }
 ]
 *)
