@@ -2,11 +2,11 @@
 
 (* generate JSON-LD files to upload to the OpenAI website *)
 
-fineTuneSplit[f_?FileExistsQ]:=Module[
+fineTuneSplit[f_?FileExistsQ]:= Module[
 	{train, test, validate, finetune, newFile},
 	newFile = StringReplace[{"data/"->"data/finetuning/", "_random"->"", ".json"->""}]@ f;
 	{train,test} = Values@ Import[f];
-	{validate,finetune} = TakeDrop[train, Floor[Length[train]/5]];
+	{validate, finetune} = TakeDrop[train, Floor[Length[train]/5]];
 	generateFineTuningData[newFile<>"_train.jsonl", finetune];
 	generateFineTuningData[newFile<>"_validate.jsonl", validate];
 ]
