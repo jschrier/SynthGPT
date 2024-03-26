@@ -1,0 +1,14 @@
+[
+	{
+		"dataset":"random_cv1.json",
+		"accuracy":6.15e-2,
+		"n_correct":123,
+		"n_test":2000
+	},
+	{
+		"dataset":"random_cv2.json",
+		"accuracy":6.15e-2,
+		"n_correct":123,
+		"n_test":2000
+	}
+]

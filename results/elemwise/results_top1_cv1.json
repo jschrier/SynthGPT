@@ -1,0 +1,12 @@
+{
+	"metadata":{
+		"model":"elemwise",
+		"datasource":"random_cv1.json",
+		"date":"2024-03-26T15:18:39",
+		"notes":"some notes from the user about timing and cost"
+	},
+	"results":[
+		{"correctQ":false,"target":"Bi0.3Nd0.3Ca0.4Mn1O3","answer":[["Nd2O3","CaCO3","Bi2O3","MnO2"],["Nd","Ca","Bi","Mn"]],"prediction":[["Bi2O3","Nd2O3","CaCO3","MnO2","O2"]]},
+		{"correctQ":false,"target":"Bi0.3Nd0.3Ca0.4Mn1O3","answer":[["Nd2O3","CaCO3","Bi2O3","MnO2"]],"prediction":[["Bi2O3","Nd2O3","CaCO3","MnO2","O2"]]}
+	]
+}
