@@ -1,425 +1,425 @@
-{"messages":[{"role":"user","content":"synthesize LiFeGe2O6"},{"role":"assistant","content":"LiFeGe2O6 <- Li2O + GeO2 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Li2CuP2O7"},{"role":"assistant","content":"Li2CuP2O7 <- Li2CO3 + CuO + (NH4)2HPO4"}]}
-{"messages":[{"role":"user","content":"synthesize Bi13O34Mo4.7Co0.3"},{"role":"assistant","content":"Bi13O34Mo4.7Co0.3 <- Bi2O3 + MoO3 + Co3O4"}]}
-{"messages":[{"role":"user","content":"synthesize Ca3Hf2SiAl2O12"},{"role":"assistant","content":"Ca3Hf2SiAl2O12 <- HfO2 + CaCO3 + Al(OH)3 + H2SiO3"}]}
-{"messages":[{"role":"user","content":"synthesize TbBaCo2O5"},{"role":"assistant","content":"TbBaCo2O5 <- Tb4O7 + Co3O4 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Mg1Ga1.567Mn0.433O4"},{"role":"assistant","content":"Mg1Ga1.567Mn0.433O4 <- MgO + Mn2O3 + Ga2O3"}]}
-{"messages":[{"role":"user","content":"synthesize (Sc0.9Fe0.1)F3"},{"role":"assistant","content":"(Sc0.9Fe0.1)F3 <- NH4F + Sc2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize BaNi2P2"},{"role":"assistant","content":"BaNi2P2 <- P + Ba + Ni"}]}
-{"messages":[{"role":"user","content":"synthesize BaGa4Se7"},{"role":"assistant","content":"BaGa4Se7 <- Ba + Ga + Se"}]}
-{"messages":[{"role":"user","content":"synthesize (Pb0.91La0.09)(Zr0.65Ti0.35)O3"},{"role":"assistant","content":"(Pb0.91La0.09)(Zr0.65Ti0.35)O3 <- La2O3 + PbO + ZrO2 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.65Sr0.35MnO3"},{"role":"assistant","content":"La0.65Sr0.35MnO3 <- La2O3 + Mn2O7 + SrCO3"}]}
-{"messages":[{"role":"user","content":"synthesize NiNb2O6"},{"role":"assistant","content":"NiNb2O6 <- NiO + Nb2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Ca3Cr2(SiO4)3"},{"role":"assistant","content":"Ca3Cr2(SiO4)3 <- SiO2 + CaCO3 + CrO3"}]}
-{"messages":[{"role":"user","content":"synthesize Mn2Mo3O8"},{"role":"assistant","content":"Mn2Mo3O8 <- MnO2 + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize LaBMoO6"},{"role":"assistant","content":"LaBMoO6 <- La2O3 + MoO3 + H3BO3"}]}
-{"messages":[{"role":"user","content":"synthesize Pb0.95Ca0.05Li0.25La0.25Mo0.5O3"},{"role":"assistant","content":"Pb0.95Ca0.05Li0.25La0.25Mo0.5O3 <- Li2CO3 + La2O3 + CaCO3 + PbO + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize Li2Cu5Si4O14"},{"role":"assistant","content":"Li2Cu5Si4O14 <- CuO + Li2CO3 + SiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Gd1.925Li0.075Ti2O7"},{"role":"assistant","content":"Gd1.925Li0.075Ti2O7 <- TiO2 + Li2CO3 + Gd2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize EuBaB9O16"},{"role":"assistant","content":"EuBaB9O16 <- BaCO3 + Eu2O3 + H3BO3"}]}
-{"messages":[{"role":"user","content":"synthesize K3V5O14"},{"role":"assistant","content":"K3V5O14 <- K2CO3 + V2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Zn0.993Zr0.007O"},{"role":"assistant","content":"Zn0.993Zr0.007O <- ZrO2 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize CdRh2O4"},{"role":"assistant","content":"CdRh2O4 <- CdO + Rh2O3"}]}
-{"messages":[{"role":"user","content":"synthesize AuCu"},{"role":"assistant","content":"AuCu <- Au + Cu"}]}
-{"messages":[{"role":"user","content":"synthesize La0.67Sr0.33Mn0.889Al0.111O3"},{"role":"assistant","content":"La0.67Sr0.33Mn0.889Al0.111O3 <- SrCO3 + La2O3 + Al2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Li1Ca2.8Sr0.2Mg1V3O12"},{"role":"assistant","content":"Li1Ca2.8Sr0.2Mg1V3O12 <- SrCO3 + MgO + Li2CO3 + CaCO3 + NH4VO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.75Y0.05La0.2Fe11.75Co0.25O19"},{"role":"assistant","content":"Sr0.75Y0.05La0.2Fe11.75Co0.25O19 <- SrCO3 + La2O3 + Y2O3 + Fe2O3 + Co2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ca1Cu3Ti1.5Ru2.5O12"},{"role":"assistant","content":"Ca1Cu3Ti1.5Ru2.5O12 <- CuO + TiO2 + CaO + RuO2"}]}
-{"messages":[{"role":"user","content":"synthesize Sm0.7Tb0.3FeO3"},{"role":"assistant","content":"Sm0.7Tb0.3FeO3 <- Tb4O7 + Sm2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Co4Sb11.2Te0.8"},{"role":"assistant","content":"Co4Sb11.2Te0.8 <- Co + Te + Sb"}]}
-{"messages":[{"role":"user","content":"synthesize Tb0.5Y0.5MnO3"},{"role":"assistant","content":"Tb0.5Y0.5MnO3 <- Tb4O7 + Y2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Pb1Hf0.48Ti0.52O3"},{"role":"assistant","content":"Pb1Hf0.48Ti0.52O3 <- TiO2 + HfO2 + Pb3O4"}]}
-{"messages":[{"role":"user","content":"synthesize B4O12Gd0.5Eu0.5Al3"},{"role":"assistant","content":"B4O12Gd0.5Eu0.5Al3 <- Gd2O3 + B2O3 + Al2O3 + Eu2O3"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: La0.7Ca0.3Mn1O3"},{"role":"assistant","content":"La0.7Ca0.3Mn1O3 <- CaO + La2O3 + MnO2\nLa0.7Ca0.3Mn1O3 <- CaCO3 + La2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1Ce0.9Sm0.1O3"},{"role":"assistant","content":"Ba1Ce0.9Sm0.1O3 <- BaCO3 + Sm2O3 + CeO2 + O2"}]}
-{"messages":[{"role":"user","content":"provide 3 synthesis plans for target: PbTiO3"},{"role":"assistant","content":"PbTiO3 <- PbO + TiO2\nPbTiO3 <- TiO2 + PbCO3\nPbTiO3 <- TiO2 + Pb3O4"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1.0Sr1.0Y1Mo1O6"},{"role":"assistant","content":"Ba1.0Sr1.0Y1Mo1O6 <- SrCO3 + BaCO3 + Y2O3 + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.9Ca0.9La1.2Mn2O7"},{"role":"assistant","content":"Sr0.9Ca0.9La1.2Mn2O7 <- SrCO3 + CaCO3 + La2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ti0.983Nb0.017Fe2O5"},{"role":"assistant","content":"Ti0.983Nb0.017Fe2O5 <- TiO2 + Nb2O5 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize La0.81Ca0.19Mn1O3"},{"role":"assistant","content":"La0.81Ca0.19Mn1O3 <- CaCO3 + La2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.9Ce0.1Co1O3"},{"role":"assistant","content":"La0.9Ce0.1Co1O3 <- CeO2 + La2O3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba4Cd3Ga2S10"},{"role":"assistant","content":"Ba4Cd3Ga2S10 <- Ga2S3 + BaS + CdS"}]}
-{"messages":[{"role":"user","content":"synthesize LaMn0.9Fe0.1O3"},{"role":"assistant","content":"LaMn0.9Fe0.1O3 <- MnCO3 + La2O3 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize K0.2Ti0.8Al0.2O2"},{"role":"assistant","content":"K0.2Ti0.8Al0.2O2 <- TiO2 + K2CO3 + Al2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Li5Nd3Sb2O12"},{"role":"assistant","content":"Li5Nd3Sb2O12 <- Nd2O3 + Sb2O3 + Li2CO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Bi0.98La0.02Fe0.99Ti0.01O3"},{"role":"assistant","content":"Bi0.98La0.02Fe0.99Ti0.01O3 <- La2O3 + Bi2O3 + Fe2O3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize SrOLa2O3Al2O3B2O3SiO2"},{"role":"assistant","content":"SrOLa2O3Al2O3B2O3SiO2 <- SrCO3 + La2O3 + Al2O3 + SiO2 + B2O3"}]}
-{"messages":[{"role":"user","content":"synthesize K0.8Ti1.73Li0.27O4"},{"role":"assistant","content":"K0.8Ti1.73Li0.27O4 <- Li2CO3 + K2CO3 + TiO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Nb1.992Mo0.008Ba3Zn1O9.004"},{"role":"assistant","content":"Nb1.992Mo0.008Ba3Zn1O9.004 <- BaCO3 + Nb2O5 + MoO3 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Ho0.5Er0.5Mn1O3"},{"role":"assistant","content":"Ho0.5Er0.5Mn1O3 <- MnCO3 + Er2O3 + Ho2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr2ZrCeO6"},{"role":"assistant","content":"Sr2ZrCeO6 <- SrCO3 + CeO2 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.402Y0.098Ca0.067Sr0.433Mn1O3"},{"role":"assistant","content":"La0.402Y0.098Ca0.067Sr0.433Mn1O3 <- SrCO3 + La2O3 + Y2O3 + CaCO3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Gd0.825Bi0.175B3O6"},{"role":"assistant","content":"Gd0.825Bi0.175B3O6 <- Bi2O3 + Gd2O3 + H3BO3"}]}
-{"messages":[{"role":"user","content":"synthesize Bi0.95Gd0.05Fe0.8Co0.2O3"},{"role":"assistant","content":"Bi0.95Gd0.05Fe0.8Co0.2O3 <- Bi2O3 + Gd2O3 + Fe2O3 + Co2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Nb1.0Ta1.0Zn1O6"},{"role":"assistant","content":"Nb1.0Ta1.0Zn1O6 <- Nb2O5 + Ta2O5 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Ba3Ni1Nb1.25Sb0.75O9"},{"role":"assistant","content":"Ba3Ni1Nb1.25Sb0.75O9 <- NiO + Nb2O5 + BaCO3 + Sb2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr2ErRuO6"},{"role":"assistant","content":"Sr2ErRuO6 <- SrCO3 + RuO2 + Er2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Li0.22Mn1.39V1O4"},{"role":"assistant","content":"Li0.22Mn1.39V1O4 <- V2O5 + Li2CO3 + MnO"}]}
-{"messages":[{"role":"user","content":"synthesize K2Pb2Sm2W2Ti4Nb4O30"},{"role":"assistant","content":"K2Pb2Sm2W2Ti4Nb4O30 <- PbO + K2CO3 + Nb2O5 + WO3 + Sm2O3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Na2Mg6Al2Si6O20F4"},{"role":"assistant","content":"Na2Mg6Al2Si6O20F4 <- MgO + NaF + Al2O3 + MgF2 + SiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Bi25Pr3Re2O49"},{"role":"assistant","content":"Bi25Pr3Re2O49 <- Bi2O3 + NH4ReO4 + Pr2O3"}]}
-{"messages":[{"role":"user","content":"synthesize CaTi0.55(Al0.5Nb0.5)0.45O3"},{"role":"assistant","content":"CaTi0.55(Al0.5Nb0.5)0.45O3 <- TiO2 + Nb2O5 + CaCO3 + Al2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Bi2V0.9Cu0.1O5.35"},{"role":"assistant","content":"Bi2V0.9Cu0.1O5.35 <- CuO + V2O5 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1Bi1.95Ce0.038Ta2O9"},{"role":"assistant","content":"Sr1Bi1.95Ce0.038Ta2O9 <- SrCO3 + Ta2O5 + CeO2 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Bi1.6Pb0.4Sr2Ca2Cu3O10"},{"role":"assistant","content":"Bi1.6Pb0.4Sr2Ca2Cu3O10 <- Bi2O3 + CuO + CaCO3 + SrO + PbO + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.6Ca0.3La0.1Fe11.78Co0.22O19"},{"role":"assistant","content":"Sr0.6Ca0.3La0.1Fe11.78Co0.22O19 <- SrCO3 + La2O3 + CaCO3 + Fe2O3 + Co2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ca3CuMnO6"},{"role":"assistant","content":"Ca3CuMnO6 <- CuO + CaCO3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Li0.18Sr0.66Ti0.5Nb0.5O3"},{"role":"assistant","content":"Li0.18Sr0.66Ti0.5Nb0.5O3 <- SrCO3 + Nb2O5 + Li2CO3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Co1Sr2Y0.8Ca0.2Cu2O7"},{"role":"assistant","content":"Co1Sr2Y0.8Ca0.2Cu2O7 <- SrCO3 + Y2O3 + CuO + CaCO3 + Co2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Li1.0V1.0O2"},{"role":"assistant","content":"Li1.0V1.0O2 <- Li2CO3 + V2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize (Sm0.5Sr0.5)CoO3"},{"role":"assistant","content":"(Sm0.5Sr0.5)CoO3 <- SrCO3 + Sm2O3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La1.2Ba1.8Mn1.6Ru0.4O7"},{"role":"assistant","content":"La1.2Ba1.8Mn1.6Ru0.4O7 <- BaCO3 + La2O3 + RuO2 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Y1.2Eu0.8Ge1O5"},{"role":"assistant","content":"Y1.2Eu0.8Ge1O5 <- GeO2 + Y2O3 + Eu2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Zn0.333Nb0.667Ca1O3"},{"role":"assistant","content":"Zn0.333Nb0.667Ca1O3 <- ZnO + CaCO3 + Nb2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.8Bi2.2Ta2O9"},{"role":"assistant","content":"Sr0.8Bi2.2Ta2O9 <- SrCO3 + Ta2O5 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Nd0.50Sr1.50Co0.75Mn0.25O4"},{"role":"assistant","content":"Nd0.50Sr1.50Co0.75Mn0.25O4 <- SrCO3 + Nd2O3 + MnO2 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1Bi3.994Sm0.006Ti4O15"},{"role":"assistant","content":"Sr1Bi3.994Sm0.006Ti4O15 <- SrCO3 + Sm2O3 + TiO2 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize BaCe0.9In0.1O2.95"},{"role":"assistant","content":"BaCe0.9In0.1O2.95 <- BaCO3 + In2O3 + CeO2"}]}
-{"messages":[{"role":"user","content":"synthesize KTaO3"},{"role":"assistant","content":"KTaO3 <- Ta2O5 + K2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Mg1.0Co2.0V2O8"},{"role":"assistant","content":"Mg1.0Co2.0V2O8 <- MgO + V2O5 + CoO"}]}
-{"messages":[{"role":"user","content":"synthesize Ca3Gd2(Si3O9)2"},{"role":"assistant","content":"Ca3Gd2(Si3O9)2 <- SiO2 + CaCO3 + Gd2O3"}]}
-{"messages":[{"role":"user","content":"synthesize La0.80Mg0.20Ni3.65"},{"role":"assistant","content":"La0.80Mg0.20Ni3.65 <- LaMgNi4 + LaNi4.3 + MgNi2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1.85Ca0.15NaNb5O15"},{"role":"assistant","content":"Sr1.85Ca0.15NaNb5O15 <- CaCO3 + SrNb2O6 + Nb2O5 + NaNbO3"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: SrMoO4"},{"role":"assistant","content":"SrMoO4 <- SrO + MoO2 + O2\nSrMoO4 <- SrCO3 + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize (ZnO)7In2O3"},{"role":"assistant","content":"(ZnO)7In2O3 <- In2O3 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Bi1.89Zr0.11O3.055"},{"role":"assistant","content":"Bi1.89Zr0.11O3.055 <- Bi2O3 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Li6.6La2.6Ce0.4Zr2O12"},{"role":"assistant","content":"Li6.6La2.6Ce0.4Zr2O12 <- Li2CO3 + ZrO2 + CeO2 + La(OH)3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.85Ca0.15Zr0.099Ti0.891Cu0.003Nb0.007O3"},{"role":"assistant","content":"Ba0.85Ca0.15Zr0.099Ti0.891Cu0.003Nb0.007O3 <- CuO + CaCO3 + Nb2O5 + TiO2 + BaCO3 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba2YCu3O7"},{"role":"assistant","content":"Ba2YCu3O7 <- CuO + BaCO3 + Y2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Fe50Ni50"},{"role":"assistant","content":"Fe50Ni50 <- Fe + Ni"}]}
-{"messages":[{"role":"user","content":"synthesize Pb0.6Sn0.4F2"},{"role":"assistant","content":"Pb0.6Sn0.4F2 <- SnF2 + PbF2"}]}
-{"messages":[{"role":"user","content":"synthesize Eu0.02Sr4Al14O25"},{"role":"assistant","content":"Eu0.02Sr4Al14O25 <- Al2O3 + SrO + Eu2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Zr0.5Ti0.5Pb1O3"},{"role":"assistant","content":"Zr0.5Ti0.5Pb1O3 <- PbO + TiO2 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize (W0.4Al0.6)C0.5"},{"role":"assistant","content":"(W0.4Al0.6)C0.5 <- C + W + Al"}]}
-{"messages":[{"role":"user","content":"synthesize Pr0.023Sr1Al2O4"},{"role":"assistant","content":"Pr0.023Sr1Al2O4 <- SrCO3 + Pr6O11 + Al2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ni0.5Mn0.5Fe2O4"},{"role":"assistant","content":"Ni0.5Mn0.5Fe2O4 <- NiO + MnO + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Y0.5Nd0.5Ba2Cu3O"},{"role":"assistant","content":"Y0.5Nd0.5Ba2Cu3O <- CuO + Nd2O3 + Y2O3 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Si6O26Sr2Y7.947Ce0.053"},{"role":"assistant","content":"Si6O26Sr2Y7.947Ce0.053 <- SrCO3 + SiO2 + CeO2 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize La1.775Ho0.225Mo1.7W0.3O9"},{"role":"assistant","content":"La1.775Ho0.225Mo1.7W0.3O9 <- La2O3 + Ho2O3 + WO3 + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize La1.866Ba0.134Mo2O9"},{"role":"assistant","content":"La1.866Ba0.134Mo2O9 <- BaCO3 + La2O3 + MoO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Zn2SnO4"},{"role":"assistant","content":"Zn2SnO4 <- SnO2 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Ge6O26La8.0Ba2.0"},{"role":"assistant","content":"Ge6O26La8.0Ba2.0 <- BaCO3 + GeO2 + La2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ca3MgAl6Fe10O28"},{"role":"assistant","content":"Ca3MgAl6Fe10O28 <- MgO + Fe2O3 + Al2O3 + CaO"}]}
-{"messages":[{"role":"user","content":"synthesize Li2CuSb"},{"role":"assistant","content":"Li2CuSb <- Cu + Sb + Li"}]}
-{"messages":[{"role":"user","content":"synthesize Ce1Nb0.5V0.5O4"},{"role":"assistant","content":"Ce1Nb0.5V0.5O4 <- V2O5 + Nb2O5 + CeO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba2BiTaO6"},{"role":"assistant","content":"Ba2BiTaO6 <- BaCO3 + Bi2O3 + Ta2O5"}]}
-{"messages":[{"role":"user","content":"synthesize TlCo2SeS"},{"role":"assistant","content":"TlCo2SeS <- TlCo2S2 + TlCo2Se2"}]}
-{"messages":[{"role":"user","content":"synthesize CaLaP3O10"},{"role":"assistant","content":"CaLaP3O10 <- CaCO3 + La2O3 + (NH4)2HPO4"}]}
-{"messages":[{"role":"user","content":"synthesize La0.80Sr0.20Ga0.85Mg0.15O2.825"},{"role":"assistant","content":"La0.80Sr0.20Ga0.85Mg0.15O2.825 <- SrCO3 + MgO + La2O3 + Ga2O3"}]}
-{"messages":[{"role":"user","content":"synthesize PbNiO3"},{"role":"assistant","content":"PbNiO3 <- NiO + PbO2"}]}
-{"messages":[{"role":"user","content":"synthesize In0.5Nb0.5Ba1O3"},{"role":"assistant","content":"In0.5Nb0.5Ba1O3 <- BaCO3 + In2O3 + Nb2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Mn0.015Sr1Mg1Al9.985O17"},{"role":"assistant","content":"Mn0.015Sr1Mg1Al9.985O17 <- SrCO3 + MgO + Al2O3 + MnCO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr7La3((PO4)2.5(SiO4)3(BO4)0.5)(BO2)"},{"role":"assistant","content":"Sr7La3((PO4)2.5(SiO4)3(BO4)0.5)(BO2) <- SrCO3 + La2O3 + SiO2 + (NH4)2HPO4 + H3BO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.5Ca0.5Fe11.8Mn0.1Zn0.1O19"},{"role":"assistant","content":"Sr0.5Ca0.5Fe11.8Mn0.1Zn0.1O19 <- SrCO3 + Mn3O4 + ZnO + CaCO3 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Bi2BaNb2O9"},{"role":"assistant","content":"Bi2BaNb2O9 <- Bi2O3 + Nb2O5 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Zn0.6Cu0.4Fe2O4"},{"role":"assistant","content":"Zn0.6Cu0.4Fe2O4 <- CuO + ZnO + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize NdBaMn2O5"},{"role":"assistant","content":"NdBaMn2O5 <- MnCO3 + Nd2O3 + BaCO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize BaCe0.5Zr0.3Y0.2O3"},{"role":"assistant","content":"BaCe0.5Zr0.3Y0.2O3 <- BaCO3 + CeO2 + ZrO2 + Y2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Mg0.93Ca0.07TiO3"},{"role":"assistant","content":"Mg0.93Ca0.07TiO3 <- MgO + CaCO3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Li1.33Mn1.67O4"},{"role":"assistant","content":"Li1.33Mn1.67O4 <- Mn2(CO3)7 + Li2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Fe0.5Cu0.5Ba2YCu2O7.41"},{"role":"assistant","content":"Fe0.5Cu0.5Ba2YCu2O7.41 <- CuO + BaCO3 + Y2O3 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ho3Fe5O12"},{"role":"assistant","content":"Ho3Fe5O12 <- Ho2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize La0.667Ca0.333Mn0.97Cr0.03O3"},{"role":"assistant","content":"La0.667Ca0.333Mn0.97Cr0.03O3 <- Cr2O3 + CaCO3 + La2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr4.5Pb4.5Ce2Ti12O36"},{"role":"assistant","content":"Sr4.5Pb4.5Ce2Ti12O36 <- SrCO3 + CeO2 + PbO + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Zr0.5Hf0.5NiSn"},{"role":"assistant","content":"Zr0.5Hf0.5NiSn <- Ni + Hf + Sn + Zr"}]}
-{"messages":[{"role":"user","content":"synthesize Li3.25Ge0.25P0.75S4"},{"role":"assistant","content":"Li3.25Ge0.25P0.75S4 <- GeS2 + P2S5 + Li2S"}]}
-{"messages":[{"role":"user","content":"provide 3 synthesis plans for target: SrAl2O4"},{"role":"assistant","content":"SrAl2O4 <- Al2O3 + SrCO3\nSrAl2O4 <- SrO + Al2O3\nSrAl2O4 <- SrCO3 + Al(OH)3"}]}
-{"messages":[{"role":"user","content":"synthesize Na2La2Ti3O10"},{"role":"assistant","content":"Na2La2Ti3O10 <- La2O3 + Na2CO3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize (Ce0.15Ti0.05)Zr0.8O2"},{"role":"assistant","content":"(Ce0.15Ti0.05)Zr0.8O2 <- CeO2 + TiO2 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize CePd3"},{"role":"assistant","content":"CePd3 <- Ce + Pd"}]}
-{"messages":[{"role":"user","content":"synthesize Er0.1Y0.9AlO3"},{"role":"assistant","content":"Er0.1Y0.9AlO3 <- Y2O3 + Al2O3 + Er2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.571Ca0.429Ir1O3"},{"role":"assistant","content":"Na0.571Ca0.429Ir1O3 <- IrO2 + CaO + Na2O2"}]}
-{"messages":[{"role":"user","content":"synthesize Li0.25Ni0.75O"},{"role":"assistant","content":"Li0.25Ni0.75O <- Ni2O3 + Li2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Na3La9O3(BO3)8"},{"role":"assistant","content":"Na3La9O3(BO3)8 <- La2O3 + H3BO3 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize La2Mo1.5W0.5O9"},{"role":"assistant","content":"La2Mo1.5W0.5O9 <- WO3 + La2O3 + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr2Bi3.84Sm0.16Ti5O18"},{"role":"assistant","content":"Sr2Bi3.84Sm0.16Ti5O18 <- SrCO3 + Bi2O3 + Sm2O3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize LiAl0.1Mn1.9O4"},{"role":"assistant","content":"LiAl0.1Mn1.9O4 <- Mn3O4 + Li2CO3 + Al(OH)3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.7Ca0.3CrO3"},{"role":"assistant","content":"La0.7Ca0.3CrO3 <- Cr2O3 + CaCO3 + La2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.154Sr0.066Ti0.198Sn0.022Na0.78Nb0.78O3"},{"role":"assistant","content":"Ba0.154Sr0.066Ti0.198Sn0.022Na0.78Nb0.78O3 <- SrCO3 + Na2CO3 + SnO2 + Nb2O5 + TiO2 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize LiIn0.965Dy0.03Eu0.005W2O8"},{"role":"assistant","content":"LiIn0.965Dy0.03Eu0.005W2O8 <- Li2CO3 + Dy2O3 + In2O3 + WO3 + Eu2O3"}]}
-{"messages":[{"role":"user","content":"synthesize (Gd0.9Ce0.1)2Si2O7"},{"role":"assistant","content":"(Gd0.9Ce0.1)2Si2O7 <- SiO2 + CeO2 + Gd2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1Bi3.875La0.125Ti4O15"},{"role":"assistant","content":"Sr1Bi3.875La0.125Ti4O15 <- SrCO3 + TiO2 + La2O3 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize La0.9Sr0.1Ga0.4Mg0.2Al0.4O2.85"},{"role":"assistant","content":"La0.9Sr0.1Ga0.4Mg0.2Al0.4O2.85 <- MgO + La2O3 + Al2O3 + SrO + Ga2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Y3Al3.914Fe1.086O12"},{"role":"assistant","content":"Y3Al3.914Fe1.086O12 <- Y2O3 + Al2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize LiMn1.8Li0.1Ni0.1O4"},{"role":"assistant","content":"LiMn1.8Li0.1Ni0.1O4 <- NiO + Li2CO3 + MnCO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.70Ca0.30MnO3"},{"role":"assistant","content":"La0.70Ca0.30MnO3 <- CaCO3 + La2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize BaCe0.4Zr0.4Y0.2O3"},{"role":"assistant","content":"BaCe0.4Zr0.4Y0.2O3 <- ZrO2 + BaCO3 + Y2O3 + CeO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ca4Mn2.885Mo0.115O10"},{"role":"assistant","content":"Ca4Mn2.885Mo0.115O10 <- CaCO3 + MoO3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize SrTi0.95Nb0.05O3.025"},{"role":"assistant","content":"SrTi0.95Nb0.05O3.025 <- SrCO3 + Nb2O5 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize K2Ca2Nb2TiO10"},{"role":"assistant","content":"K2Ca2Nb2TiO10 <- CaCO3 + K2CO3 + Nb2O5 + TiO2"}]}
-{"messages":[{"role":"user","content":"provide 7 synthesis plans for target: LiNiO2"},{"role":"assistant","content":"LiNiO2 <- Ni2O3 + LiOH\nLiNiO2 <- LiOH + Ni(OH)2 + O2\nLiNiO2 <- LiOH + NiO + O2\nLiNiO2 <- Li + Ni + O2\nLiNiO2 <- NiO + Li2CO3 + O2\nLiNiO2 <- Ni + LiOH + O2\nLiNiO2 <- NiO + Li2O + O2"}]}
-{"messages":[{"role":"user","content":"synthesize (Na0.47Bi0.47Ba0.06)TiO3"},{"role":"assistant","content":"(Na0.47Bi0.47Ba0.06)TiO3 <- Bi2O3 + Na2CO3 + TiO2 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Dy0.6Bi0.4Fe1O3"},{"role":"assistant","content":"Dy0.6Bi0.4Fe1O3 <- Bi2O3 + Dy2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Eu0.046Ca1.954B1O3Cl1"},{"role":"assistant","content":"Eu0.046Ca1.954B1O3Cl1 <- CaCO3 + H3BO3 + Eu2O3 + CaCl2"}]}
-{"messages":[{"role":"user","content":"synthesize BaCe0.8Eu0.1Tb0.1O2.9"},{"role":"assistant","content":"BaCe0.8Eu0.1Tb0.1O2.9 <- CeO2 + Tb4O7 + BaCO3 + Eu2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.5La0.5Bi2Nb1.977W0.023O9"},{"role":"assistant","content":"Na0.5La0.5Bi2Nb1.977W0.023O9 <- La2O3 + Bi2O3 + Na2CO3 + Nb2O5 + WO3"}]}
-{"messages":[{"role":"user","content":"synthesize Ti2.475Sn0.525Li2Mg1O8"},{"role":"assistant","content":"Ti2.475Sn0.525Li2Mg1O8 <- TiO2 + MgO + Li2CO3 + SnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Li3.9Si0.9P0.1O4"},{"role":"assistant","content":"Li3.9Si0.9P0.1O4 <- SiO2 + Li2CO3 + NH4H2PO4"}]}
-{"messages":[{"role":"user","content":"synthesize Na1.96Mg1Si1O4"},{"role":"assistant","content":"Na1.96Mg1Si1O4 <- MgO + Na2CO3 + SiO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize InVO4"},{"role":"assistant","content":"InVO4 <- V2O5 + In2O3"}]}
-{"messages":[{"role":"user","content":"synthesize (Pb0.45Ca0.55)((Fe0.5Nb0.5)0.9Sn0.1)O3"},{"role":"assistant","content":"(Pb0.45Ca0.55)((Fe0.5Nb0.5)0.9Sn0.1)O3 <- SnO2 + CaCO3 + Fe2O3 + PbO + Nb2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Sr3(VO4)2"},{"role":"assistant","content":"Sr3(VO4)2 <- SrCO3 + V2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Cu0.19Mn2.81O4"},{"role":"assistant","content":"Cu0.19Mn2.81O4 <- CuO + Mn3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.35Ca0.35La0.3Fe11.75Zn0.25O19"},{"role":"assistant","content":"Sr0.35Ca0.35La0.3Fe11.75Zn0.25O19 <- SrCO3 + La2O3 + ZnO + CaCO3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba14Mn1.75Ta10.5O42"},{"role":"assistant","content":"Ba14Mn1.75Ta10.5O42 <- MnCO3 + BaCO3 + Ta2O5"}]}
-{"messages":[{"role":"user","content":"synthesize La1.45Ca0.55Co1O4"},{"role":"assistant","content":"La1.45Ca0.55Co1O4 <- CoO + CaCO3 + La2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Zr0.363Ti0.377Mg0.067Nb0.173Zn0.02Pb1O3"},{"role":"assistant","content":"Zr0.363Ti0.377Mg0.067Nb0.173Zn0.02Pb1O3 <- MgO + ZnO + PbO + Nb2O5 + TiO2 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ni0.5Zn0.5Mn2O4"},{"role":"assistant","content":"Ni0.5Zn0.5Mn2O4 <- NiO + Mn3O4 + ZnO + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Lu0.951Nd0.049Ta1O4"},{"role":"assistant","content":"Lu0.951Nd0.049Ta1O4 <- Nd2O3 + Lu2O3 + Ta2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Bi2.1Sr1.96Ca0.975Cu2O8"},{"role":"assistant","content":"Bi2.1Sr1.96Ca0.975Cu2O8 <- SrCO3 + CaCO3 + CuO + Bi2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.815Ba0.185Mn1O3"},{"role":"assistant","content":"La0.815Ba0.185Mn1O3 <- Mn3O4 + BaCO3 + La2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Mg1.5B3.0Cr0.5"},{"role":"assistant","content":"Mg1.5B3.0Cr0.5 <- Cr + MgB2"}]}
-{"messages":[{"role":"user","content":"synthesize In1.96Zn0.04O3"},{"role":"assistant","content":"In1.96Zn0.04O3 <- In2O3 + ZnO + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La1.85Sr0.45Ca0.7Cu3O7"},{"role":"assistant","content":"La1.85Sr0.45Ca0.7Cu3O7 <- SrCO3 + CuO + CaCO3 + La2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ca2CrSbO6"},{"role":"assistant","content":"Ca2CrSbO6 <- Cr2O3 + CaCO3 + Sb2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Gd0.5Eu1.0Sm0.5Zr2O7"},{"role":"assistant","content":"Gd0.5Eu1.0Sm0.5Zr2O7 <- Gd2O3 + Sm2O3 + Eu2O3 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize TiNiSn"},{"role":"assistant","content":"TiNiSn <- Ti + Sn + Ni"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.223Ti1O2"},{"role":"assistant","content":"Na0.223Ti1O2 <- TiO2 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Y0.8Nb0.2O1.7"},{"role":"assistant","content":"Y0.8Nb0.2O1.7 <- Nb2O5 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Cu0.875Zn0.125Y2Ba1O5"},{"role":"assistant","content":"Cu0.875Zn0.125Y2Ba1O5 <- CuO + BaCO3 + Y2O3 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.473K0.473Sr0.053Nb0.947Ti0.053O3"},{"role":"assistant","content":"Na0.473K0.473Sr0.053Nb0.947Ti0.053O3 <- SrCO3 + NaCO3 + K2CO3 + Nb2O5 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Na4Si3.92P0.08"},{"role":"assistant","content":"Na4Si3.92P0.08 <- P + Si + Na"}]}
-{"messages":[{"role":"user","content":"synthesize ZnBi1.5Sb1.5O7"},{"role":"assistant","content":"ZnBi1.5Sb1.5O7 <- Sb2O3 + Bi2O3 + ZnO + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sm1.92Ca0.08Sn2O7"},{"role":"assistant","content":"Sm1.92Ca0.08Sn2O7 <- SnO2 + Sm2O3 + CaCO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Co1Sr2Y1.35Ce0.65Cu2O9"},{"role":"assistant","content":"Co1Sr2Y1.35Ce0.65Cu2O9 <- SrCO3 + CeO2 + Y2O3 + CuO + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: (Bi0.5Na0.5)0.94Ba0.06TiO3"},{"role":"assistant","content":"(Bi0.5Na0.5)0.94Ba0.06TiO3 <- TiO2 + BaO + Bi2O3 + Na2CO3\n(Bi0.5Na0.5)0.94Ba0.06TiO3 <- Bi2O3 + Na2CO3 + TiO2 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Ca2Nb3O10"},{"role":"assistant","content":"Ca2Nb3O10 <- Nb2O5 + CaCO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.545Ca0.06Co1O2"},{"role":"assistant","content":"Na0.545Ca0.06Co1O2 <- CaCO3 + CoO + Na2CO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba2MnWO6"},{"role":"assistant","content":"Ba2MnWO6 <- BaCO3 + MnO + WO3"}]}
-{"messages":[{"role":"user","content":"synthesize Zr0.8Hf0.05Y0.15O2"},{"role":"assistant","content":"Zr0.8Hf0.05Y0.15O2 <- HfO2 + ZrO2 + Y2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Mg0.642Ni0.358Ti2O5"},{"role":"assistant","content":"Mg0.642Ni0.358Ti2O5 <- NiO + MgCO3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Pr0.63Sm0.07Ca0.3Co1O3"},{"role":"assistant","content":"Pr0.63Sm0.07Ca0.3Co1O3 <- Pr6O11 + CaCO3 + Sm2O3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize KSr2Nb3O10"},{"role":"assistant","content":"KSr2Nb3O10 <- SrCO3 + Nb2O5 + K2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Cu6.65Zn0.35La8O19"},{"role":"assistant","content":"Cu6.65Zn0.35La8O19 <- CuO + La2O3 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Pr1.0La1.0Ni1O4"},{"role":"assistant","content":"Pr1.0La1.0Ni1O4 <- NiO + La2O3 + Pr6O11"}]}
-{"messages":[{"role":"user","content":"synthesize TiO2SiO2"},{"role":"assistant","content":"TiO2SiO2 <- SiO2 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba2Fe2O5"},{"role":"assistant","content":"Ba2Fe2O5 <- BaCO3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1.7Sr0.3Tb1Ir1O6"},{"role":"assistant","content":"Ba1.7Sr0.3Tb1Ir1O6 <- SrCO3 + BaCO3 + Ir + Tb4O7 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1.0Ba1.0Ca0.25Y0.75Cu2.625O1"},{"role":"assistant","content":"Sr1.0Ba1.0Ca0.25Y0.75Cu2.625O1 <- SrCO3 + Y2O3 + CuO + CaCO3 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize NaBa4(B5O9)2F2Cl"},{"role":"assistant","content":"NaBa4(B5O9)2F2Cl <- NaCl + BaF2 + BaCO3 + H3BO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1.85Ir1O4"},{"role":"assistant","content":"Sr1.85Ir1O4 <- SrCO3 + IrO2 + O2"}]}
-{"messages":[{"role":"user","content":"provide 4 synthesis plans for target: Ba0.5Sr0.5Ti1O3"},{"role":"assistant","content":"Ba0.5Sr0.5Ti1O3 <- TiO2 + BaO2 + SrO\nBa0.5Sr0.5Ti1O3 <- SrTiO3 + BaTiO3\nBa0.5Sr0.5Ti1O3 <- SrO + TiO2 + BaO\nBa0.5Sr0.5Ti1O3 <- SrCO3 + BaCO3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr4Mn3O10"},{"role":"assistant","content":"Sr4Mn3O10 <- SrCO3 + Mn2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.78Y0.22Co0.88Fe0.12O3"},{"role":"assistant","content":"Sr0.78Y0.22Co0.88Fe0.12O3 <- SrCO3 + Y2O3 + CoO + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Na5Gd(MoO4)4"},{"role":"assistant","content":"Na5Gd(MoO4)4 <- Gd2O3 + Na2CO3 + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba(Zr0.1Ti0.9)O3"},{"role":"assistant","content":"Ba(Zr0.1Ti0.9)O3 <- TiO2 + BaCO3 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ca0.5Zn0.5La4Ti5O17"},{"role":"assistant","content":"Ca0.5Zn0.5La4Ti5O17 <- TiO2 + CaCO3 + La2O3 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Dy0.925Tb0.075Ba2Cu3O1"},{"role":"assistant","content":"Dy0.925Tb0.075Ba2Cu3O1 <- Dy2O3 + CuO + Tb4O7 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sn4.0Bi1.0Eu3"},{"role":"assistant","content":"Sn4.0Bi1.0Eu3 <- Bi + Eu + Sn"}]}
-{"messages":[{"role":"user","content":"synthesize Li1Ni0.6Co0.2Ti0.2O2"},{"role":"assistant","content":"Li1Ni0.6Co0.2Ti0.2O2 <- NiO + Li2CO3 + TiO2 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Na6Si8O19"},{"role":"assistant","content":"Na6Si8O19 <- SiO2 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize CaV2O6"},{"role":"assistant","content":"CaV2O6 <- V2O5 + CaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Mg3Sb1.9Bi0.1"},{"role":"assistant","content":"Mg3Sb1.9Bi0.1 <- Bi + Mg + Sb"}]}
-{"messages":[{"role":"user","content":"synthesize La0.7Ca0.3Mn0.9Fe0.1O3"},{"role":"assistant","content":"La0.7Ca0.3Mn0.9Fe0.1O3 <- MnCO3 + CaCO3 + La2O3 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La2Cu0.95Zn0.05O4"},{"role":"assistant","content":"La2Cu0.95Zn0.05O4 <- CuO + La2O3 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Pr0.9Sr0.1CoO3"},{"role":"assistant","content":"Pr0.9Sr0.1CoO3 <- Co2O3 + SrO2 + Pr6O11"}]}
-{"messages":[{"role":"user","content":"synthesize Nd3(PO4)O3"},{"role":"assistant","content":"Nd3(PO4)O3 <- Nd2O3 + (NH4)2HPO4"}]}
-{"messages":[{"role":"user","content":"synthesize HoCrO3"},{"role":"assistant","content":"HoCrO3 <- Cr2O3 + Ho2O3"}]}
-{"messages":[{"role":"user","content":"synthesize BaZr0.1Ce0.7Y0.1Yb0.1O3"},{"role":"assistant","content":"BaZr0.1Ce0.7Y0.1Yb0.1O3 <- CeO2 + Y2O3 + BaCO3 + ZrO2 + Yb2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La1.2Sr1.8Mn1.6Ru0.4O7"},{"role":"assistant","content":"La1.2Sr1.8Mn1.6Ru0.4O7 <- SrCO3 + La2O3 + RuO2 + MnO2"}]}
-{"messages":[{"role":"user","content":"provide 3 synthesis plans for target: RuSr2Eu1.5Ce0.5Cu2O10"},{"role":"assistant","content":"RuSr2Eu1.5Ce0.5Cu2O10 <- SrCO3 + CeO2 + Ru + CuO + Eu2O3 + O2\nRuSr2Eu1.5Ce0.5Cu2O10 <- CeO2 + CuO + SrO2 + Eu2O3 + RuO2\nRuSr2Eu1.5Ce0.5Cu2O10 <- SrCO3 + CeO2 + CuO + Eu2O3 + RuO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize LiVMoO6"},{"role":"assistant","content":"LiVMoO6 <- V2O5 + Li2CO3 + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.5Bi1.5VMoO8"},{"role":"assistant","content":"Na0.5Bi1.5VMoO8 <- Bi2O3 + MoO3 + NH4VO3 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1.28Ba0.72Fe1Mo1O6"},{"role":"assistant","content":"Sr1.28Ba0.72Fe1Mo1O6 <- SrCO3 + BaCO3 + MoO3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Na2SiO3"},{"role":"assistant","content":"Na2SiO3 <- SiO2 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize La10(Si5Al1O24)O2.5"},{"role":"assistant","content":"La10(Si5Al1O24)O2.5 <- SiO2 + La2O3 + Al2O3"}]}
-{"messages":[{"role":"user","content":"synthesize InCu23V13O3"},{"role":"assistant","content":"InCu23V13O3 <- CuO + V2O5 + In2O3"}]}
-{"messages":[{"role":"user","content":"synthesize MnGeO3"},{"role":"assistant","content":"MnGeO3 <- MnCO3 + GeO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.7Sr0.3TiO3"},{"role":"assistant","content":"Ba0.7Sr0.3TiO3 <- SrCO3 + BaCO3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Cu90Ni10"},{"role":"assistant","content":"Cu90Ni10 <- Cu + Ni"}]}
-{"messages":[{"role":"user","content":"synthesize P2O8Li1.072Zr1.232"},{"role":"assistant","content":"P2O8Li1.072Zr1.232 <- Li2CO3 + ZrO2 + (NH4)H2PO4"}]}
-{"messages":[{"role":"user","content":"synthesize YMn0.5Co0.5O3"},{"role":"assistant","content":"YMn0.5Co0.5O3 <- Y2O3 + CoO + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Pr0.85Ag0.15Mn1O3"},{"role":"assistant","content":"Pr0.85Ag0.15Mn1O3 <- Ag2O + Pr6O11 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize SrFe0.8Sb0.2O3"},{"role":"assistant","content":"SrFe0.8Sb0.2O3 <- SrCO3 + Sb2O5 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1Co0.7Fe0.25Sn0.05O3"},{"role":"assistant","content":"Ba1Co0.7Fe0.25Sn0.05O3 <- SnO2 + BaCO3 + Co3O4 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Bi2(Cr0.1Fe0.9)4O9"},{"role":"assistant","content":"Bi2(Cr0.1Fe0.9)4O9 <- Cr2O3 + Bi2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Pr0.55Ca0.45MnO3"},{"role":"assistant","content":"Pr0.55Ca0.45MnO3 <- Mn3O4 + CaCO3 + Pr2O3 + O2"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: Y3Al5O12"},{"role":"assistant","content":"Y3Al5O12 <- Al2O3 + Y2O3\nY3Al5O12 <- Al(OH)3 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize YBaCo2O5"},{"role":"assistant","content":"YBaCo2O5 <- BaCO3 + Y2O3 + Co3O4"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.5Bi4.5Ti3.94Mg0.06O15"},{"role":"assistant","content":"Na0.5Bi4.5Ti3.94Mg0.06O15 <- TiO2 + MgO + Bi2O3 + Na2CO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Cu3(PO4)4"},{"role":"assistant","content":"Cu3(PO4)4 <- CuO + NH4H2PO4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Y1Ba0.5Sr0.5Co2O5"},{"role":"assistant","content":"Y1Ba0.5Sr0.5Co2O5 <- SrCO3 + Y2O3 + Co3O4 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Pr1Ba1.75Sr0.25Cu3O1"},{"role":"assistant","content":"Pr1Ba1.75Sr0.25Cu3O1 <- SrCO3 + BaCO3 + CuO + Pr6O11"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: InMnO3"},{"role":"assistant","content":"InMnO3 <- In2O3 + MnO2\nInMnO3 <- In2O3 + Mn2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.5Ca0.5Fe12O19"},{"role":"assistant","content":"Sr0.5Ca0.5Fe12O19 <- SrCO3 + CaCO3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Zn0.973Ni0.027O1"},{"role":"assistant","content":"Zn0.973Ni0.027O1 <- Ni + ZnO + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Bi0.9Y0.1Fe1O3"},{"role":"assistant","content":"Bi0.9Y0.1Fe1O3 <- Fe2O3 + Bi2O3 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1Bi0.05Co0.85Nb0.1O3"},{"role":"assistant","content":"Ba1Bi0.05Co0.85Nb0.1O3 <- BaCO3 + Nb2O5 + Bi2O3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.667Ca0.333Mn0.925Co0.075O3"},{"role":"assistant","content":"La0.667Ca0.333Mn0.925Co0.075O3 <- Co2O3 + CaCO3 + La2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr2CuO3"},{"role":"assistant","content":"Sr2CuO3 <- SrCO3 + CuO"}]}
-{"messages":[{"role":"user","content":"synthesize Cu2.4Sc0.6Y1Ba2O1"},{"role":"assistant","content":"Cu2.4Sc0.6Y1Ba2O1 <- CuO + BaCO3 + Sc2O3 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.962La0.038Ti1O3"},{"role":"assistant","content":"Sr0.962La0.038Ti1O3 <- TiO2 + La2O3 + SrO"}]}
-{"messages":[{"role":"user","content":"synthesize P6O26H2Ca5.0Pb5.0"},{"role":"assistant","content":"P6O26H2Ca5.0Pb5.0 <- PbO + CaCO3 + (NH4)2HPO4"}]}
-{"messages":[{"role":"user","content":"synthesize Ru0.85Sr2Gd1Cu2O8"},{"role":"assistant","content":"Ru0.85Sr2Gd1Cu2O8 <- CuO + SrCO3 + Gd2O3 + RuO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Li1.18Nb0.82Ti0.18O3"},{"role":"assistant","content":"Li1.18Nb0.82Ti0.18O3 <- TiO2 + Nb2O5 + Li2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Mn0.25Cu0.25W0.5Pb1O3"},{"role":"assistant","content":"Mn0.25Cu0.25W0.5Pb1O3 <- CuO + WO3 + PbO + MnCO3"}]}
-{"messages":[{"role":"user","content":"synthesize LiZnNbO4"},{"role":"assistant","content":"LiZnNbO4 <- Li2CO3 + ZnO + Nb2O5"}]}
-{"messages":[{"role":"user","content":"synthesize LiBa2Nb5O15"},{"role":"assistant","content":"LiBa2Nb5O15 <- Li2CO3 + BaCO3 + Nb2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Eu0.20NaLa0.80(WO4)2"},{"role":"assistant","content":"Eu0.20NaLa0.80(WO4)2 <- La2O3 + Na2CO3 + WO3 + Eu2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.78Sr0.22Zr0.05Ti0.95O3"},{"role":"assistant","content":"Ba0.78Sr0.22Zr0.05Ti0.95O3 <- SrCO3 + BaCO3 + TiO2 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Te0.49O1.973B0.42Zn0.3Ho0.042"},{"role":"assistant","content":"Te0.49O1.973B0.42Zn0.3Ho0.042 <- ZnO + Ho2O3 + B2O3 + TeO2"}]}
-{"messages":[{"role":"user","content":"synthesize Eu0.050Sr4.95(PO4)3Cl"},{"role":"assistant","content":"Eu0.050Sr4.95(PO4)3Cl <- SrCO3 + Eu2O3 + NH4H2PO4 + SrCl2"}]}
-{"messages":[{"role":"user","content":"synthesize Sc4Ti3O12"},{"role":"assistant","content":"Sc4Ti3O12 <- TiO2 + Sc2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1.812Sr0.188Lu1Bi1O6"},{"role":"assistant","content":"Ba1.812Sr0.188Lu1Bi1O6 <- SrCO3 + Lu2O3 + Bi2O3 + BaCO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize ZnFeO"},{"role":"assistant","content":"ZnFeO <- FeO + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Bi0.885La0.115Fe1O3"},{"role":"assistant","content":"Bi0.885La0.115Fe1O3 <- La2O3 + Bi2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: LiVO3"},{"role":"assistant","content":"LiVO3 <- Li2CO3 + V2O5\nLiVO3 <- Li2CO3 + NH4VO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1Ti0.63Fe0.37O3"},{"role":"assistant","content":"Sr1Ti0.63Fe0.37O3 <- TiO2 + SrO + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ti0.935Zr0.065Ba1O3"},{"role":"assistant","content":"Ti0.935Zr0.065Ba1O3 <- TiO2 + BaCO3 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize V3(PO4)5"},{"role":"assistant","content":"V3(PO4)5 <- V2O5 + P2O5"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: BaBiO3"},{"role":"assistant","content":"BaBiO3 <- BaCO3 + Bi2O3 + O2\nBaBiO3 <- BaO2 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Th0.8Ce0.2O2.00"},{"role":"assistant","content":"Th0.8Ce0.2O2.00 <- ThO2 + CeO2"}]}
-{"messages":[{"role":"user","content":"synthesize Pb5Ge3O11"},{"role":"assistant","content":"Pb5Ge3O11 <- PbO + GeO2"}]}
-{"messages":[{"role":"user","content":"synthesize CaFeTi(PO4)3"},{"role":"assistant","content":"CaFeTi(PO4)3 <- CaCO3 + Fe2O3 + NH4H2PO4 + TiO2"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: Mg2SiO4"},{"role":"assistant","content":"Mg2SiO4 <- SiO2 + MgO\nMg2SiO4 <- SiO2 + Mg(OH)2"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: YMn2O5"},{"role":"assistant","content":"YMn2O5 <- MnCO3 + Y2O3 + O2\nYMn2O5 <- Y2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Na2Al2B2O7"},{"role":"assistant","content":"Na2Al2B2O7 <- H3BO3 + Al2O3 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize PbZr0.58Ti0.42O3"},{"role":"assistant","content":"PbZr0.58Ti0.42O3 <- PbO + TiO2 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.65Gd0.05Ca0.3Mn1O3"},{"role":"assistant","content":"La0.65Gd0.05Ca0.3Mn1O3 <- CaCO3 + La2O3 + Gd2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Lu0.367Si9.9Al2.1ON15"},{"role":"assistant","content":"Lu0.367Si9.9Al2.1ON15 <- Al2O3 + AlN + Si3N4 + Lu2O3"}]}
-{"messages":[{"role":"user","content":"synthesize CoGe1.5S1.5"},{"role":"assistant","content":"CoGe1.5S1.5 <- Ge + Co + S"}]}
-{"messages":[{"role":"user","content":"synthesize Na4Mg6Al4Si4O20F4"},{"role":"assistant","content":"Na4Mg6Al4Si4O20F4 <- MgO + NaF + Al2O3 + SiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba3LiTa3Ti5O21"},{"role":"assistant","content":"Ba3LiTa3Ti5O21 <- Ta2O5 + Li2CO3 + TiO2 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize BaBiNaTeO6"},{"role":"assistant","content":"BaBiNaTeO6 <- Bi2O3 + Na2CO3 + BaCO3 + TeO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize KGd(WO4)2"},{"role":"assistant","content":"KGd(WO4)2 <- Gd2O3 + K2CO3 + WO3"}]}
-{"messages":[{"role":"user","content":"synthesize Mg0.978B1.956Co0.022"},{"role":"assistant","content":"Mg0.978B1.956Co0.022 <- Co + MgB2"}]}
-{"messages":[{"role":"user","content":"synthesize Nd1.9Ce0.1Cu1O4"},{"role":"assistant","content":"Nd1.9Ce0.1Cu1O4 <- CuO + Nd2O3 + CeO2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr3.6La0.4Fe5.6Ti0.4O13.4"},{"role":"assistant","content":"Sr3.6La0.4Fe5.6Ti0.4O13.4 <- SrCO3 + TiO2 + La2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.825Sr1Na0.07Ti1Nb1O3"},{"role":"assistant","content":"Ba0.825Sr1Na0.07Ti1Nb1O3 <- SrCO3 + Na2CO3 + Nb2O5 + TiO2 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Zn0.968Mn0.032O1"},{"role":"assistant","content":"Zn0.968Mn0.032O1 <- ZnO + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba4Co1.0Mn1.0Fe36O60"},{"role":"assistant","content":"Ba4Co1.0Mn1.0Fe36O60 <- BaCO3 + Fe2O3 + Co2O3 + Mn2O7"}]}
-{"messages":[{"role":"user","content":"synthesize Ba8ZnNb6O24"},{"role":"assistant","content":"Ba8ZnNb6O24 <- ZnO + Nb2O5 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Mg0.9Tb0.1Fe2O4"},{"role":"assistant","content":"Mg0.9Tb0.1Fe2O4 <- MgO + Tb4O7 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ce1Lu1.5Gd1.5Ga2.0Al3.0O12"},{"role":"assistant","content":"Ce1Lu1.5Gd1.5Ga2.0Al3.0O12 <- CeO2 + Al2O3 + Gd2O3 + Ga2O3 + Lu2O3"}]}
-{"messages":[{"role":"user","content":"synthesize TiZr"},{"role":"assistant","content":"TiZr <- Ti + Zr"}]}
-{"messages":[{"role":"user","content":"synthesize LiAlSiO4"},{"role":"assistant","content":"LiAlSiO4 <- SiO2 + Li2CO3 + Al2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Mg1.904Ni0.096Sn1O4"},{"role":"assistant","content":"Mg1.904Ni0.096Sn1O4 <- NiO + MgO + SnO2"}]}
-{"messages":[{"role":"user","content":"synthesize (Er2O3)0.2(Bi2O3)0.8"},{"role":"assistant","content":"(Er2O3)0.2(Bi2O3)0.8 <- Bi2O3 + Er2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.98Eu0.01Sm0.01WO4"},{"role":"assistant","content":"Ba0.98Eu0.01Sm0.01WO4 <- BaO + Sm2O3 + WO3 + Eu2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ti41.5Zr41.5Ni17"},{"role":"assistant","content":"Ti41.5Zr41.5Ni17 <- Zr + Ti + Ni"}]}
-{"messages":[{"role":"user","content":"synthesize Si0.388Sb0.012Sn0.6Mg2"},{"role":"assistant","content":"Si0.388Sb0.012Sn0.6Mg2 <- Si + Sb + Mg + Sn"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.939Eu0.061Al2Si2O8"},{"role":"assistant","content":"Ba0.939Eu0.061Al2Si2O8 <- SiO2 + BaO + Eu2O3 + Al2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ti0.75PtSb"},{"role":"assistant","content":"Ti0.75PtSb <- Pt + Sb + Ti"}]}
-{"messages":[{"role":"user","content":"synthesize Ce0.7Fe0.3O2"},{"role":"assistant","content":"Ce0.7Fe0.3O2 <- CeO2 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.5Sr0.5Fe0.9Ti0.1O3"},{"role":"assistant","content":"La0.5Sr0.5Fe0.9Ti0.1O3 <- La(OH)3 + SrCO3 + Fe2O3 + TiO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Li1Na2.936Dy0.064P2O7"},{"role":"assistant","content":"Li1Na2.936Dy0.064P2O7 <- NH4H2PO4 + Li2CO3 + Dy2O3 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize CaGaBO4"},{"role":"assistant","content":"CaGaBO4 <- CaCO3 + H3BO3 + Ga2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Bi3.092Ta0.908O7"},{"role":"assistant","content":"Bi3.092Ta0.908O7 <- Ta2O5 + Bi2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr2CoOsO6"},{"role":"assistant","content":"Sr2CoOsO6 <- SrO2 + OsO2 + Co3O4"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1Bi1.92Pr0.08Nb2O9"},{"role":"assistant","content":"Sr1Bi1.92Pr0.08Nb2O9 <- SrCO3 + Nb2O5 + Pr6O11 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize TmMn2O5"},{"role":"assistant","content":"TmMn2O5 <- Mn2O3 + Tm2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Bi0.962Sm0.038Nb1O4"},{"role":"assistant","content":"Bi0.962Sm0.038Nb1O4 <- Nb2O5 + Sm2O3 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ag2MnO2"},{"role":"assistant","content":"Ag2MnO2 <- Ag + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr0.7Ce0.3MnO3"},{"role":"assistant","content":"Sr0.7Ce0.3MnO3 <- SrCO3 + Mn3O4 + CeO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize In0.2Nb0.2Ca1Ti0.6O3"},{"role":"assistant","content":"In0.2Nb0.2Ca1Ti0.6O3 <- TiO2 + Nb2O5 + In2O3 + CaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Bi0.75Nd0.25Fe1O3"},{"role":"assistant","content":"Bi0.75Nd0.25Fe1O3 <- Nd2O3 + Bi2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Co0.333Nb0.667Ba1O3"},{"role":"assistant","content":"Co0.333Nb0.667Ba1O3 <- BaCO3 + Nb2O5 + CoO"}]}
-{"messages":[{"role":"user","content":"synthesize Co0.191Y0.009Zn0.127Ba1Nb0.667O3"},{"role":"assistant","content":"Co0.191Y0.009Zn0.127Ba1Nb0.667O3 <- Y2O3 + ZnO + Co2O3 + Nb2O5 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize TbCoO3"},{"role":"assistant","content":"TbCoO3 <- Co2O3 + Tb4O7"}]}
-{"messages":[{"role":"user","content":"synthesize Nd9.33(SiO4)6O2"},{"role":"assistant","content":"Nd9.33(SiO4)6O2 <- SiO2 + Nd2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.2Sr0.012Ce0.5Y2O3"},{"role":"assistant","content":"La0.2Sr0.012Ce0.5Y2O3 <- SrCO3 + La2O3 + CeO2 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ni0.93Co0.02Mn0.05Fe2O4"},{"role":"assistant","content":"Ni0.93Co0.02Mn0.05Fe2O4 <- NiCO3 + Fe2O3 + MnCO3 + CoCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.45Sr0.55Ti1O3"},{"role":"assistant","content":"Ba0.45Sr0.55Ti1O3 <- SrTiO3 + BaTiO3"}]}
-{"messages":[{"role":"user","content":"synthesize KCaGd(PO4)2"},{"role":"assistant","content":"KCaGd(PO4)2 <- Gd2O3 + CaCO3 + (NH4)2HPO4 + K2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Pb2Mg(PO4)2"},{"role":"assistant","content":"Pb2Mg(PO4)2 <- PbO + MgO + NH4H2PO4"}]}
-{"messages":[{"role":"user","content":"synthesize Na2OsO4"},{"role":"assistant","content":"Na2OsO4 <- OsO2 + Na2O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba2Nd0.805Y0.195Mo1O6"},{"role":"assistant","content":"Ba2Nd0.805Y0.195Mo1O6 <- Nd2O3 + Y2O3 + MoO3 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Ti0.5Mn0.5Ca1O3"},{"role":"assistant","content":"Ti0.5Mn0.5Ca1O3 <- TiO2 + CaCO3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.5Sr0.5Mg0.54Nb0.46O3"},{"role":"assistant","content":"La0.5Sr0.5Mg0.54Nb0.46O3 <- SrCO3 + MgO + Nb2O5 + La2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba2Mg0.929Mn0.071Si2O7"},{"role":"assistant","content":"Ba2Mg0.929Mn0.071Si2O7 <- SiO2 + BaCO3 + MgO + MnCO3"}]}
-{"messages":[{"role":"user","content":"synthesize La0.6Ca0.355Ce0.045Mn1O3"},{"role":"assistant","content":"La0.6Ca0.355Ce0.045Mn1O3 <- MnO + CaCO3 + La2O3 + CeO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Y2.94Ce0.06Al5O11.91F0.18"},{"role":"assistant","content":"Y2.94Ce0.06Al5O11.91F0.18 <- CeF3 + Al2O3 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Li0.47Na0.353Co1O2"},{"role":"assistant","content":"Li0.47Na0.353Co1O2 <- Li2CO3 + Co3O4 + Na2CO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Zr0.635Ti0.365Ba1O3"},{"role":"assistant","content":"Zr0.635Ti0.365Ba1O3 <- TiO2 + BaCO3 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Co0.8Fe2.2O4"},{"role":"assistant","content":"Co0.8Fe2.2O4 <- Co3O4 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1.5La0.4Mn1O4"},{"role":"assistant","content":"Sr1.5La0.4Mn1O4 <- SrCO3 + La2O3 + MnCO3 + O2"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: Ba3NbFe3Si2O14"},{"role":"assistant","content":"Ba3NbFe3Si2O14 <- SiO2 + BaCO3 + Nb2O5 + Fe2O3\nBa3NbFe3Si2O14 <- SiO2 + BaCO3 + Nb2O3 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Mg0.5Zn0.5Fe2O4"},{"role":"assistant","content":"Mg0.5Zn0.5Fe2O4 <- ZnO + Fe2O3 + MgCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Ti0.95Co0.05O2"},{"role":"assistant","content":"Ti0.95Co0.05O2 <- TiO2 + Co2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ce0.026Na1Ca0.974B1O3"},{"role":"assistant","content":"Ce0.026Na1Ca0.974B1O3 <- CaCO3 + CeO2 + H3BO3 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Co0.5Mg0.5Fe2O4"},{"role":"assistant","content":"Co0.5Mg0.5Fe2O4 <- MgO + CoO + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize CoGe1.5Te1.5"},{"role":"assistant","content":"CoGe1.5Te1.5 <- Ge + Co + Te"}]}
-{"messages":[{"role":"user","content":"synthesize Eu1Ba2Cu3O7"},{"role":"assistant","content":"Eu1Ba2Cu3O7 <- CuO + BaCO3 + Eu2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.6Li0.2TiO3"},{"role":"assistant","content":"La0.6Li0.2TiO3 <- TiO2 + Li2CO3 + La2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Li1Nb0.5Ta0.5O3"},{"role":"assistant","content":"Li1Nb0.5Ta0.5O3 <- Ta2O5 + Li2CO3 + Nb2O5"}]}
-{"messages":[{"role":"user","content":"provide 3 synthesis plans for target: La0.8Sr0.2MnO3"},{"role":"assistant","content":"La0.8Sr0.2MnO3 <- SrCO3 + La2O3 + Mn2O3 + O2\nLa0.8Sr0.2MnO3 <- SrCO3 + La2O3 + MnCO3 + O2\nLa0.8Sr0.2MnO3 <- SrCO3 + La2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba4Nd2Fe1.5Co0.5Nb8O30"},{"role":"assistant","content":"Ba4Nd2Fe1.5Co0.5Nb8O30 <- Nd2O3 + Fe2O3 + Co2O3 + Nb2O5 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.25K0.25Ca0.5Nb0.5Ti0.5O3"},{"role":"assistant","content":"Na0.25K0.25Ca0.5Nb0.5Ti0.5O3 <- Na2CO3 + CaCO3 + Nb2O5 + K2CO3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Cs(Mg0.25W1.75)O6"},{"role":"assistant","content":"Cs(Mg0.25W1.75)O6 <- MgO + Cs2CO3 + WO3"}]}
-{"messages":[{"role":"user","content":"synthesize LiCrGe2O6"},{"role":"assistant","content":"LiCrGe2O6 <- Li2CO3 + GeO2 + Cr2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Bi1.5Y0.5FeNbO7"},{"role":"assistant","content":"Bi1.5Y0.5FeNbO7 <- Y2O3 + Fe2O3 + Nb2O5 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Na4AlCdP3O12"},{"role":"assistant","content":"Na4AlCdP3O12 <- CdO + Al2O3 + Na2CO3 + NH4H2PO4"}]}
-{"messages":[{"role":"user","content":"synthesize Ba2Ca2Cu3O7"},{"role":"assistant","content":"Ba2Ca2Cu3O7 <- BaO2 + CuO + CaO"}]}
-{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: Mn1.56Co0.96Ni0.48O4"},{"role":"assistant","content":"Mn1.56Co0.96Ni0.48O4 <- NiO + MnCO3 + CoO + O2\nMn1.56Co0.96Ni0.48O4 <- Mn2O3 + Co2O3 + NiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Y0.633Ca0.367Ba2Cu3O1"},{"role":"assistant","content":"Y0.633Ca0.367Ba2Cu3O1 <- CuO + BaCO3 + CaCO3 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize P3O12Li1.428Al0.428Ti1.572"},{"role":"assistant","content":"P3O12Li1.428Al0.428Ti1.572 <- TiO2 + Li2CO3 + Al2O3 + (NH4)H2PO4"}]}
-{"messages":[{"role":"user","content":"synthesize Ba2YCu3O6"},{"role":"assistant","content":"Ba2YCu3O6 <- Y2O3 + CuO + BaO"}]}
-{"messages":[{"role":"user","content":"synthesize Ca2Y8(SiO4)6O2"},{"role":"assistant","content":"Ca2Y8(SiO4)6O2 <- SiO2 + Y2O3 + CaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize NaFeTiO4"},{"role":"assistant","content":"NaFeTiO4 <- TiO2 + Na2CO3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Nd0.8Ca0.2CoO3"},{"role":"assistant","content":"Nd0.8Ca0.2CoO3 <- Nd2O3 + CaCO3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr2CuO2Cl2"},{"role":"assistant","content":"Sr2CuO2Cl2 <- SrCO3 + SrCl2 + CuO"}]}
-{"messages":[{"role":"user","content":"synthesize La1.866Sm6.531Bi0.933Ba4Ti18O54"},{"role":"assistant","content":"La1.866Sm6.531Bi0.933Ba4Ti18O54 <- Bi2O3 + La2O3 + Sm2O3 + TiO2 + BaCO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize (Pb0.48Ca0.52)(Fe0.5Nb0.5)O3"},{"role":"assistant","content":"(Pb0.48Ca0.52)(Fe0.5Nb0.5)O3 <- CaCO3 + Fe2O3 + PbO + Nb2O5"}]}
-{"messages":[{"role":"user","content":"synthesize Li1Ni0.8Mn0.08Co0.1Mo0.02O2"},{"role":"assistant","content":"Li1Ni0.8Mn0.08Co0.1Mo0.02O2 <- NiO + LiOH + MnO2 + MoO3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Mg0.5Nb0.501Ba0.5La0.5O3"},{"role":"assistant","content":"Mg0.5Nb0.501Ba0.5La0.5O3 <- BaCO3 + MgO + Nb2O5 + La2O3"}]}
-{"messages":[{"role":"user","content":"synthesize CuCr0.9Sc0.1O2"},{"role":"assistant","content":"CuCr0.9Sc0.1O2 <- Cr2O3 + Sc2O3 + Cu2O"}]}
-{"messages":[{"role":"user","content":"synthesize Ca1.97Nd0.03Bi1.6Pb0.4Sr2Cu3O1"},{"role":"assistant","content":"Ca1.97Nd0.03Bi1.6Pb0.4Sr2Cu3O1 <- SrCO3 + Bi2O3 + CuO + Nd2O3 + CaCO3 + PbO"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1.12Sr0.88Y1Ir1O6"},{"role":"assistant","content":"Ba1.12Sr0.88Y1Ir1O6 <- SrCO3 + BaCO3 + Y2O3 + Ir + O2"}]}
-{"messages":[{"role":"user","content":"synthesize ZnRh2O4"},{"role":"assistant","content":"ZnRh2O4 <- Rh2O3 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Ba3Fe2TeO9"},{"role":"assistant","content":"Ba3Fe2TeO9 <- TeO2 + BaCO3 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1.7Ba0.3Cu1O3"},{"role":"assistant","content":"Sr1.7Ba0.3Cu1O3 <- SrCO3 + BaCO3 + CuO"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1Zn0.333Nb0.667O3"},{"role":"assistant","content":"Ba1Zn0.333Nb0.667O3 <- ZnO + Nb2O5 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Pb1.83Mg0.29Nb1.71O6.39"},{"role":"assistant","content":"Pb1.83Mg0.29Nb1.71O6.39 <- PbO + Nb2O5 + MgO"}]}
-{"messages":[{"role":"user","content":"synthesize Ca2.8Dy0.2Co2O6"},{"role":"assistant","content":"Ca2.8Dy0.2Co2O6 <- Dy2O3 + CaCO3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Co0.68Fe0.17Sr1Ti0.15O3"},{"role":"assistant","content":"Co0.68Fe0.17Sr1Ti0.15O3 <- SrCO3 + TiO2 + Co2O3 + Fe2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Mg2In0.1Ni"},{"role":"assistant","content":"Mg2In0.1Ni <- Mg + Ni + In"}]}
-{"messages":[{"role":"user","content":"synthesize La6.4Sr1.6Cu8O20"},{"role":"assistant","content":"La6.4Sr1.6Cu8O20 <- SrCO3 + La2O3 + CuO + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Na3Al2(PO4)3"},{"role":"assistant","content":"Na3Al2(PO4)3 <- Al2O3 + (NH4)2HPO4 + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.837Sr0.093Na0.07Ti0.93Nb0.07O3"},{"role":"assistant","content":"Ba0.837Sr0.093Na0.07Ti0.93Nb0.07O3 <- SrCO3 + Na2CO3 + Nb2O5 + TiO2 + BaCO3"}]}
-{"messages":[{"role":"user","content":"synthesize Mg1.99Al0.01Si0.977Bi0.023"},{"role":"assistant","content":"Mg1.99Al0.01Si0.977Bi0.023 <- Bi + Si + Al + Mg"}]}
-{"messages":[{"role":"user","content":"synthesize LiNi0.5Mn0.5O2"},{"role":"assistant","content":"LiNi0.5Mn0.5O2 <- LiOH + NiO + MnO2"}]}
-{"messages":[{"role":"user","content":"provide 3 synthesis plans for target: FePO4"},{"role":"assistant","content":"FePO4 <- NH4H2PO4 + Fe2O3\nFePO4 <- Fe + P2O5 + O2\nFePO4 <- Fe3O4 + NH4H2PO4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize SrFe0.8Mo0.2O3"},{"role":"assistant","content":"SrFe0.8Mo0.2O3 <- SrCO3 + Fe2O3 + MoO3 + O2"}]}
-{"messages":[{"role":"user","content":"provide 3 synthesis plans for target: La0.9Sr0.1MnO3"},{"role":"assistant","content":"La0.9Sr0.1MnO3 <- SrCO3 + La2O3 + MnCO3 + O2\nLa0.9Sr0.1MnO3 <- SrCO3 + La2O3 + MnO2\nLa0.9Sr0.1MnO3 <- SrCO3 + La2O3 + Mn2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Dy2Ce2O7"},{"role":"assistant","content":"Dy2Ce2O7 <- CeO2 + Dy2O3"}]}
-{"messages":[{"role":"user","content":"synthesize PbBi2Nb2O9.16"},{"role":"assistant","content":"PbBi2Nb2O9.16 <- Nb2O5 + Bi2O3 + PbO + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Bi4Ti2.953V0.047O12.024"},{"role":"assistant","content":"Bi4Ti2.953V0.047O12.024 <- TiO2 + V2O5 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.98Ca0.02Ti0.94Sn0.03Zr0.03O3"},{"role":"assistant","content":"Ba0.98Ca0.02Ti0.94Sn0.03Zr0.03O3 <- SnO2 + CaCO3 + TiO2 + BaCO3 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba(Zr0.8Y0.2)O3"},{"role":"assistant","content":"Ba(Zr0.8Y0.2)O3 <- BaCO3 + Y2O3 + ZrO2 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Na0.5Y0.5Cu3Ti4O12"},{"role":"assistant","content":"Na0.5Y0.5Cu3Ti4O12 <- TiO2 + Y2O3 + CuO + Na2CO3"}]}
-{"messages":[{"role":"user","content":"synthesize La4.6Sr0.4Ti4.4Sc0.6O17"},{"role":"assistant","content":"La4.6Sr0.4Ti4.4Sc0.6O17 <- TiO2 + SrCO3 + Sc2O3 + La2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Li1Fe0.5Mn0.5V1O4"},{"role":"assistant","content":"Li1Fe0.5Mn0.5V1O4 <- V2O5 + Li2CO3 + Mn2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize (Pb0.97La0.02)(Zr0.66Sn0.27Ti0.07)O3"},{"role":"assistant","content":"(Pb0.97La0.02)(Zr0.66Sn0.27Ti0.07)O3 <- La2O3 + SnO2 + PbO + TiO2 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ca0.2Sr0.6Nd0.2Mn0.9Cr0.1O3"},{"role":"assistant","content":"Ca0.2Sr0.6Nd0.2Mn0.9Cr0.1O3 <- SrCO3 + Nd2O3 + Cr2O3 + CaCO3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Cu1.775Bi4.525S8"},{"role":"assistant","content":"Cu1.775Bi4.525S8 <- Bi + Cu + S"}]}
-{"messages":[{"role":"user","content":"synthesize Mg0.02Zn0.98O"},{"role":"assistant","content":"Mg0.02Zn0.98O <- MgO + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Ca3NbGa3Si2O14"},{"role":"assistant","content":"Ca3NbGa3Si2O14 <- SiO2 + CaCO3 + Ga2O3 + Nb2O5"}]}
-{"messages":[{"role":"user","content":"synthesize La1Sr3Fe2.25Co0.75O10"},{"role":"assistant","content":"La1Sr3Fe2.25Co0.75O10 <- SrCO3 + La2O3 + Fe2O3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Li5Rb2B7O14"},{"role":"assistant","content":"Li5Rb2B7O14 <- Rb2CO3 + Li2CO3 + H3BO3"}]}
-{"messages":[{"role":"user","content":"synthesize PrFeO3"},{"role":"assistant","content":"PrFeO3 <- Pr6O11 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Eu0.13Y1.67La0.2O3"},{"role":"assistant","content":"Eu0.13Y1.67La0.2O3 <- La2O3 + Eu2O3 + Y2O3"}]}
-{"messages":[{"role":"user","content":"synthesize La0.3Sm0.3Sr0.3Mn1.1O3"},{"role":"assistant","content":"La0.3Sm0.3Sr0.3Mn1.1O3 <- La(OH)3 + Mn3O4 + Sm2O3 + SrCO3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La1.64Sr0.36Ga3O7.32"},{"role":"assistant","content":"La1.64Sr0.36Ga3O7.32 <- SrCO3 + La2O3 + Ga2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Mg0.042Nb0.083Zr0.445Ti0.43Pb0.95Ba0.05O3"},{"role":"assistant","content":"Mg0.042Nb0.083Zr0.445Ti0.43Pb0.95Ba0.05O3 <- MgO + PbO + Nb2O5 + TiO2 + BaCO3 + ZrO2"}]}
-{"messages":[{"role":"user","content":"synthesize Bi1.9Ta1.9Sr1Ti0.2O9"},{"role":"assistant","content":"Bi1.9Ta1.9Sr1Ti0.2O9 <- SrCO3 + Ta2O5 + TiO2 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1Ca1Bi3.97Er0.03Ti5O18"},{"role":"assistant","content":"Sr1Ca1Bi3.97Er0.03Ti5O18 <- SrCO3 + Bi2O3 + CaCO3 + Er2O3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.7Ca0.08Ba0.22Mn1O3"},{"role":"assistant","content":"La0.7Ca0.08Ba0.22Mn1O3 <- BaCO3 + CaCO3 + La2O3 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize (Sm0.33Eu0.33Gd0.33)2BaCuO5"},{"role":"assistant","content":"(Sm0.33Eu0.33Gd0.33)2BaCuO5 <- Gd2O3 + CuO + Sm2O3 + BaCO3 + Eu2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1Bi1.992Pr0.008Nb2O9"},{"role":"assistant","content":"Sr1Bi1.992Pr0.008Nb2O9 <- SrCO3 + Nb2O5 + Pr6O11 + Bi2O3"}]}
-{"messages":[{"role":"user","content":"synthesize BaY2(MoO4)4"},{"role":"assistant","content":"BaY2(MoO4)4 <- BaCO3 + Y2O3 + MoO3"}]}
-{"messages":[{"role":"user","content":"synthesize Sr1.02TiO3.02"},{"role":"assistant","content":"Sr1.02TiO3.02 <- SrCO3 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize K0.792Ba0.208Ga1.208Ge2.792O8"},{"role":"assistant","content":"K0.792Ba0.208Ga1.208Ge2.792O8 <- K2CO3 + GeO2 + BaCO3 + Ga2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Pr0.7Ba0.3Mn1O3"},{"role":"assistant","content":"Pr0.7Ba0.3Mn1O3 <- BaCO3 + MnO2 + Pr2O3"}]}
-{"messages":[{"role":"user","content":"synthesize La0.95Ca0.05CoO3"},{"role":"assistant","content":"La0.95Ca0.05CoO3 <- CaCO3 + La2O3 + Co3O4 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba1Fe10.8Ga1.2O19"},{"role":"assistant","content":"Ba1Fe10.8Ga1.2O19 <- BaCO3 + Ga2O3 + Fe2O3"}]}
-{"messages":[{"role":"user","content":"synthesize Ba3ZnTa2O9"},{"role":"assistant","content":"Ba3ZnTa2O9 <- BaCO3 + Ta2O5 + ZnO"}]}
-{"messages":[{"role":"user","content":"synthesize Bi1.5Sb0.75Nb0.75Cu1O7"},{"role":"assistant","content":"Bi1.5Sb0.75Nb0.75Cu1O7 <- CuO + Nb2O5 + Sb2O3 + Bi2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize GdBaCo2O6"},{"role":"assistant","content":"GdBaCo2O6 <- BaCO3 + Co3O4 + Gd2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize La0.85Te0.15MnO3"},{"role":"assistant","content":"La0.85Te0.15MnO3 <- La2O3 + TeO2 + MnO2"}]}
-{"messages":[{"role":"user","content":"synthesize Y1Mn0.925Ni0.075O3"},{"role":"assistant","content":"Y1Mn0.925Ni0.075O3 <- NiO + Mn2O3 + Y2O3 + O2"}]}
-{"messages":[{"role":"user","content":"synthesize Li3TiCdP3O12"},{"role":"assistant","content":"Li3TiCdP3O12 <- CdO + Li2CO3 + NH4H2PO4 + TiO2"}]}
-{"messages":[{"role":"user","content":"synthesize Ba0.6Sr0.05Ca0.35Ti1O3"},{"role":"assistant","content":"Ba0.6Sr0.05Ca0.35Ti1O3 <- SrTiO3 + CaCO3 + TiO2 + BaTiO3"}]}
-{"messages":[{"role":"user","content":"synthesize La0.95Eu0.05O1F1"},{"role":"assistant","content":"La0.95Eu0.05O1F1 <- La2O3 + Eu2O3 + NH4F"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1Ce0.7Zr0.083Y0.167Zn0.05O3"},{"role":"assistant","content":"Ba1Ce0.7Zr0.083Y0.167Zn0.05O3 <- CeO2 + Y2O3 + ZnO + BaO + ZrO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize LiMn0.2Co0.1Ni0.7O2"},{"role":"assistant","content":"LiMn0.2Co0.1Ni0.7O2 <- NiO + Li2CO3 + Mn2O3 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Li1.05V0.95O2"},{"role":"assistant","content":"Li1.05V0.95O2 <- Li2CO3 + V2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Zn1Li0.667Ti1.333O4"},{"role":"assistant","content":"Zn1Li0.667Ti1.333O4 <- Li2CO3 + ZnO + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Na4Si4"},{"role":"assistant","content":"Na4Si4 <- Si + Na"}]}
+{"messages":[{"role":"user","content":"synthesize La1.4Sr1.2Ca0.4Mn2O7"},{"role":"assistant","content":"La1.4Sr1.2Ca0.4Mn2O7 <- SrCO3 + Mn2O3 + CaCO3 + La2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Cs2C1O15La2Nd2W1"},{"role":"assistant","content":"Cs2C1O15La2Nd2W1 <- La2O3 + Nd2O3 + WO3 + Cs2CO3 + O2"}]}
+{"messages":[{"role":"user","content":"provide 3 synthesis plans for target: La0.6Sr0.4Co0.2Fe0.8O3"},{"role":"assistant","content":"La0.6Sr0.4Co0.2Fe0.8O3 <- SrCO3 + La2O3 + Fe2O3 + Co3O4 + O2\nLa0.6Sr0.4Co0.2Fe0.8O3 <- SrCO3 + La2O3 + Fe2O3 + Co2O3 + O2\nLa0.6Sr0.4Co0.2Fe0.8O3 <- Co2O3 + Fe2O3 + La2O3 + Sr(CO3)2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi4.25Fe1O15.5La0.75Ti3"},{"role":"assistant","content":"Bi4.25Fe1O15.5La0.75Ti3 <- TiO2 + La2O3 + Bi2O3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Cu0.75N1Mn3.25"},{"role":"assistant","content":"Cu0.75N1Mn3.25 <- Mn + Cu + Mn2N"}]}
+{"messages":[{"role":"user","content":"synthesize Zr65Al7.5Ni10Cu12.5Pd5"},{"role":"assistant","content":"Zr65Al7.5Ni10Cu12.5Pd5 <- Al + Ni + Pd + Cu + Zr"}]}
+{"messages":[{"role":"user","content":"synthesize W1.0O8Mo1.0Ag1La1"},{"role":"assistant","content":"W1.0O8Mo1.0Ag1La1 <- Ag2O + La2O3 + MoO3 + WO3"}]}
+{"messages":[{"role":"user","content":"synthesize (SmO1.5)0.2(CeO2)0.8"},{"role":"assistant","content":"(SmO1.5)0.2(CeO2)0.8 <- CeO2 + Sm2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.2Sr0.8Co0.2Fe0.8O3"},{"role":"assistant","content":"La0.2Sr0.8Co0.2Fe0.8O3 <- Co2O3 + Fe2O3 + La2O3 + Sr(CO3)2"}]}
+{"messages":[{"role":"user","content":"synthesize Y0.15Gd0.85Ba2Cu3O7"},{"role":"assistant","content":"Y0.15Gd0.85Ba2Cu3O7 <- CuO + BaCO3 + Y2O3 + Gd2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2V0.833Nb0.167O5.5"},{"role":"assistant","content":"Bi2V0.833Nb0.167O5.5 <- V2O5 + Nb2O5 + Bi2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1Ce0.698Zr0.152Sm0.15O3"},{"role":"assistant","content":"Ba1Ce0.698Zr0.152Sm0.15O3 <- BaCO3 + Sm2O3 + CeO2 + ZrO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Mg2Ge"},{"role":"assistant","content":"Mg2Ge <- Ge + Mg"}]}
+{"messages":[{"role":"user","content":"synthesize Ag1Sb1Se0.02Te1.98"},{"role":"assistant","content":"Ag1Sb1Se0.02Te1.98 <- Se + Sb + Te + Ag"}]}
+{"messages":[{"role":"user","content":"synthesize Yb4Si2O7N2"},{"role":"assistant","content":"Yb4Si2O7N2 <- SiO2 + Yb2O3 + Si3N4"}]}
+{"messages":[{"role":"user","content":"synthesize CaLaMnFeO6"},{"role":"assistant","content":"CaLaMnFeO6 <- CaCO3 + La2O3 + MnO2 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.85Ca0.15Ti2O5"},{"role":"assistant","content":"Ba0.85Ca0.15Ti2O5 <- TiO2 + BaCO3 + CaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.5Zr0.5Y1.0Ti2O7"},{"role":"assistant","content":"Ca0.5Zr0.5Y1.0Ti2O7 <- TiO2 + CaCO3 + Y2O3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Na0.35K0.11Li0.013Ti0.95Zr0.03Bi0.5O3"},{"role":"assistant","content":"Na0.35K0.11Li0.013Ti0.95Zr0.03Bi0.5O3 <- Li2CO3 + Bi2O3 + Na2CO3 + K2CO3 + TiO2 + ZrO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.774Ca0.226Ti0.9Sn0.1O3"},{"role":"assistant","content":"Ba0.774Ca0.226Ti0.9Sn0.1O3 <- TiO2 + BaCO3 + CaCO3 + SnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi1.5Mg0.5Nb0.5Ti1.5O7"},{"role":"assistant","content":"Bi1.5Mg0.5Nb0.5Ti1.5O7 <- TiO2 + MgO + Nb2O5 + Bi2O3"}]}
+{"messages":[{"role":"user","content":"synthesize LiBiP2O7"},{"role":"assistant","content":"LiBiP2O7 <- Li2CO3 + Bi2O3 + (NH4)2HPO4"}]}
+{"messages":[{"role":"user","content":"synthesize Ca2ZrSi4O12"},{"role":"assistant","content":"Ca2ZrSi4O12 <- SiO2 + CaCO3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize ZnCoO"},{"role":"assistant","content":"ZnCoO <- Co2O3 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize (Li0.04K0.44Na0.52)NbO3"},{"role":"assistant","content":"(Li0.04K0.44Na0.52)NbO3 <- Li2CO3 + Na2CO3 + Nb2O5 + K2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize (Ba0.02Sr0.98)TiO3"},{"role":"assistant","content":"(Ba0.02Sr0.98)TiO3 <- SrCO3 + BaCO3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize NaFeSnO4"},{"role":"assistant","content":"NaFeSnO4 <- Na2CO3 + SnO2 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Eu0.05Sr3.95Al2O7"},{"role":"assistant","content":"Eu0.05Sr3.95Al2O7 <- SrCO3 + Al2O3 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize CoCu2O3"},{"role":"assistant","content":"CoCu2O3 <- CuO + Co3O4"}]}
+{"messages":[{"role":"user","content":"synthesize In1.0Sc1.0W3O12"},{"role":"assistant","content":"In1.0Sc1.0W3O12 <- WO3 + In2O3 + Sc2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sm0.018Sr1.982Sn1O4"},{"role":"assistant","content":"Sm0.018Sr1.982Sn1O4 <- SrCO3 + SnO2 + Sm2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.46Eu0.21Ca0.33MnO3"},{"role":"assistant","content":"La0.46Eu0.21Ca0.33MnO3 <- CaCO3 + La2O3 + Eu2O3 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize PrBaCo2O5.74"},{"role":"assistant","content":"PrBaCo2O5.74 <- BaCO3 + Pr6O11 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Al3Gd"},{"role":"assistant","content":"Al3Gd <- Al + Gd"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2Mo0.25W0.75O6"},{"role":"assistant","content":"Bi2Mo0.25W0.75O6 <- WO3 + Bi2O3 + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize LaAl0.995Cr0.005O3"},{"role":"assistant","content":"LaAl0.995Cr0.005O3 <- La2O3 + Al2O3 + Cr2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2(Te)"},{"role":"assistant","content":"Bi2(Te) <- Bi + Te"}]}
+{"messages":[{"role":"user","content":"synthesize La5GaTi3O15"},{"role":"assistant","content":"La5GaTi3O15 <- La2O3 + Ga2O3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ce0.9Sr0.1VO3"},{"role":"assistant","content":"Ce0.9Sr0.1VO3 <- V2O5 + SrO2 + CeO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ca1Gd1Zr1Nb0.5Ta0.5O7"},{"role":"assistant","content":"Ca1Gd1Zr1Nb0.5Ta0.5O7 <- Ta2O5 + Gd2O3 + CaCO3 + Nb2O5 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Cu0.02Ti0.94Nb2.04O7"},{"role":"assistant","content":"Cu0.02Ti0.94Nb2.04O7 <- TiO2 + Nb2O5 + CuO"}]}
+{"messages":[{"role":"user","content":"synthesize Ca3Al0.98Zn0.02Sb3"},{"role":"assistant","content":"Ca3Al0.98Zn0.02Sb3 <- Ca + Al + Zn + Sb"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1Ce0.625Zr0.175Y0.15Sm0.05O3"},{"role":"assistant","content":"Ba1Ce0.625Zr0.175Y0.15Sm0.05O3 <- CeO2 + Y2O3 + Sm2O3 + BaCO3 + ZrO2 + O2"}]}
+{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: CoTiO3"},{"role":"assistant","content":"CoTiO3 <- TiO2 + Co3O4\nCoTiO3 <- TiO2 + CoO"}]}
+{"messages":[{"role":"user","content":"provide 3 synthesis plans for target: LiV3O8"},{"role":"assistant","content":"LiV3O8 <- Li2CO3 + V2O5\nLiV3O8 <- LiOH + V2O5\nLiV3O8 <- Li2CO3 + NH4VO3"}]}
+{"messages":[{"role":"user","content":"synthesize DyBaCo4O7"},{"role":"assistant","content":"DyBaCo4O7 <- BaCO3 + Co3O4 + Dy2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Zn0.083Nb0.167Li2Ti0.75O3"},{"role":"assistant","content":"Zn0.083Nb0.167Li2Ti0.75O3 <- TiO2 + Nb2O5 + Li2CO3 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize Mo2O8Ag1Y0.693"},{"role":"assistant","content":"Mo2O8Ag1Y0.693 <- Ag2O + Y2O3 + MoO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Sr2MgSi2O7"},{"role":"assistant","content":"Sr2MgSi2O7 <- SrCO3 + MgO + SiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Mg1.87Li0.13Si1"},{"role":"assistant","content":"Mg1.87Li0.13Si1 <- Si + Li + Mg"}]}
+{"messages":[{"role":"user","content":"synthesize LiRhO2"},{"role":"assistant","content":"LiRhO2 <- Li2CO3 + Rh2O3"}]}
+{"messages":[{"role":"user","content":"synthesize (Lu0.50Ca0.50)MnO3"},{"role":"assistant","content":"(Lu0.50Ca0.50)MnO3 <- Lu2O3 + CaO + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Nd0.83K0.17Mn1O3"},{"role":"assistant","content":"Nd0.83K0.17Mn1O3 <- Nd2O3 + K2CO3 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize NaCa3La0.95Eu0.05(PO4)3F"},{"role":"assistant","content":"NaCa3La0.95Eu0.05(PO4)3F <- NaF + Eu2O3 + La2O3 + NH4H2PO4 + CaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi1.95La0.05U1O6"},{"role":"assistant","content":"Bi1.95La0.05U1O6 <- La(OH)3 + Bi2O3 + U3O8 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Sr1Co0.89Ta0.11O3"},{"role":"assistant","content":"Sr1Co0.89Ta0.11O3 <- SrCO3 + Ta2O5 + Co2O3 + O2"}]}
+{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: CaSiO3"},{"role":"assistant","content":"CaSiO3 <- SiO2 + CaCO3\nCaSiO3 <- SiO2 + CaO"}]}
+{"messages":[{"role":"user","content":"synthesize Sc2Mo3O12"},{"role":"assistant","content":"Sc2Mo3O12 <- Sc2O3 + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba3(Ca1.18Nb1.70Zn0.12)O8.55"},{"role":"assistant","content":"Ba3(Ca1.18Nb1.70Zn0.12)O8.55 <- Nb2O5 + BaCO3 + CaCO3 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize CaCrO3"},{"role":"assistant","content":"CaCrO3 <- CaO + CrO2"}]}
+{"messages":[{"role":"user","content":"synthesize GaVTe2O8"},{"role":"assistant","content":"GaVTe2O8 <- Ga2O3 + VO2 + TeO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Sr3CaZr0.9Ta1.1O8.55"},{"role":"assistant","content":"Sr3CaZr0.9Ta1.1O8.55 <- SrCO3 + Ta2O5 + CaCO3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize La1Ba1Ni0.5Co0.5Ta1O6"},{"role":"assistant","content":"La1Ba1Ni0.5Co0.5Ta1O6 <- NiO + Ta2O5 + La2O3 + BaCO3 + Co3O4"}]}
+{"messages":[{"role":"user","content":"synthesize Mg0.075Eu0.075U0.85O2"},{"role":"assistant","content":"Mg0.075Eu0.075U0.85O2 <- MgO + Eu2O3 + UO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize BaCe0.65Zr0.2Y0.15O3"},{"role":"assistant","content":"BaCe0.65Zr0.2Y0.15O3 <- BaCO3 + CeO2 + ZrO2 + Y2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba3As4O13"},{"role":"assistant","content":"Ba3As4O13 <- BaCO3 + As2O5"}]}
+{"messages":[{"role":"user","content":"synthesize Co0.25Ti0.25Fe0.5Bi1O3"},{"role":"assistant","content":"Co0.25Ti0.25Fe0.5Bi1O3 <- Fe2O3 + Bi2O3 + CoO + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Pr0.296Ca0.704Mn1O3"},{"role":"assistant","content":"Pr0.296Ca0.704Mn1O3 <- MnCO3 + CaCO3 + Pr6O11 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Na1.82Mg1.09P2O7"},{"role":"assistant","content":"Na1.82Mg1.09P2O7 <- (NH4)2HPO4 + NaH2PO4 + Mg(OH)2"}]}
+{"messages":[{"role":"user","content":"synthesize CaMnP2O7"},{"role":"assistant","content":"CaMnP2O7 <- MnO2 + CaCO3 + P2O5"}]}
+{"messages":[{"role":"user","content":"synthesize La0.717Sr0.283Co1O3"},{"role":"assistant","content":"La0.717Sr0.283Co1O3 <- SrCO3 + CoO + La2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ti3.887Hf0.113Ca1Cu3O12"},{"role":"assistant","content":"Ti3.887Hf0.113Ca1Cu3O12 <- TiO2 + HfO2 + CaCO3 + CuO"}]}
+{"messages":[{"role":"user","content":"synthesize Gd3Ga5O12"},{"role":"assistant","content":"Gd3Ga5O12 <- Ga2O3 + Gd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr0.833Ba0.167Ti1O3"},{"role":"assistant","content":"Sr0.833Ba0.167Ti1O3 <- SrTiO3 + BaTiO3"}]}
+{"messages":[{"role":"user","content":"synthesize Al2O3Gd2O3"},{"role":"assistant","content":"Al2O3Gd2O3 <- Al2O3 + Gd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Mn0.6Zn0.4Fe2O4"},{"role":"assistant","content":"Mn0.6Zn0.4Fe2O4 <- MnO2 + ZnO + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Cu2Fe1Sn1.5Ti1.5S8"},{"role":"assistant","content":"Cu2Fe1Sn1.5Ti1.5S8 <- Fe + Sn + Ti + Cu + S"}]}
+{"messages":[{"role":"user","content":"synthesize Sr2AlSbO6"},{"role":"assistant","content":"Sr2AlSbO6 <- SrCO3 + Sb2O5 + Al2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Yb0.42Co4Sb12"},{"role":"assistant","content":"Yb0.42Co4Sb12 <- Co + Sb + Yb"}]}
+{"messages":[{"role":"user","content":"synthesize LaSrCoO4"},{"role":"assistant","content":"LaSrCoO4 <- SrCO3 + La2O3 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Sm1Fe0.5Ni0.5O3"},{"role":"assistant","content":"Sm1Fe0.5Ni0.5O3 <- NiO + Sm2O3 + FeO + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Na2VO3"},{"role":"assistant","content":"Na2VO3 <- VO2 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Mg0.75Zn0.25Ti1O3"},{"role":"assistant","content":"Mg0.75Zn0.25Ti1O3 <- Ti + Zn + Mg + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Eu0.038P2O8Ca1.862Sr1.1"},{"role":"assistant","content":"Eu0.038P2O8Ca1.862Sr1.1 <- CaCO3 + SrCO3 + (NH4)2HPO4 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Tb2.7Ce0.09Eu0.21Al5O12"},{"role":"assistant","content":"Tb2.7Ce0.09Eu0.21Al5O12 <- CeO2 + Al2O3 + Tb4O7 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize K0.47Na0.489Li0.041Nb0.9Ta0.04Sb0.06O3"},{"role":"assistant","content":"K0.47Na0.489Li0.041Nb0.9Ta0.04Sb0.06O3 <- Ta2O5 + Li2CO3 + Na2CO3 + Nb2O5 + K2CO3 + Sb2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Eu0.06Gd1.94WO6"},{"role":"assistant","content":"Eu0.06Gd1.94WO6 <- Gd2O3 + WO3 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Li0.66Ni0.33O"},{"role":"assistant","content":"Li0.66Ni0.33O <- NiO + Li2CO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Y1Fe0.771Mn0.229O3"},{"role":"assistant","content":"Y1Fe0.771Mn0.229O3 <- Mn2O3 + Y2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.9Te0.1MnO"},{"role":"assistant","content":"La0.9Te0.1MnO <- La2O3 + TeO2 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize MnTa2O6"},{"role":"assistant","content":"MnTa2O6 <- Ta2O5 + MnO"}]}
+{"messages":[{"role":"user","content":"synthesize FeTaO4"},{"role":"assistant","content":"FeTaO4 <- Ta2O5 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Y0.08Sr0.92TiO3"},{"role":"assistant","content":"Y0.08Sr0.92TiO3 <- TiO2 + SrCO3 + Y2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.85Ca0.13Y0.02Zr0.1Ti0.9O3"},{"role":"assistant","content":"Ba0.85Ca0.13Y0.02Zr0.1Ti0.9O3 <- Y2O3 + CaCO3 + TiO2 + BaCO3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Li2AlZr(PO4)3"},{"role":"assistant","content":"Li2AlZr(PO4)3 <- Li2CO3 + (NH4)2HPO4 + ZrO2 + Al2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ni0.5Ti0.5NbO4"},{"role":"assistant","content":"Ni0.5Ti0.5NbO4 <- NiO + Nb2O5 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.96Na0.04Cu3Ti4O12"},{"role":"assistant","content":"Ca0.96Na0.04Cu3Ti4O12 <- CuO + CaCO3 + TiO2 + Na2CO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi(Mg0.5Zr0.5)O3"},{"role":"assistant","content":"Bi(Mg0.5Zr0.5)O3 <- MgO + Bi2O3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ti2.85Zr0.15Li2Zn1O8"},{"role":"assistant","content":"Ti2.85Zr0.15Li2Zn1O8 <- TiO2 + Li2CO3 + ZrO2 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1.5Ca0.5CuO"},{"role":"assistant","content":"Ba1.5Ca0.5CuO <- BaCO3 + CaCO3 + CuO"}]}
+{"messages":[{"role":"user","content":"synthesize Bi4Sr14Fe24O56"},{"role":"assistant","content":"Bi4Sr14Fe24O56 <- Bi2O3 + SrO + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Pb3(VO4)2"},{"role":"assistant","content":"Pb3(VO4)2 <- PbO + NH4VO3"}]}
+{"messages":[{"role":"user","content":"synthesize BaCe0.90Y0.10O3"},{"role":"assistant","content":"BaCe0.90Y0.10O3 <- BaCO3 + CeO2 + Y2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Nb2Pd0.81S5"},{"role":"assistant","content":"Nb2Pd0.81S5 <- Pd + S + Nb"}]}
+{"messages":[{"role":"user","content":"synthesize La3Ga5SnO14"},{"role":"assistant","content":"La3Ga5SnO14 <- La2O3 + SnO2 + Ga2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba4Mn3O10"},{"role":"assistant","content":"Ba4Mn3O10 <- BaCO3 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Nd1.57Ce2.56Sr3.87CuO12.08"},{"role":"assistant","content":"Nd1.57Ce2.56Sr3.87CuO12.08 <- SrCO3 + Nd2O3 + CuO + CeO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba4Eu2Fe2Ta8O30"},{"role":"assistant","content":"Ba4Eu2Fe2Ta8O30 <- Ta2O5 + Fe2O3 + BaCO3 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sm0.02Sr0.97TiO3"},{"role":"assistant","content":"Sm0.02Sr0.97TiO3 <- SrCO3 + Sm2O3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Nd0.333Nb1O3"},{"role":"assistant","content":"Nd0.333Nb1O3 <- Nd2O3 + Nb2O5"}]}
+{"messages":[{"role":"user","content":"synthesize NaBa2Ta5O15"},{"role":"assistant","content":"NaBa2Ta5O15 <- BaCO3 + Ta2O5 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize CaErAlO4"},{"role":"assistant","content":"CaErAlO4 <- CaCO3 + Er2O3 + Al2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr5.574Nb2.426O11.639"},{"role":"assistant","content":"Sr5.574Nb2.426O11.639 <- SrCO3 + Nb2O5"}]}
+{"messages":[{"role":"user","content":"synthesize TbMn2O5"},{"role":"assistant","content":"TbMn2O5 <- Tb4O7 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Li2CoSiO4"},{"role":"assistant","content":"Li2CoSiO4 <- Li2SiO3 + CoCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Mn0.7Zn0.2Fe2.1O4"},{"role":"assistant","content":"Mn0.7Zn0.2Fe2.1O4 <- Mn3O4 + ZnO + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.985Sr0.015Ti0.98Zr0.02O3"},{"role":"assistant","content":"Ba0.985Sr0.015Ti0.98Zr0.02O3 <- SrCO3 + BaCO3 + TiO2 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ge0.55Pb0.45Te0.533Se0.467"},{"role":"assistant","content":"Ge0.55Pb0.45Te0.533Se0.467 <- Se + Ge + Te + Pb"}]}
+{"messages":[{"role":"user","content":"synthesize Ag0.96Li0.04NbO3"},{"role":"assistant","content":"Ag0.96Li0.04NbO3 <- Ag2O + Li2CO3 + Nb2O5"}]}
+{"messages":[{"role":"user","content":"synthesize La0.4Pr0.1Ca0.5MnO3"},{"role":"assistant","content":"La0.4Pr0.1Ca0.5MnO3 <- CaCO3 + La2O3 + MnO2 + Pr2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi4(TiO4)3"},{"role":"assistant","content":"Bi4(TiO4)3 <- TiO2 + Bi2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Zn0.3Mg0.74Zr0.04Fe1.92O4"},{"role":"assistant","content":"Zn0.3Mg0.74Zr0.04Fe1.92O4 <- MgO + ZrO2 + ZnO + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Na0.25K0.25Bi0.5Ti1O3"},{"role":"assistant","content":"Na0.25K0.25Bi0.5Ti1O3 <- Bi2O3 + Na2CO3 + K2CO3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Fe1.25Sb1Bi1.75O7"},{"role":"assistant","content":"Fe1.25Sb1Bi1.75O7 <- Bi2O3 + Sb2O4 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Co1.872Fe0.128Ge1"},{"role":"assistant","content":"Co1.872Fe0.128Ge1 <- Ge + Co + Fe"}]}
+{"messages":[{"role":"user","content":"synthesize GeSe1.4Sn0.6"},{"role":"assistant","content":"GeSe1.4Sn0.6 <- Se + Ge + Sn"}]}
+{"messages":[{"role":"user","content":"synthesize Sr1Mo0.95Ni0.05O4"},{"role":"assistant","content":"Sr1Mo0.95Ni0.05O4 <- SrCO3 + MoO3 + Ni + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Li3Ni2BiO6"},{"role":"assistant","content":"Li3Ni2BiO6 <- NiO + Li2CO3 + Bi2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize BaSn0.75Y0.25O3"},{"role":"assistant","content":"BaSn0.75Y0.25O3 <- SnO2 + BaCO3 + Y2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Sr3CuNb2O9"},{"role":"assistant","content":"Sr3CuNb2O9 <- CuO + Nb2O5 + SrCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Na0.5La0.5Bi7.985Sm0.015Ti7O27"},{"role":"assistant","content":"Na0.5La0.5Bi7.985Sm0.015Ti7O27 <- La2O3 + Bi2O3 + Na2CO3 + Sm2O3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ni0.7Cu0.3La1Sr1Ta1O1"},{"role":"assistant","content":"Ni0.7Cu0.3La1Sr1Ta1O1 <- CuO + Ta2O5 + SrCO3 + La2O3 + NiO"}]}
+{"messages":[{"role":"user","content":"synthesize Pb(Zr0.50Ti0.50)O3"},{"role":"assistant","content":"Pb(Zr0.50Ti0.50)O3 <- PbO + TiO2 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize (Mg0.4Zn0.6)2SiO4"},{"role":"assistant","content":"(Mg0.4Zn0.6)2SiO4 <- MgO + ZnO + SiO2"}]}
+{"messages":[{"role":"user","content":"synthesize CaCo1.86As2"},{"role":"assistant","content":"CaCo1.86As2 <- As + Ca + Co"}]}
+{"messages":[{"role":"user","content":"synthesize Zn0.25Zr0.25Ni0.5W0.5Nb0.5O4"},{"role":"assistant","content":"Zn0.25Zr0.25Ni0.5W0.5Nb0.5O4 <- NiO + ZnO + WO3 + Nb2O5 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Y2Si2O7"},{"role":"assistant","content":"Y2Si2O7 <- SiO2 + Y2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr2CaMoO6"},{"role":"assistant","content":"Sr2CaMoO6 <- SrCO3 + CaCO3 + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize P2O9.0Na3V2F2.0"},{"role":"assistant","content":"P2O9.0Na3V2F2.0 <- NaF + Na2CO3 + V2O5 + NH4H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.8Sr0.2RuO3"},{"role":"assistant","content":"Ba0.8Sr0.2RuO3 <- SrCO3 + BaCO3 + RuO2"}]}
+{"messages":[{"role":"user","content":"synthesize Y0.75In0.25Ba1Co3Zn1O7"},{"role":"assistant","content":"Y0.75In0.25Ba1Co3Zn1O7 <- Y2O3 + ZnO + In2O3 + BaCO3 + Co3O4"}]}
+{"messages":[{"role":"user","content":"synthesize Cu2Y2O5"},{"role":"assistant","content":"Cu2Y2O5 <- Y2O3 + Cu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.875Pb0.175FeO3"},{"role":"assistant","content":"Bi0.875Pb0.175FeO3 <- PbO + Bi2O3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba3Ru2NaO9"},{"role":"assistant","content":"Ba3Ru2NaO9 <- BaCO3 + RuO2 + Na2CO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize BiMn0.9Fe2.1O6"},{"role":"assistant","content":"BiMn0.9Fe2.1O6 <- Mn2O3 + Bi2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La1.9Sr0.1Mo2O9"},{"role":"assistant","content":"La1.9Sr0.1Mo2O9 <- SrCO3 + La2O3 + MoO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Pb0.97La0.02(Zr0.56Sn0.35Ti0.09)O3"},{"role":"assistant","content":"Pb0.97La0.02(Zr0.56Sn0.35Ti0.09)O3 <- La2O3 + SnO2 + PbO + TiO2 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ni0.6Zn0.4Cr0.125Fe1.875O4"},{"role":"assistant","content":"Ni0.6Zn0.4Cr0.125Fe1.875O4 <- NiO + Cr2O3 + ZnO + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize SrCr2As2"},{"role":"assistant","content":"SrCr2As2 <- As + Cr + Sr"}]}
+{"messages":[{"role":"user","content":"synthesize Ba2InTaO6"},{"role":"assistant","content":"Ba2InTaO6 <- BaCO3 + In2O3 + Ta2O5"}]}
+{"messages":[{"role":"user","content":"synthesize Sr2Fe0.7Ga0.3Mo1O6"},{"role":"assistant","content":"Sr2Fe0.7Ga0.3Mo1O6 <- SrCO3 + MoO3 + Ga2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr0.408Ba0.592Nb2O6"},{"role":"assistant","content":"Sr0.408Ba0.592Nb2O6 <- SrCO3 + BaCO3 + Nb2O5"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.95K0.05Fe0.882Ti0.118O3"},{"role":"assistant","content":"Bi0.95K0.05Fe0.882Ti0.118O3 <- TiO2 + K2CO3 + Bi2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize ErBiW2O9"},{"role":"assistant","content":"ErBiW2O9 <- Bi2O3 + Er2O3 + WO3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr3Fe2O6"},{"role":"assistant","content":"Sr3Fe2O6 <- SrCO3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr2Fe0.5Co0.5Nb1O6"},{"role":"assistant","content":"Sr2Fe0.5Co0.5Nb1O6 <- SrCO3 + Nb2O5 + Co3O4 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Gd0.2Ce0.8O2"},{"role":"assistant","content":"Gd0.2Ce0.8O2 <- CeO2 + Gd2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ce0.85Y0.15V1O4"},{"role":"assistant","content":"Ce0.85Y0.15V1O4 <- CeO2 + Y2O3 + V2O5"}]}
+{"messages":[{"role":"user","content":"synthesize La1Sr3Fe1.3Co1.3Ga0.4O10"},{"role":"assistant","content":"La1Sr3Fe1.3Co1.3Ga0.4O10 <- SrCO3 + La2O3 + Ga2O3 + Fe2O3 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Mg0.5Mo0.5Pb1O3"},{"role":"assistant","content":"Mg0.5Mo0.5Pb1O3 <- PbO + MoO3 + MgCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr3Al2O6"},{"role":"assistant","content":"Sr3Al2O6 <- SrCO3 + Al2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La1.35Sr0.65Cu0.5Fe0.5O1"},{"role":"assistant","content":"La1.35Sr0.65Cu0.5Fe0.5O1 <- SrCO3 + CuO + La2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize In1.7Eu0.3Mg1O4"},{"role":"assistant","content":"In1.7Eu0.3Mg1O4 <- MgO + In2O3 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La8Y2(GeO4)6O3"},{"role":"assistant","content":"La8Y2(GeO4)6O3 <- La2O3 + Y2O3 + GeO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.91Pr0.06Ti0.95Sn0.05O3"},{"role":"assistant","content":"Ba0.91Pr0.06Ti0.95Sn0.05O3 <- TiO2 + BaCO3 + Pr6O11 + SnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ca5Sm2Ti5Nb4O28"},{"role":"assistant","content":"Ca5Sm2Ti5Nb4O28 <- CaCO3 + Nb2O5 + Sm2O3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.4Sb1.6Te3.5"},{"role":"assistant","content":"Bi0.4Sb1.6Te3.5 <- Bi + Sb + Te"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.7Pr0.3Fe1O3"},{"role":"assistant","content":"Bi0.7Pr0.3Fe1O3 <- Pr6O11 + Bi2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.2Sr0.3Ca0.4Ti1O3"},{"role":"assistant","content":"La0.2Sr0.3Ca0.4Ti1O3 <- SrCO3 + TiO2 + La2O3 + CaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Al86Ni8Y6"},{"role":"assistant","content":"Al86Ni8Y6 <- Y + Al + Ni"}]}
+{"messages":[{"role":"user","content":"synthesize RbNdNb2O7"},{"role":"assistant","content":"RbNdNb2O7 <- Nd2O3 + Rb2CO3 + Nb2O5"}]}
+{"messages":[{"role":"user","content":"synthesize Sr2.0Ba2.0Mn3O10"},{"role":"assistant","content":"Sr2.0Ba2.0Mn3O10 <- SrCO3 + BaCO3 + Mn2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1.6Sr0.4CuO"},{"role":"assistant","content":"Ba1.6Sr0.4CuO <- SrCO3 + BaCO3 + CuO"}]}
+{"messages":[{"role":"user","content":"synthesize BaZr(PO4)2"},{"role":"assistant","content":"BaZr(PO4)2 <- BaCO3 + ZrO2 + NH4H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize Cs2S3"},{"role":"assistant","content":"Cs2S3 <- Cs + S"}]}
+{"messages":[{"role":"user","content":"synthesize La1Mn0.6Ga0.4O3"},{"role":"assistant","content":"La1Mn0.6Ga0.4O3 <- MnCO3 + La2O3 + Ga2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize La0.75Pb0.25Mn1O3"},{"role":"assistant","content":"La0.75Pb0.25Mn1O3 <- PbO + Mn3O4 + La2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.6La0.267TiO3"},{"role":"assistant","content":"Ca0.6La0.267TiO3 <- La2O3 + CaCO3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Na0.507K0.452Li0.058Nb1O3"},{"role":"assistant","content":"Na0.507K0.452Li0.058Nb1O3 <- Li2CO3 + Na2CO3 + Nb2O5 + K2CO3"}]}
+{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: Co0.5Ti0.5La1O3"},{"role":"assistant","content":"Co0.5Ti0.5La1O3 <- TiO2 + CoO + La2O3\nCo0.5Ti0.5La1O3 <- TiO2 + CoCO3 + La2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Tl0.9Bi0.1Sr1.8Ti0.2Ca0.9Cu2O7"},{"role":"assistant","content":"Tl0.9Bi0.1Sr1.8Ti0.2Ca0.9Cu2O7 <- SrCO3 + Tl2O3 + Ti2O3 + Bi2O3 + CuO + CaO + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2Sr2Ca0.918Ce0.082Cu2O8"},{"role":"assistant","content":"Bi2Sr2Ca0.918Ce0.082Cu2O8 <- SrCO3 + Bi2O3 + CeO2 + CuO + CaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.95Sr0.05Al2O4"},{"role":"assistant","content":"Ba0.95Sr0.05Al2O4 <- SrCO3 + BaCO3 + Al2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.9Sr0.1Ga1O3"},{"role":"assistant","content":"La0.9Sr0.1Ga1O3 <- SrCO3 + La2O3 + Ga2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize BaSn0.96Sb0.04O3"},{"role":"assistant","content":"BaSn0.96Sb0.04O3 <- SnO2 + BaCO3 + Sb2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize SrBi2B2O7"},{"role":"assistant","content":"SrBi2B2O7 <- SrCO3 + Bi2O3 + B2O3"}]}
+{"messages":[{"role":"user","content":"synthesize SrIn2O4"},{"role":"assistant","content":"SrIn2O4 <- SrCO3 + In2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Li2CrO4"},{"role":"assistant","content":"Li2CrO4 <- Li2CO3 + CrO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba4Gd2Fe2Nb3.0Ta5.0O30"},{"role":"assistant","content":"Ba4Gd2Fe2Nb3.0Ta5.0O30 <- Ta2O5 + Gd2O3 + Fe2O3 + Nb2O5 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.888La0.112Fe1O3"},{"role":"assistant","content":"Bi0.888La0.112Fe1O3 <- Bi2O3 + La2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize GaTaO4"},{"role":"assistant","content":"GaTaO4 <- Ta2O5 + Ga2O3"}]}
+{"messages":[{"role":"user","content":"synthesize ErCo0.50Mn0.50O3"},{"role":"assistant","content":"ErCo0.50Mn0.50O3 <- MnO + Er2O3 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize La0.25Sr0.75Mn1O1"},{"role":"assistant","content":"La0.25Sr0.75Mn1O1 <- SrCO3 + La2O3 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.011Sr0.989Ga2O4"},{"role":"assistant","content":"Bi0.011Sr0.989Ga2O4 <- Bi2O3 + Sr2CO3 + Ga2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Li1Ni0.333Mn0.333Co0.333O2"},{"role":"assistant","content":"Li1Ni0.333Mn0.333Co0.333O2 <- NiCO3 + LiOH + Co(OH)2 + MnO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Sr0.6Ba0.4Nb2O6"},{"role":"assistant","content":"Sr0.6Ba0.4Nb2O6 <- SrCO3 + BaCO3 + Nb2O5"}]}
+{"messages":[{"role":"user","content":"synthesize Na1Y0.45Gd0.55F4"},{"role":"assistant","content":"Na1Y0.45Gd0.55F4 <- GdF3 + NaF + YF3"}]}
+{"messages":[{"role":"user","content":"synthesize Pr1.55Sr0.45Mn1O4"},{"role":"assistant","content":"Pr1.55Sr0.45Mn1O4 <- SrCO3 + Pr6O11 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi1.7Pb0.3Ca2Sr2Cu3O10"},{"role":"assistant","content":"Bi1.7Pb0.3Ca2Sr2Cu3O10 <- SrCO3 + Bi2O3 + CuO + CaCO3 + PbO + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Na0.5Bi2.5Ta2O9"},{"role":"assistant","content":"Na0.5Bi2.5Ta2O9 <- Ta2O5 + Bi2O3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Cu60Zr30Ti10"},{"role":"assistant","content":"Cu60Zr30Ti10 <- Cu + Zr + Ti"}]}
+{"messages":[{"role":"user","content":"synthesize Ni0.35Mn0.25Zn0.4Fe2O4"},{"role":"assistant","content":"Ni0.35Mn0.25Zn0.4Fe2O4 <- NiO + MnCO3 + ZnO + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.9Sr0.1Cu1Si2O6"},{"role":"assistant","content":"Ba0.9Sr0.1Cu1Si2O6 <- SrCO3 + BaCO3 + SiO2 + CuO"}]}
+{"messages":[{"role":"user","content":"synthesize Li2.538Si1"},{"role":"assistant","content":"Li2.538Si1 <- Si + Li"}]}
+{"messages":[{"role":"user","content":"synthesize Ce0.975Ti2O6"},{"role":"assistant","content":"Ce0.975Ti2O6 <- TiO2 + CeO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ag5Pb2O6"},{"role":"assistant","content":"Ag5Pb2O6 <- PbO + Ag2O + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Eu0.475Na3Y0.525Si3O9"},{"role":"assistant","content":"Eu0.475Na3Y0.525Si3O9 <- SiO2 + Eu2O3 + Y2O3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ce0.9Hf0.1O2"},{"role":"assistant","content":"Ce0.9Hf0.1O2 <- HfO2 + CeO2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi1.7Pb0.3Sr1.9La0.1Cu1O6"},{"role":"assistant","content":"Bi1.7Pb0.3Sr1.9La0.1Cu1O6 <- SrCO3 + La2O3 + Bi2O3 + CuO + PbO"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2Sr2Nb2TiO12"},{"role":"assistant","content":"Bi2Sr2Nb2TiO12 <- SrCO3 + Bi2O3 + Nb2O5 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Sm1.95Ca0.05Sc1Ta1O7"},{"role":"assistant","content":"Sm1.95Ca0.05Sc1Ta1O7 <- Ta2O5 + Sm2O3 + CaO + Sc2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2NdO4Cl"},{"role":"assistant","content":"Bi2NdO4Cl <- BiOCl + Bi2O3 + Nd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba3Ce0.036Tb0.378P4O13"},{"role":"assistant","content":"Ba3Ce0.036Tb0.378P4O13 <- BaCO3 + CeO2 + Tb4O7 + NH4H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize RuAl"},{"role":"assistant","content":"RuAl <- Al + Ru"}]}
+{"messages":[{"role":"user","content":"synthesize Mn1.25Ni0.75Co0.557Mg0.443O4"},{"role":"assistant","content":"Mn1.25Ni0.75Co0.557Mg0.443O4 <- Co2O3 + Ni2O3 + Mn2O3 + MgO"}]}
+{"messages":[{"role":"user","content":"synthesize Pr0.5Sr0.5Co0.5Fe0.5O3"},{"role":"assistant","content":"Pr0.5Sr0.5Co0.5Fe0.5O3 <- SrCO3 + Pr6O11 + Co3O4 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Na6AlP3O12"},{"role":"assistant","content":"Na6AlP3O12 <- Al2O3 + Na2CO3 + NH4H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize La0.1Sr0.9Co0.8Fe0.2O3"},{"role":"assistant","content":"La0.1Sr0.9Co0.8Fe0.2O3 <- SrCO3 + La2O3 + Fe2O3 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi3Sr2Ca2Cu3O10"},{"role":"assistant","content":"Bi3Sr2Ca2Cu3O10 <- SrCO3 + CaCO3 + CuO + Bi2O3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.4Sr0.6FeO3"},{"role":"assistant","content":"La0.4Sr0.6FeO3 <- SrCO3 + La2O3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize La0.6Ca0.3Pb0.1MnO3"},{"role":"assistant","content":"La0.6Ca0.3Pb0.1MnO3 <- PbCO3 + CaCO3 + La2O3 + MnO2"}]}
+{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: Bi2Sr2CoO6"},{"role":"assistant","content":"Bi2Sr2CoO6 <- SrCO3 + Bi2O3 + Co3O4\nBi2Sr2CoO6 <- SrCO3 + Bi2O3 + Co2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Gd0.6Sr0.4Co1O3"},{"role":"assistant","content":"Gd0.6Sr0.4Co1O3 <- SrCO3 + Co3O4 + Gd2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.7Y0.2Ba0.1Fe0.95Co0.03O3"},{"role":"assistant","content":"Bi0.7Y0.2Ba0.1Fe0.95Co0.03O3 <- Bi2O3 + Y2O3 + Fe2O3 + Co2O3 + BaCO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Cs2CaP2O7"},{"role":"assistant","content":"Cs2CaP2O7 <- CaCO3 + (NH4)2HPO4 + Cs2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Li6.75La3Zr1.75Nb0.25O12"},{"role":"assistant","content":"Li6.75La3Zr1.75Nb0.25O12 <- Li2CO3 + La2O3 + Nb2O5 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize CeZn3"},{"role":"assistant","content":"CeZn3 <- Zn + Ce"}]}
+{"messages":[{"role":"user","content":"synthesize Sr2Bi3.84Nd0.16Ti5O18"},{"role":"assistant","content":"Sr2Bi3.84Nd0.16Ti5O18 <- SrCO3 + Bi2O3 + Nd2O3 + TiO2"}]}
+{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: BaMgAl10O17"},{"role":"assistant","content":"BaMgAl10O17 <- MgO + Al2O3 + BaCO3\nBaMgAl10O17 <- BaCO3 + Al2O3 + Mg(OH)2"}]}
+{"messages":[{"role":"user","content":"synthesize Mg0.9Ti0.1NiAl0.05Pd0.1"},{"role":"assistant","content":"Mg0.9Ti0.1NiAl0.05Pd0.1 <- Al + Ni + Pd + Mg + Ti"}]}
+{"messages":[{"role":"user","content":"synthesize La4Ni3O10"},{"role":"assistant","content":"La4Ni3O10 <- NiO + La2O3 + O2"}]}
+{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: NaBi(WO4)2"},{"role":"assistant","content":"NaBi(WO4)2 <- WO3 + Bi2O3 + NaCO3\nNaBi(WO4)2 <- WO3 + Bi2O3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize RuSr2Gd1.5Ce0.5Cu2O10"},{"role":"assistant","content":"RuSr2Gd1.5Ce0.5Cu2O10 <- CeO2 + Gd2O3 + CuO + SrO2 + RuO2"}]}
+{"messages":[{"role":"user","content":"synthesize Eu0.03Li1Sr0.92Y0.05P1O4"},{"role":"assistant","content":"Eu0.03Li1Sr0.92Y0.05P1O4 <- SrCO3 + Li2CO3 + Y2O3 + NH4H2PO4 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize KTa0.5Nb0.5O3"},{"role":"assistant","content":"KTa0.5Nb0.5O3 <- Ta2O5 + Nb2O5 + K2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.5Sr0.5Bi4Ti4O15"},{"role":"assistant","content":"Ca0.5Sr0.5Bi4Ti4O15 <- SrCO3 + TiO2 + Bi2O3 + CaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.9Ba0.1Cr1O3"},{"role":"assistant","content":"La0.9Ba0.1Cr1O3 <- La2O3 + Cr2O3 + BaCO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize La2Mo1.4W0.6O9"},{"role":"assistant","content":"La2Mo1.4W0.6O9 <- WO3 + La2O3 + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize Mn0.45Ni0.05Zn0.50Fe2O4"},{"role":"assistant","content":"Mn0.45Ni0.05Zn0.50Fe2O4 <- NiO + ZnO + Fe2O3 + MnCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ho2MgZrO6"},{"role":"assistant","content":"Ho2MgZrO6 <- MgO + ZrO2 + Ho2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Y1.95Fe0.05O3"},{"role":"assistant","content":"Y1.95Fe0.05O3 <- Fe2O3 + Y2O3"}]}
+{"messages":[{"role":"user","content":"synthesize In35Sb45Se11.25Te8.75"},{"role":"assistant","content":"In35Sb45Se11.25Te8.75 <- In + Sb + Se + Te"}]}
+{"messages":[{"role":"user","content":"synthesize Ru0.774Pb0.226Sr2Gd1.4Ce0.6Cu2O10"},{"role":"assistant","content":"Ru0.774Pb0.226Sr2Gd1.4Ce0.6Cu2O10 <- SrCO3 + CeO2 + Gd2O3 + CuO + PbO + RuO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ni0.75Cd0.2Cu0.05Fe2O4"},{"role":"assistant","content":"Ni0.75Cd0.2Cu0.05Fe2O4 <- NiO + CdO + CuO + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Mo0.5W0.5Sr2Mg1O6"},{"role":"assistant","content":"Mo0.5W0.5Sr2Mg1O6 <- SrCO3 + MgO + W + MoO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ca1Cu2.68Ti3.68Fe0.64O12"},{"role":"assistant","content":"Ca1Cu2.68Ti3.68Fe0.64O12 <- CuO + CaCO3 + TiO2 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize LiCo0.9Ga0.1O2"},{"role":"assistant","content":"LiCo0.9Ga0.1O2 <- Ga2O3 + Li2O3 + Co3O4"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.88La0.12Fe1O3"},{"role":"assistant","content":"Bi0.88La0.12Fe1O3 <- La2O3 + Bi2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1.9Sr0.1CuO"},{"role":"assistant","content":"Ba1.9Sr0.1CuO <- SrCO3 + BaCO3 + CuO"}]}
+{"messages":[{"role":"user","content":"synthesize Zn2V2O7"},{"role":"assistant","content":"Zn2V2O7 <- V2O5 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize Cu1.878Zn0.122Ca1O3"},{"role":"assistant","content":"Cu1.878Zn0.122Ca1O3 <- CuO + CaCO3 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize La2.97Ho0.03Ga5SiO14"},{"role":"assistant","content":"La2.97Ho0.03Ga5SiO14 <- SiO2 + La2O3 + Ga2O3 + Ho2O3"}]}
+{"messages":[{"role":"user","content":"synthesize (K0.5Na0.5)0.985La0.005NbO3"},{"role":"assistant","content":"(K0.5Na0.5)0.985La0.005NbO3 <- K2CO3 + Nb2O5 + La2O3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"provide 6 synthesis plans for target: Li7La3Zr2O12"},{"role":"assistant","content":"Li7La3Zr2O12 <- Li2CO3 + La2O3 + ZrO2\nLi7La3Zr2O12 <- La(OH)3 + ZrO2 + Li2CO3\nLi7La3Zr2O12 <- Li2O + La2O3 + ZrO2\nLi7La3Zr2O12 <- LiOH + La2O3 + ZrO2\nLi7La3Zr2O12 <- La2O3 + LiCO3 + ZrO2\nLi7La3Zr2O12 <- La(OH)3 + LiOH + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba3La0.9Tb0.1(PO4)3"},{"role":"assistant","content":"Ba3La0.9Tb0.1(PO4)3 <- La2O3 + Tb4O7 + NH4H2PO4 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.61Nd0.26Ti0.65Al0.465O3"},{"role":"assistant","content":"Ca0.61Nd0.26Ti0.65Al0.465O3 <- Al2O3 + Nd2O3 + CaCO3 + TiO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Pb0.95Sr0.05Li0.25La0.25Mo0.5O3"},{"role":"assistant","content":"Pb0.95Sr0.05Li0.25La0.25Mo0.5O3 <- SrCO3 + Li2CO3 + La2O3 + PbO + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize BaCo0.7Fe0.2Ta0.1O3"},{"role":"assistant","content":"BaCo0.7Fe0.2Ta0.1O3 <- Co2O3 + BaCO3 + Ta2O5 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Gd1Ba0.5Sr0.5Co1.0Fe1.0O5"},{"role":"assistant","content":"Gd1Ba0.5Sr0.5Co1.0Fe1.0O5 <- SrCO3 + Gd2O3 + Fe2O3 + BaCO3 + Co3O4"}]}
+{"messages":[{"role":"user","content":"synthesize Co1.5Fe1.5O4"},{"role":"assistant","content":"Co1.5Fe1.5O4 <- Co3O4 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca3.1Cu0.9MnO6"},{"role":"assistant","content":"Ca3.1Cu0.9MnO6 <- CuO + CaCO3 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Zr0.5Ce0.5O2"},{"role":"assistant","content":"Zr0.5Ce0.5O2 <- CeO2 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize SrAl1.5Fe0.5O4"},{"role":"assistant","content":"SrAl1.5Fe0.5O4 <- SrCO3 + Al2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.5Sr0.5Mo1O4"},{"role":"assistant","content":"Ca0.5Sr0.5Mo1O4 <- SrCO3 + CaCO3 + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.7Sr0.3FeO3"},{"role":"assistant","content":"La0.7Sr0.3FeO3 <- SrCO3 + La2O3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Sr1Ti0.955Nb0.045O3"},{"role":"assistant","content":"Sr1Ti0.955Nb0.045O3 <- SrCO3 + Nb2O5 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize La1.75Sr0.25CoO4"},{"role":"assistant","content":"La1.75Sr0.25CoO4 <- SrCO3 + La2O3 + Co3O4"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1.99Eu0.01Ca(BO3)2"},{"role":"assistant","content":"Ba1.99Eu0.01Ca(BO3)2 <- CaCO3 + B2O3 + BaCO3 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sm0.057Y5.943W1O6"},{"role":"assistant","content":"Sm0.057Y5.943W1O6 <- WO3 + Sm2O3 + Y2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sn1Se0.019Ag2S1"},{"role":"assistant","content":"Sn1Se0.019Ag2S1 <- Ag2S + Sn + Se"}]}
+{"messages":[{"role":"user","content":"synthesize Sr0.983Sm0.017Ti1O3"},{"role":"assistant","content":"Sr0.983Sm0.017Ti1O3 <- SrCO3 + Sm2O3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Li0.5Na1.5WO4"},{"role":"assistant","content":"Li0.5Na1.5WO4 <- WO3 + Li2CO3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Tm0.822Y1.178O3"},{"role":"assistant","content":"Tm0.822Y1.178O3 <- Y2O3 + Tm2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca2.95Eu0.05Co4O9"},{"role":"assistant","content":"Ca2.95Eu0.05Co4O9 <- CaCO3 + Eu2O3 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Cu1Cr0.867Rh0.133O2"},{"role":"assistant","content":"Cu1Cr0.867Rh0.133O2 <- Rh2O3 + Cu2O + Cr2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Li1Sn0.006Mn1.988O4"},{"role":"assistant","content":"Li1Sn0.006Mn1.988O4 <- Li2CO3 + SnO + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ni0.9Zn0.1Fe1.98O4"},{"role":"assistant","content":"Ni0.9Zn0.1Fe1.98O4 <- NiO + ZnO + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: Na3V2(PO4)2F3"},{"role":"assistant","content":"Na3V2(PO4)2F3 <- NaF + NH4VO3 + NH4H2PO4\nNa3V2(PO4)2F3 <- NaF + V2O5 + NH4H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize LiYO2"},{"role":"assistant","content":"LiYO2 <- Li2CO3 + Y2O3"}]}
+{"messages":[{"role":"user","content":"synthesize K0.48Na0.52Mo0.006Sr0.002Nb0.992O3"},{"role":"assistant","content":"K0.48Na0.52Mo0.006Sr0.002Nb0.992O3 <- SrCO3 + Na2CO3 + K2CO3 + Nb2O5 + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize NaInO2"},{"role":"assistant","content":"NaInO2 <- In2O3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr4(Sr1.92Ta2.08)O11.12"},{"role":"assistant","content":"Sr4(Sr1.92Ta2.08)O11.12 <- SrCO3 + Ta2O5"}]}
+{"messages":[{"role":"user","content":"synthesize P3O12Li1.275Al0.275Ti1.725"},{"role":"assistant","content":"P3O12Li1.275Al0.275Ti1.725 <- Li2CO3 + Al2O3 + (NH4)H2PO4 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize BaBiO"},{"role":"assistant","content":"BaBiO <- Bi2O3 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba2SmCu3O6"},{"role":"assistant","content":"Ba2SmCu3O6 <- CuO + Sm2O3 + BaCO3"}]}
+{"messages":[{"role":"user","content":"provide 6 synthesis plans for target: LiCoPO4"},{"role":"assistant","content":"LiCoPO4 <- LiH2PO4 + CoO\nLiCoPO4 <- Li2CO3 + (NH4)2HPO4 + Co3O4\nLiCoPO4 <- LiH2PO4 + Co(OH)2\nLiCoPO4 <- Li2CO3 + CoO + (NH4)2HPO4\nLiCoPO4 <- Li2CO3 + Co2(C2O4)3 + NH4H2PO4 + O2\nLiCoPO4 <- Li2CO3 + CoC2O4 + (NH4)2HPO4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Y0.75Sr0.25Mn0.75Cr0.25O3"},{"role":"assistant","content":"Y0.75Sr0.25Mn0.75Cr0.25O3 <- SrCO3 + Cr2O3 + Y2O3 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Na0.5Bi0.5Cu3Ti4O12"},{"role":"assistant","content":"Na0.5Bi0.5Cu3Ti4O12 <- TiO2 + CuO + Bi2O3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1Ti0.912Sn0.088O3"},{"role":"assistant","content":"Ba1Ti0.912Sn0.088O3 <- TiO2 + BaCO3 + SnO2"}]}
+{"messages":[{"role":"user","content":"synthesize BiSbO4"},{"role":"assistant","content":"BiSbO4 <- Sb2O3 + Bi2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Na2Co2TeO6"},{"role":"assistant","content":"Na2Co2TeO6 <- Na2CO3 + Co3O4 + TeO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Zr0.025Ti0.975Ba0.985La0.01O3"},{"role":"assistant","content":"Zr0.025Ti0.975Ba0.985La0.01O3 <- TiO2 + BaCO3 + La2O3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Sr0.466Ba0.534Nb2O6"},{"role":"assistant","content":"Sr0.466Ba0.534Nb2O6 <- SrCO3 + Nb2O5 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize (Ba0.7Ca0.3)TiO3"},{"role":"assistant","content":"(Ba0.7Ca0.3)TiO3 <- CaCO3 + TiO2 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr2Cu0.9975Mn0.0025O3"},{"role":"assistant","content":"Sr2Cu0.9975Mn0.0025O3 <- SrCO3 + CuO + MnO"}]}
+{"messages":[{"role":"user","content":"synthesize Bi1.85Pb0.35Sr1.90Ca2.05Cu3.05O"},{"role":"assistant","content":"Bi1.85Pb0.35Sr1.90Ca2.05Cu3.05O <- SrCO3 + Bi2O3 + CuO + CaCO3 + PbO"}]}
+{"messages":[{"role":"user","content":"synthesize Nd0.75Sr0.25Co1O3"},{"role":"assistant","content":"Nd0.75Sr0.25Co1O3 <- SrCO3 + Nd2O3 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Zn0.92Mn0.08S1"},{"role":"assistant","content":"Zn0.92Mn0.08S1 <- ZnS + MnS"}]}
+{"messages":[{"role":"user","content":"synthesize Y1.0Sm1.0Cu0.9Co0.1Ba1O5"},{"role":"assistant","content":"Y1.0Sm1.0Cu0.9Co0.1Ba1O5 <- Y2O3 + CuO + Sm2O3 + CoO + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca1.47Ba3.53La1Ti3Ta7O30"},{"role":"assistant","content":"Ca1.47Ba3.53La1Ti3Ta7O30 <- Ta2O5 + La2O3 + CaCO3 + TiO2 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ce0.95Yb0.04Er0.01O2"},{"role":"assistant","content":"Ce0.95Yb0.04Er0.01O2 <- CeO2 + Yb2O3 + Er2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.937Pr0.063Fe0.937Ti0.063O3"},{"role":"assistant","content":"Bi0.937Pr0.063Fe0.937Ti0.063O3 <- TiO2 + Pr6O11 + Bi2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize BaIn0.5Sn0.5O2.75"},{"role":"assistant","content":"BaIn0.5Sn0.5O2.75 <- SnO2 + BaCO3 + In2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba(Sn0.1(MgNb2)0.3)O3"},{"role":"assistant","content":"Ba(Sn0.1(MgNb2)0.3)O3 <- SnO2 + BaCO3 + MgO + Nb2O5"}]}
+{"messages":[{"role":"user","content":"synthesize Li0.225Ti0.1Ni0.775O1"},{"role":"assistant","content":"Li0.225Ti0.1Ni0.775O1 <- NiO + LiCO3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize La2CuIrO6"},{"role":"assistant","content":"La2CuIrO6 <- CuO + IrO2 + La2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba3Bi(PO4)3"},{"role":"assistant","content":"Ba3Bi(PO4)3 <- Bi2O3 + NH4H2PO4 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Na0.543K0.47Nb0.55Ta0.45O3"},{"role":"assistant","content":"Na0.543K0.47Nb0.55Ta0.45O3 <- K2CO3 + Nb2O5 + Ta2O5 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2Sr2.1Ca0.9Cu2O8"},{"role":"assistant","content":"Bi2Sr2.1Ca0.9Cu2O8 <- SrCO3 + CaCO3 + CuO + Bi2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.99Gd0.01Nb1O4"},{"role":"assistant","content":"Bi0.99Gd0.01Nb1O4 <- Bi2O3 + Nb2O5 + Gd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Sr5NdTi3Nb7O30"},{"role":"assistant","content":"Sr5NdTi3Nb7O30 <- SrCO3 + Nd2O3 + Nb2O5 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Dy0.05Na1Ba0.95B1O3"},{"role":"assistant","content":"Dy0.05Na1Ba0.95B1O3 <- Dy2O3 + Na2CO3 + BaCO3 + H3BO3"}]}
+{"messages":[{"role":"user","content":"synthesize KSr4B3O9"},{"role":"assistant","content":"KSr4B3O9 <- SrCO3 + K2CO3 + H3BO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ni0.39Cu0.18Zn0.43Fe1.98O4"},{"role":"assistant","content":"Ni0.39Cu0.18Zn0.43Fe1.98O4 <- NiO + ZnO + CuO + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize La0.5Li0.5Fe0.5V0.5O3"},{"role":"assistant","content":"La0.5Li0.5Fe0.5V0.5O3 <- V2O5 + Li2CO3 + La2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.99Eu0.01WO4"},{"role":"assistant","content":"Ba0.99Eu0.01WO4 <- BaO + WO3 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Cs2TiNb6O18"},{"role":"assistant","content":"Cs2TiNb6O18 <- TiO2 + Nb2O5 + Cs2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize In4Sn3O12"},{"role":"assistant","content":"In4Sn3O12 <- SnO2 + In2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.5La0.5In0.3Ti0.1Mn0.6O3"},{"role":"assistant","content":"Ba0.5La0.5In0.3Ti0.1Mn0.6O3 <- La2O3 + In2O3 + MnO2 + TiO2 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize SrHfO3"},{"role":"assistant","content":"SrHfO3 <- SrCO3 + HfO2"}]}
+{"messages":[{"role":"user","content":"synthesize Cu0.5Cd0.5Fe2O4"},{"role":"assistant","content":"Cu0.5Cd0.5Fe2O4 <- CuO + CdO + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Li1Mo0.05Ni0.475Mn1.475O4"},{"role":"assistant","content":"Li1Mo0.05Ni0.475Mn1.475O4 <- NiO + Li2CO3 + MnCO3 + MoO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize CuAg3Se2"},{"role":"assistant","content":"CuAg3Se2 <- Se + Cu + Ag"}]}
+{"messages":[{"role":"user","content":"synthesize Gd1Ta1O4"},{"role":"assistant","content":"Gd1Ta1O4 <- Ta2O5 + Gd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba2YIrO6"},{"role":"assistant","content":"Ba2YIrO6 <- Y2O3 + Ir + BaCO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize EuPO4"},{"role":"assistant","content":"EuPO4 <- Eu2O3 + (NH4)2HPO4"}]}
+{"messages":[{"role":"user","content":"synthesize Nd2NiO4"},{"role":"assistant","content":"Nd2NiO4 <- NiO + Nd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize PNb9O25"},{"role":"assistant","content":"PNb9O25 <- Nb2O5 + NH4H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize Gd2SiO5"},{"role":"assistant","content":"Gd2SiO5 <- SiO2 + Gd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Eu0.2La0.8MgAl11O19"},{"role":"assistant","content":"Eu0.2La0.8MgAl11O19 <- La2O3 + Al(OH)3 + Mg(OH)2 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Co0.5Ni0.5O1"},{"role":"assistant","content":"Co0.5Ni0.5O1 <- NiO + CoO"}]}
+{"messages":[{"role":"user","content":"synthesize Ca2.86Mg0.14(PO4)2"},{"role":"assistant","content":"Ca2.86Mg0.14(PO4)2 <- Ca(OH)2 + H3PO4 + Mg(OH)2"}]}
+{"messages":[{"role":"user","content":"synthesize LiNaMg(PO4)F"},{"role":"assistant","content":"LiNaMg(PO4)F <- MgO + Li2CO3 + NaF + (NH4)H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize LaNb0.92W0.08O4.04"},{"role":"assistant","content":"LaNb0.92W0.08O4.04 <- Nb2O5 + La2O3 + WO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca3Li0.275Nb1.775Ga2.95O12"},{"role":"assistant","content":"Ca3Li0.275Nb1.775Ga2.95O12 <- Nb2O5 + Li2CO3 + CaCO3 + Ga2O3"}]}
+{"messages":[{"role":"user","content":"synthesize MgSnO3"},{"role":"assistant","content":"MgSnO3 <- SnO2 + MgCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Li14Zn(GeO4)4"},{"role":"assistant","content":"Li14Zn(GeO4)4 <- Li2CO3 + GeO2 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize Fe0.667Mo0.333O3"},{"role":"assistant","content":"Fe0.667Mo0.333O3 <- MoO3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize LaAlSiO5"},{"role":"assistant","content":"LaAlSiO5 <- La2O3 + Al2O3 + SiO2"}]}
+{"messages":[{"role":"user","content":"synthesize NaBa4(BO3)3"},{"role":"assistant","content":"NaBa4(BO3)3 <- Na2CO3 + BaCO3 + H3BO3"}]}
+{"messages":[{"role":"user","content":"synthesize Li1.6Mg0.3Ti1.7(PO4)3"},{"role":"assistant","content":"Li1.6Mg0.3Ti1.7(PO4)3 <- TiO2 + MgO + Li2CO3 + NH4H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize Mg4Ta2O9"},{"role":"assistant","content":"Mg4Ta2O9 <- Ta2O5 + MgCO3"}]}
+{"messages":[{"role":"user","content":"synthesize LiYCd5(BO3)6"},{"role":"assistant","content":"LiYCd5(BO3)6 <- CdO + Li2CO3 + Y2O3 + H3BO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize CaMg0.8Al0.4Si1.8O6"},{"role":"assistant","content":"CaMg0.8Al0.4Si1.8O6 <- Al2O3 + SiO2 + CaCO3 + MgCO3"}]}
+{"messages":[{"role":"user","content":"provide 2 synthesis plans for target: Li2MoO4"},{"role":"assistant","content":"Li2MoO4 <- Mo + Li + O2\nLi2MoO4 <- Li2CO3 + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.989Pr0.011Mo1O4"},{"role":"assistant","content":"Ca0.989Pr0.011Mo1O4 <- CaCO3 + Pr6O11 + MoO3"}]}
+{"messages":[{"role":"user","content":"synthesize Li8ZrO6"},{"role":"assistant","content":"Li8ZrO6 <- Li2CO3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi85Sb15"},{"role":"assistant","content":"Bi85Sb15 <- Bi + Sb"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.4Sb1.6Se3"},{"role":"assistant","content":"Bi0.4Sb1.6Se3 <- Se + Bi + Sb"}]}
+{"messages":[{"role":"user","content":"synthesize Li0.5Cr1.0Fe1.5O4"},{"role":"assistant","content":"Li0.5Cr1.0Fe1.5O4 <- Li2CO3 + Cr2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize SrCrO4"},{"role":"assistant","content":"SrCrO4 <- SrCO3 + Cr2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Na15Sn4"},{"role":"assistant","content":"Na15Sn4 <- Sn + Na"}]}
+{"messages":[{"role":"user","content":"synthesize Nd0.80Cd0.20MnO3"},{"role":"assistant","content":"Nd0.80Cd0.20MnO3 <- Nd2O3 + CdO + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize Zn0.333Ta0.667Ba1O3"},{"role":"assistant","content":"Zn0.333Ta0.667Ba1O3 <- BaCO3 + Ta2O5 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize Gd0.895Tb0.105Ta1O4"},{"role":"assistant","content":"Gd0.895Tb0.105Ta1O4 <- Ta2O5 + Tb4O7 + Gd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba2SiO4"},{"role":"assistant","content":"Ba2SiO4 <- SiO2 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize CaUO4"},{"role":"assistant","content":"CaUO4 <- CaCO3 + U3O8 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Li3AlSiO5"},{"role":"assistant","content":"Li3AlSiO5 <- SiO2 + Li2CO3 + Al2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Nd0.742Y0.258Mn1O3"},{"role":"assistant","content":"Nd0.742Y0.258Mn1O3 <- Nd2O3 + Mn2O3 + Y2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ni0.104Nb0.208Ti0.688O2"},{"role":"assistant","content":"Ni0.104Nb0.208Ti0.688O2 <- Nb2O5 + TiO2 + NiO"}]}
+{"messages":[{"role":"user","content":"synthesize Ba1Ti0.616Zr0.384O3"},{"role":"assistant","content":"Ba1Ti0.616Zr0.384O3 <- TiO2 + BaCO3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize U0.55Pu0.45O2"},{"role":"assistant","content":"U0.55Pu0.45O2 <- PuO2 + UO2"}]}
+{"messages":[{"role":"user","content":"synthesize BaLaLiTeO6"},{"role":"assistant","content":"BaLaLiTeO6 <- Li2CO3 + La2O3 + BaCO3 + TeO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Nd0.3Ce0.7O2"},{"role":"assistant","content":"Nd0.3Ce0.7O2 <- Nd2O3 + CeO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Gd1.36Yb0.64Zr2O7"},{"role":"assistant","content":"Gd1.36Yb0.64Zr2O7 <- Yb2O3 + ZrO2 + Gd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize CaBiO2Cl"},{"role":"assistant","content":"CaBiO2Cl <- BiOCl + CaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize InCoO3"},{"role":"assistant","content":"InCoO3 <- In2O3 + Co3O4 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize SrSi2O2N2"},{"role":"assistant","content":"SrSi2O2N2 <- SrCO3 + SiO2 + Si3N4"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.988Cu0.012Nb0.988W0.012O4"},{"role":"assistant","content":"Bi0.988Cu0.012Nb0.988W0.012O4 <- CuO + Nb2O5 + WO3 + Bi2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Zn0.5Ni0.167Bi2Nb1.333O7"},{"role":"assistant","content":"Zn0.5Ni0.167Bi2Nb1.333O7 <- NiO + Bi2O3 + ZnO + Nb2O5"}]}
+{"messages":[{"role":"user","content":"synthesize Sm1Yb0.925Mg0.075Zr2O6.963"},{"role":"assistant","content":"Sm1Yb0.925Mg0.075Zr2O6.963 <- MgO + Sm2O3 + ZrO2 + Yb2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca2Gd8(SiO4)6O2"},{"role":"assistant","content":"Ca2Gd8(SiO4)6O2 <- SiO2 + CaCO3 + Gd2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.85Sr0.15Fe0.95V0.05O3"},{"role":"assistant","content":"Bi0.85Sr0.15Fe0.95V0.05O3 <- SrCO3 + V2O5 + Bi2O3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Li5.584La3Nb1.708Gd0.292O12"},{"role":"assistant","content":"Li5.584La3Nb1.708Gd0.292O12 <- Li2CO3 + La2O3 + Gd2O3 + Nb2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.94Gd0.06Mn2O5"},{"role":"assistant","content":"Bi0.94Gd0.06Mn2O5 <- MnCO3 + Bi2O3 + Gd2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize ZnCMn3"},{"role":"assistant","content":"ZnCMn3 <- Mn + C + Zn"}]}
+{"messages":[{"role":"user","content":"synthesize SrBi4Ti4O1"},{"role":"assistant","content":"SrBi4Ti4O1 <- TiO2 + Bi2O3 + SrCO3"}]}
+{"messages":[{"role":"user","content":"synthesize La0.8Bi0.2Fe0.7Mn0.3O3"},{"role":"assistant","content":"La0.8Bi0.2Fe0.7Mn0.3O3 <- MnO + Bi2O3 + La2O3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba3Ti4Nb4O21"},{"role":"assistant","content":"Ba3Ti4Nb4O21 <- Nb2O5 + TiO2 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize MgAlB14"},{"role":"assistant","content":"MgAlB14 <- Mg + Al + B"}]}
+{"messages":[{"role":"user","content":"synthesize Sr0.995Eu0.005B2O4"},{"role":"assistant","content":"Sr0.995Eu0.005B2O4 <- SrCO3 + Eu2O3 + B2O3"}]}
+{"messages":[{"role":"user","content":"synthesize LiNi0.45Cr0.05Mn1.5O4"},{"role":"assistant","content":"LiNi0.45Cr0.05Mn1.5O4 <- NiO + Li2CO3 + Cr2O3 + MnCO3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Nd2Zr2O7"},{"role":"assistant","content":"Nd2Zr2O7 <- Nd2O3 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Sr0.7Bi0.3Fe1O3"},{"role":"assistant","content":"Sr0.7Bi0.3Fe1O3 <- SrCO3 + Bi2O3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Mo6S8"},{"role":"assistant","content":"Mo6S8 <- Mo + MoS2"}]}
+{"messages":[{"role":"user","content":"synthesize Na0.5Bi4.5Ti4Mg0.06O15"},{"role":"assistant","content":"Na0.5Bi4.5Ti4Mg0.06O15 <- TiO2 + MgO + Bi2O3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize (Dy0.9Ca0.1)2Ti2O6.9"},{"role":"assistant","content":"(Dy0.9Ca0.1)2Ti2O6.9 <- TiO2 + CaO + Dy2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.61Nd0.26TiO3"},{"role":"assistant","content":"Ca0.61Nd0.26TiO3 <- Nd2O3 + CaCO3 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize LiMn1.5Al0.5O4"},{"role":"assistant","content":"LiMn1.5Al0.5O4 <- LiOH + Al(OH)3 + MnO2"}]}
+{"messages":[{"role":"user","content":"synthesize (Er0.05Y0.95)2BaZnO5"},{"role":"assistant","content":"(Er0.05Y0.95)2BaZnO5 <- Y2O3 + ZnO + Er2O3 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi0.5Na0.433Li0.067Ti0.95Hf0.05O3"},{"role":"assistant","content":"Bi0.5Na0.433Li0.067Ti0.95Hf0.05O3 <- Li2CO3 + Bi2O3 + Na2CO3 + HfO2 + TiO2"}]}
+{"messages":[{"role":"user","content":"synthesize Li3.4V0.6Si0.4O4"},{"role":"assistant","content":"Li3.4V0.6Si0.4O4 <- Li2CO3 + SiO2 + V2O5"}]}
+{"messages":[{"role":"user","content":"synthesize La0.9Sr0.1Ga0.95Mg0.05O3"},{"role":"assistant","content":"La0.9Sr0.1Ga0.95Mg0.05O3 <- SrCO3 + MgO + La2O3 + Ga2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ba0.55Sr0.45Ti1O3"},{"role":"assistant","content":"Ba0.55Sr0.45Ti1O3 <- SrCO3 + TiO2 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize P2O5CdO"},{"role":"assistant","content":"P2O5CdO <- CdCO3 + (NH4)2HPO4"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2Cu1O14"},{"role":"assistant","content":"Bi2Cu1O14 <- CuO + Bi2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize La0.05Ta0.05Ba2Ti8.9O20"},{"role":"assistant","content":"La0.05Ta0.05Ba2Ti8.9O20 <- Ta2O5 + La2O3 + TiO2 + BaCO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ba2CeSbO6"},{"role":"assistant","content":"Ba2CeSbO6 <- BaCO3 + Sb2O5 + Ce2(CO3)3"}]}
+{"messages":[{"role":"user","content":"synthesize Li1.33Ti1.67O4"},{"role":"assistant","content":"Li1.33Ti1.67O4 <- TiO2 + Li2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ca2La8(GeO4)6O2"},{"role":"assistant","content":"Ca2La8(GeO4)6O2 <- La2O3 + CaCO3 + GeO2"}]}
+{"messages":[{"role":"user","content":"synthesize Mg0.5W0.5Pb0.493La0.338O3"},{"role":"assistant","content":"Mg0.5W0.5Pb0.493La0.338O3 <- MgO + La2O3 + WO3 + Pb3O4"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2Zr0.1V0.9O5.5"},{"role":"assistant","content":"Bi2Zr0.1V0.9O5.5 <- V2O5 + Bi2O3 + ZrO2 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Ca0.15Ba0.85Ti1O3"},{"role":"assistant","content":"Ca0.15Ba0.85Ti1O3 <- TiO2 + BaCO3 + CaO"}]}
+{"messages":[{"role":"user","content":"synthesize La0.81Sm0.19Ga1O3"},{"role":"assistant","content":"La0.81Sm0.19Ga1O3 <- Sm2O3 + La2O3 + Ga2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Bi2V0.75Ge0.25O5"},{"role":"assistant","content":"Bi2V0.75Ge0.25O5 <- Bi2O3 + GeO2 + VO2"}]}
+{"messages":[{"role":"user","content":"synthesize Ag3.725Mo9Se11"},{"role":"assistant","content":"Ag3.725Mo9Se11 <- Se + Ag + Mo"}]}
+{"messages":[{"role":"user","content":"synthesize Zn0.5W0.5Pb1O3"},{"role":"assistant","content":"Zn0.5W0.5Pb1O3 <- PbO + WO3 + ZnO"}]}
+{"messages":[{"role":"user","content":"synthesize La0.3Sr0.7FeO3"},{"role":"assistant","content":"La0.3Sr0.7FeO3 <- SrCO3 + La2O3 + Fe2O3 + O2"}]}
+{"messages":[{"role":"user","content":"synthesize Co2SnO4"},{"role":"assistant","content":"Co2SnO4 <- SnO2 + Co3O4"}]}
+{"messages":[{"role":"user","content":"synthesize Sm0.4Er0.6FeO3"},{"role":"assistant","content":"Sm0.4Er0.6FeO3 <- Sm2O3 + Er2O3 + Fe2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Eu0.162Sr1.838Si1O4"},{"role":"assistant","content":"Eu0.162Sr1.838Si1O4 <- SrCO3 + SiO2 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize CsV2O5"},{"role":"assistant","content":"CsV2O5 <- V2O5 + Cs2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Eu0.02Ba3.98(Si3O8)2"},{"role":"assistant","content":"Eu0.02Ba3.98(Si3O8)2 <- SiO2 + BaCO3 + Eu2O3"}]}
+{"messages":[{"role":"user","content":"synthesize Na4Mn4Ti5O18"},{"role":"assistant","content":"Na4Mn4Ti5O18 <- TiO2 + Mn2O3 + Na2CO3"}]}
+{"messages":[{"role":"user","content":"synthesize Ce0.85Zr0.175Ta0.025O2"},{"role":"assistant","content":"Ce0.85Zr0.175Ta0.025O2 <- Ta2O5 + CeO2 + ZrO2"}]}
+{"messages":[{"role":"user","content":"synthesize Na1Ca0.915Tb0.3Mn0.085P1O4"},{"role":"assistant","content":"Na1Ca0.915Tb0.3Mn0.085P1O4 <- Na2CO3 + CaCO3 + MnCO3 + Tb4O7 + NH4H2PO4"}]}
+{"messages":[{"role":"user","content":"synthesize La2GaMnO6"},{"role":"assistant","content":"La2GaMnO6 <- La2O3 + Ga2O3 + MnO2"}]}
 {"messages":[{"role":"user","content":"synthesize Sn2WO5"},{"role":"assistant","content":"Sn2WO5 <- WO3 + SnO"}]}
 {"messages":[{"role":"user","content":"synthesize Eu0.125Ca2.875Sn3Nb2O14"},{"role":"assistant","content":"Eu0.125Ca2.875Sn3Nb2O14 <- SnO2 + Nb2O5 + CaCO3 + Eu2O3"}]}
 {"messages":[{"role":"user","content":"synthesize La5AlTi3O15"},{"role":"assistant","content":"La5AlTi3O15 <- La2O3 + Al2O3 + TiO2"}]}
