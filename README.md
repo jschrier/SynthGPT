@@ -6,7 +6,7 @@ We need to redo these results with the new way of defining the duplicate precurs
 
 Evaluation on getting all precursors correct, given target, evaluated on 2109 target items, containing only precursors that appear >=5 times in the dataset.
 
-| Method          | Cost (USD) | Top-1 | Top 5 |
+| Method          | Cost (USD) | Top-1 | Top-5 |
 | :-----           | :-------  | ----: |-----: |
 | Statistical baseline | 0          |  0.35 | 0.55  |
 | GPT-3.5 (zero shot) | $4  |  0.37 | 0.48  |
