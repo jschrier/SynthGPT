@@ -21,5 +21,5 @@ precursorMatchQ[actual_List, predicted_List]:=
 	AnyTrue[singlePredictionMatchQ[actual]]@ predicted
 
 (* overloaded versuion which takes a ChatObject as input *)
-precursorMatchQ[actual_List,prediction_ChatObject]:=
+precursorMatchQ[actual_List, prediction_ChatObject]:=
 	precursorMatchQ[actual, precursorList[prediction]]

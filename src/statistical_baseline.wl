@@ -67,9 +67,11 @@ evaluateBaselinePrediction[
 	
 	
 (* overloaded version for an input cross validation file *)
-evaluateBaselinePrediction[weights_Association, k_Integer:1][
-	inputFile_?FileExistsQ, 
-	outputPath_:{".", "results", "statistical_baseline"}]:= With[
+evaluateBaselinePrediction[
+	weights_Association, 
+	k_Integer:1,
+	outputPath_:{".", "results", "statistical_baseline"}][
+	inputFile_?FileExistsQ]:= With[
 	{outputFile = FileNameJoin@ Append[outputPath, #]&@ 
 					StringTemplate["top``_``"][k, FileNameTake[inputFile]],
 					
