@@ -17,7 +17,7 @@ evaluatePrediction[
 	session_ChatObject,
 	question_TemplateObject:StringTemplate["synthesize ``"]
 	][target_String->precursors_List]:= With[
-	{prediction = ChatEvaluate[session,question[target], ProgressReporting->False]},
+	{prediction = ChatEvaluate[session, question[target], ProgressReporting->False]},
 	<|"correct" -> precursorMatchQ[precursors, prediction],
 	  "input" -> prediction["Messages"][[-2, "Content"]],
 	  "output" -> prediction["Messages"][[-1, "Content"]] |>]

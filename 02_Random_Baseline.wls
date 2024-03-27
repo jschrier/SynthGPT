@@ -3,6 +3,7 @@
 
 SetDirectory@NotebookDirectory[];
 <<"./src/statistical_baseline.wl"
+<<"./src/string_formatting.wl"
 
 (* setup calculation by defining possible precursors and targets *)
 precursors = Import["./data/precursors.json", "RawJSON"];
