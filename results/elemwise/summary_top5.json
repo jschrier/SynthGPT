@@ -1,32 +1,32 @@
 [
     {
         "dataset": "random_cv1.json",
-        "accuracy": 0.7525,
-        "n_correct": 1587,
+        "accuracy": 0.8445,
+        "n_correct": 1781,
         "n_test": 2109
     },
     {
         "dataset": "random_cv2.json",
-        "accuracy": 0.7515,
-        "n_correct": 1585,
+        "accuracy": 0.8331,
+        "n_correct": 1757,
         "n_test": 2109
     },
     {
         "dataset": "random_cv3.json",
-        "accuracy": 0.7648,
-        "n_correct": 1613,
+        "accuracy": 0.8511,
+        "n_correct": 1795,
         "n_test": 2109
     },
     {
         "dataset": "random_cv4.json",
-        "accuracy": 0.7686,
-        "n_correct": 1621,
+        "accuracy": 0.8592,
+        "n_correct": 1812,
         "n_test": 2109
     },
     {
         "dataset": "random_cv5.json",
-        "accuracy": 0.7505,
-        "n_correct": 1582,
+        "accuracy": 0.8449,
+        "n_correct": 1781,
         "n_test": 2108
     }
 ]
