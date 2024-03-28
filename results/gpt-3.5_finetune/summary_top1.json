@@ -1,0 +1,32 @@
+[
+	{
+		"dataset":".\/data\/cross_validation\/random_cv1.json",
+		"accuracy":0.5391180654338549,
+		"n_correct":1137,
+		"n_test":2109
+	},
+	{
+		"dataset":".\/data\/cross_validation\/random_cv2.json",
+		"accuracy":0.5694642010431484,
+		"n_correct":1201,
+		"n_test":2109
+	},
+	{
+		"dataset":".\/data\/cross_validation\/random_cv3.json",
+		"accuracy":0.6647700331910859,
+		"n_correct":1402,
+		"n_test":2109
+	},
+	{
+		"dataset":".\/data\/cross_validation\/random_cv4.json",
+		"accuracy":0.5490753911806543,
+		"n_correct":1158,
+		"n_test":2109
+	},
+	{
+		"dataset":".\/data\/cross_validation\/random_cv5.json",
+		"accuracy":0.5616698292220114,
+		"n_correct":1184,
+		"n_test":2108
+	}
+]
