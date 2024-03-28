@@ -16,8 +16,7 @@ session = setupChat[prompt, 0, "gpt-4-0125-preview"];
 FileSystemScan[
 	evaluatePrediction[session, 1, "./results/gpt-4"], 
 	"./data/cross_validation"]
-
-
+	
 (* top-5 *)
 FileSystemScan[
 	evaluatePrediction[session, 5, "./results/gpt-4"], 
