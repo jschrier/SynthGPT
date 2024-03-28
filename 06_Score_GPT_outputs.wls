@@ -78,3 +78,7 @@ FileSystemScan[rescore, #<>"_rescore", FileNameForms->"*cv*.json"]&/@ directorie
 
 (* recompute summary statistics*)
 Outer[summarize, (#<>"_rescore"&/@directories), groups];
+
+
+(* summarize random baseline result*)
+summarize["./results/statistical_baseline",#]&/@groups;
