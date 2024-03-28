@@ -1,5 +1,5 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
-
 
 (* Elemwise reactions must obey two criteria:  
 1. each precursor element in the target is used only once ... *)
@@ -20,13 +20,19 @@ withinElemwiseScopeQ[precursors_List]:=
 (* overload to handle a reaction record with multiple precursor sets *)
 withinElemwiseScopeQ[target_->precursors_]:=
 	AnyTrue[withinElemwiseScopeQ]@ precursors
+	
+(* generate summary statistics from cross-validation file *)
+estimatePerfectElemwise[f_?FileExistsQ]:=With[
+	{result = CountsBy[withinElemwiseScopeQ]@ Lookup["test"]@Import[f]},
+	<|"dataset" -> f,
+	"accuracy" -> N[result[True]/Total[result]],
+	"n_correct" -> result[True],
+	"n_test" -> Total[result]|>]
 
 
-(*** evaluate on CV 1 dataset ***)
-
+(*** perform evaluate on CV 1 dataset ***)
 SetDirectory@ NotebookDirectory[];
 <<"./src/statistical_baseline.wl"
 
-{train, test} = Values@ Import["./data/cv_random1.json"];
-N@ ResourceFunction["ProportionsBy"][withinElemwiseScopeQ]@ test
-
+Export["./results/perfect_elemwise/summary_top1.json", #, "Compact"->2]&@
+	Values@ FileSystemMap[estimatePerfectElemwise, "./data/cross_validation"]
