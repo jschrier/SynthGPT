@@ -1,0 +1,768 @@
+{"messages":[{"role":"user","content":"Is the inorganic compound K1Tb1Si2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Al1Cu1Pt1W1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pu1Ge1Ru1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Zn3Si3Sb2O12 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Y1Al1Cr1Mo1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sc1Cu1B1Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Th2Re1As1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Tm5Mg1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Mn1Ir1Ru1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Mg1Sc1Ti1Bi1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound K1Al2Co1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba2Sr2La2Cu6O13"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li8Th4O11 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Yb1Ce1Fe2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ho1Re1Pt2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Eu1Gd1Pb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Gd1Os1Pb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Y1Sc1Zn1Fe1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na1La2Pm1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Pu1N2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pm1Pa1Tc2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ba1Ac1Fe2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? U1Hg1B1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ca1Ti1Ge2O6 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Rb1Pr1U2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Li3Cr2In3O12"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ba1Zr1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Fe1Cu1Re1As1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Hf1Re1Pd1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ac1Mg2Zn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Np1Cr1H8C2N4O8 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sb1Pt1Se1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Lu3Be1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ca1Pu1Ge1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ni1O4F2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Co1W2O7"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Tb1Er2Ti1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Yb1Tm1Pa1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sm1Tm1Pu1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Er1Th1Ru2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Li1Er1Al1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Rb1Mg1Co1F6 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pm1Co1Ru1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Zn1Pt1Au2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound U1Pa1Tc2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ba2Tm1Cu3O7"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Er2Tc2O7"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Mo2Ir1Rh1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ho2Sc1Nb1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Er1Th1Ti1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ba2Co1W1O6"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Lu1Al2As1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pm1Cu1Os2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? La1Sm1Pa2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pa2Fe1Pb1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li4Nb2V3Ni3O16 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Er1Sb1W2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Yb1Be1Ir1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Tb4Mg1Ge4 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pm2Mn1Fe1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound La3Sb5O12 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Y2Pu1Be1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pu1Tl1Rh2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Gd1Nb1Tc1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Eu1Cr2Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Rb2Hf1Mn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Nd1B4Cl1O8 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Tl1Sb1Pb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sc1Mo1Pt1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Mg1B4Os3 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Na6Te1Mo6H44O46"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ca1Pm1Sc2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sr1Ag1Hg1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ba2La1Cu2Hg1O7 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li1Cu1Re1Ir1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ba1Er2Ni1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Co1Ge2Ru1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ca1Fe4O8 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na1Ca4Ti4Nb1Si5O25 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Rb1Hf1Cu1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Cu1Si1Te2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Zr1Br3"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Pr1Sm2Cu1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ce5Mg8Ge8 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound In1Fe2W1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound La1Mn1Ru2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Pr2Tl1Ag1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Li4Tc1Ru1O6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sr2Ta1Cr1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Nd2Mg1Np1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ba2Eu1Ho1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Mg1U1Hg1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Na1V3P2O13"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Gd2Ru1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ir2Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sr1Re2Bi1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? K1Lu1Mn2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pu1Th2Sn1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca1Nd1Sm2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Na3Co2O4 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ca1Mn1Au2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Co1Hg1Sb1Rh1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pu1V2Sb1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Li2Zr1Ta1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Al4W1 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ac2Sm1V1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Be1Ga1Co1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ag3As2O8 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li1Co3P4O15 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ac2Sm1Mg1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sb4S7N2"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Y1Ti1Co1Bi1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ac1Np1Sc2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Gd2Tl1Co1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pm1Mg1Ge2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Gd1Y1Pa1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Fe2Ni1Mo1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba2Yb1Al1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? As1W1O3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na2Sr1Bi1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? K1Pa1Cd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Eu2Dy1Bi1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pa1Ni2Pd1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Tc1Bi2Pt1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sr1La1Ru2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Mg1Fe2Co1O7 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca1Pr1Mo2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Y1Mn1Tl1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na2Mg1C2O6"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Na1Th1Sc1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Cs1Gd2Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na1Ge1Ir2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sr3Zn3Te1P2O14"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pa1Ti1Te1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Zn1Re1O3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Tm1Rh1W2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pm1Sn2As1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Yb1Be1Au2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Li1Gd1Bi1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Np1Sb1Rh2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Lu2Hf1Hg1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ti1V1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Nd2Fe1Ni1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? K2Se4O1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound Th1Np1Cr2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Pr2Ta1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sc1Tc1Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cr1In1Fe1Cu1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Tm1Ge1Ir2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pr1Ti2Ge1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Te2N1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Na1Dy2Th1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sr2Cu1Mo1O6 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Li1Ni1Sb1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Zn1In1Fe1Mo1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? In1Ge1As2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Mn1Cu1Bi1As1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ce1Pm1Gd1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Si2Ni1Au1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Tb1Nb1B1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pr2Er1Nb1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Nd2Pa1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound P4Pb2O15 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sr2Mn1W1O6 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound Er1Hf1Pd1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Li8U4O11"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Y1Fe2Bi2Se2O4 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ta1Cr1Ga1Ir1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Y3Cl2O6 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound Sm2Mg1Te1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Tb2Np1Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? As1Pd3"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Li1Be1Hg1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Dy2Zr1Ti1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cu1Sb1Ru1Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Na1Ta1Ge1Os1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Er1Al1Sb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Th1Pa1Tl1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound K1Rb2Al1Br6 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sm1Er1Ru2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cs2La1Ir1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ti1Cu1Bi1Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Lu1Mn1Ru2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ca1Mg1Cd1In1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Np1Al1Zn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Yb1Gd1Tm2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Dy1Sn1O3 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sm1Hf1Ga2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ac1Pr1Au1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Sr1Cr1Re1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Tb1Np1Zn2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na1Lu1Si1Pd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Tb1Er2Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pr2V2O5 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Hf1Th2Cu1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? K2V1B1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pm1Nb1B1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Y1As1W2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Os3Pb3N5"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Na1Er1Sn2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y3Ge13Ir4"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound Sc1Ti1Ni1Ge1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ta1Cr1Pb1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sr1Sb12Ru4 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cs1Na2Tc1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ce1Er1In1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ca2Y1Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y1Zn1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Mn1Hg1As2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ac2V1Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cu1Ni1Sn1W1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Rb2La1Rh1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Y2Ta1Tc1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Nd1Be2V1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Th1Cr1Os1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Tc1Ni1Bi1W1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ce1Fe2Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pa2Re1Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Er1Lu1Mo1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Rb1Mn1Co1Cu1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ca2Pr1Al1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Y1Tm2Si1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Y1Co1Pb1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Zr2Sn1Au1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Sr2Al1Cr1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ni1Rh2S4"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Fe4Cu3O12"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Y1Al1Tc1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Tl2Ga1Te1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sc1Mn1Re1Si1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Np1Zn1Cd2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Tm1Co2Ru1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sm1Sc2Ru1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Np1Fe1Sb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pa1Re1Sn2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Li1Zr1Be2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na1Zr2Mn1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Yb1Sm2Os1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Rb3Sc1H6O6"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba2Sn1O4"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ho1V1Ga2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ba2Pm1Mn1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sm1Mg1O3 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Tb2Np1Hg1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Rb1Lu1Mn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Nd1Hf1Nb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li8Ti2Mn2O11 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Sr2Zn2Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Cs2Ti1Pd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Gd1Pu2Fe1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ta10Si2Mo1Se8"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Eu1Mn1Rh2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Mn1Zn1Ga1Co1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Zn1Hg1Sb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Be1Co1Sb1Rh1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ag1B2Pt2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Yb1Mn1Co2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Pm1Ge1B1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Er1Ru2Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ba1Na1Er2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound U1Mo1Ru2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sr2Nd1Gd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ba1Na2Cd1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ba1Th1Te1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sr1Pd2W1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sr4V4O11"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Tl1Ru1Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Yb1Nd1Zn2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Cs2Be1Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cu1Ag1Mo2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cs1Tb1Y2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Zr6Be15Cu8 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ac2Ni1Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na2Pr1Ge1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pm1Gd2Zr1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca1Dy1Cd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Fe1Ag1Pb1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na1Ce1Re1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Dy1Cu2W1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound V1Cr1Hg1Pb1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Dy2Sn1Ru1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Eu1Nb2W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pm1Pr2Mg1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ba1La1Co1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Yb1Ce1Er2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ac1Zn1Pd2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Be1Pt2W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Th1Ge2As1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Mn1In1Ag1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Be1Cd2Re1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Gd2In1Ru1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Yb2Hf1Tc1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cu1Sn1Pb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Nd1Zn1Rh1 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Rb2Ho1Be1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Tm2Sc1Ti1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Cr1Co1As1Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Zn1H36C60N12"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pr1Y1Mg2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Sr2Li1O4 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ni1Sn2Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Cr1Tc2Mo2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pr2Mg1Nb1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Pr1Pa1Ni2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Li2Al1Ni1O4 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ti1Cd1Ru1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Si1As1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sc1Ti2As1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Zr2Cr1Ir1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Pa1Zn2Cr1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Nd2Ga1Cu1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Re1Ir1Pt1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Na1Yb1Pr1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Nb1Cu1Hg1As1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ho2Pd1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Zn3Mo2O9 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cs1Pa1Cr1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Np2Hg1Bi1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? K3Hg1N5O11"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sm2Np1U1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cs2Pr1Ta1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Sr4Fe2Co1Ni1O12"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Na2In1Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Cs1Ce1Pa2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na1Al1Mo1Ru1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ni1Te2Pd2 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound La1Lu1Os2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Mg1Ga1Ni1Mo1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Gd1Cr1B1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Li8Nb1S6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Rb2Y1Cu1F6 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba1In2Ir1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pr1Er2W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Na2Bi2Pd3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cs1Zr6I14 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound La2Zr1In1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? K1Sr2Os1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pr2Nb1Te1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Na2Zr1Ir1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ce1Ta1Ni2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Li1La1Ni1Ge1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ce1Ti1Te1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y1Np2Nb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Lu3Fe2Si3 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cs1Sr1Os2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ba2Sc1Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li1Nb1Te1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Mg2Sb2Au1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ni1Sn1 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ho1Tl2As1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na1Nb1Si2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ca3Lu2Ge3O12 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? In2Pd1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Mg1As2Xe4F20"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Yb1Mg1Au1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Tb1Ce1Ni2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Er1Zr1Pb2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Tm1Hf1Tc2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Er1Tm1Tc2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Zn1Ni1Pd1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ho1Ga6Fe6"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? K5Te3"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Cs2Eu1Re1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pm1Zr2Zn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ac2Mg1Rh1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Li2Mg1Ta1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pa2Ag1Ru1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Be1Ag1Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Bi1Ru1Pt1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Mg2Ir1W1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Gd1Cr2Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ba1Cd1As2O7"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y1Zn1Fe1Tc1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pm1Er2Bi1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? As2S2F3"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sr1Pt2Pb1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Cs1Na1Pd2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba1Be1Ni1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Mg2Pt1I6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Lu1Hf1Mn1Si1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ce1Dy1Th2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Y1Hf2Te1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Te1Pt1W2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Tm1Lu1Pb1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Li2Ca1Bi2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound K8Li31Al8O32 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Li1Sn3Pd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Sr1Pr1Rh2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cr1Sn1Pd1Au1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Zn1Fe1Co2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ba2Al1W1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound V1Co1Sb1Rh1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? La2Re1Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ni1Sb1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Th1Ti1V1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sr1Mn1Pt1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Yb2Tm1Pd1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Gd2Y1B1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pa1Mn2As1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ac2Be2O5 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ca2Pr2O5"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li4N1O1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ac2Sc1Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? K2Ga3"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Li2Cd1As1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Be1Fe2Te1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Np1Al2Ru1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Na1Sr2La1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? U1Mo2Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Np1Mn2Au1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ba2Tm1Hg1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? K1Os1Pb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Hg1Pt2Au2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Mn1Nb1Re1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Lu1O1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ca1Ho2Si1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Nb1Zn2Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sr2Y2Fe2O7 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Gd2V1Tc1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Th1Be1Cr2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ca1Cu1Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Mn1Pt1O6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na1Ca1Al1Fe1Si4O12"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pr1Cd2Cu1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Li1Fe2Cl2O2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Nd1Tl2Au1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ho1Zr1Sb1 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba2Ge1Cl6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Li1In1Sn1Pd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cr1As1Os1Pd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Tb2Tm1Nb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cs1Sr1I3 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Rb1Nd2Mn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Be3Hg2W2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Hf1Al1Pd1Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Nd4Mg1Ni1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sm1Pd1Ru1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? La1Cu5Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na2N2O3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Rb1Tm2Bi1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound K1Na3Al12Si12H8O48 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pr1Sm1Nb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Lu1Zn2Bi1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound K2Re1Sn1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba1Sm1Ho1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Np1Nb1Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Gd1Hf2Ti1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sc1Fe1Sn1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sr1Li1Pa2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cs1Tb1Cd1Te3"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cd1Cu2Ir1S4 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Hf1Ag1Ir1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Na1Li1Ru2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Yb1Sc2In1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li1Sn1Ir1Pb1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ho1Co1Pb1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ca1Fe3P3H2O13"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Zr2Cd1Hg2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sc2Ta1Tl1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sr2In1Cu2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca2Ni3O8"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? K1Rb2Rh1F6"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Al2Si3Sn3O12"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ge2Bi1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca4Sm2Cu3Cl4O8"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Dy1Fe1O3 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Np1As2Rh1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pu2Np1V1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Tl1Cl1O3 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound Eu2Sn1Mo1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Li2Co1Sn1O4"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cs1La2Mg1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Yb5Sn3"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Sc2Cr1Sb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ho2Sc1Fe1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cr2Si1Os1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Cr1Fe2N3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Mg1Zn1Cr1Sb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cs1Rb1Zr6B1Cl15"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Cs1Pa1Ni1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ni2C5Cl4O2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ce1Ho2As1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Be3Al2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Co1N2O8 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ga2Te1As1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li3Mn1F7 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sr1Pm1Al1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Y1Lu1Sc1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Re1Ni1Ag2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Tb1Sm1Y1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pm1Sn1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Er2Mg1Pa1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ca4Mn1P4 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Tb1Ge1W1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ca1B2As1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Na1La2Tb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Nb6Al1Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? La1In1Pt2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ce3Si1Pd5"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y1Mn1Hg1Bi1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sm1Mn1Se2Cl1O6 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na1Ca2Zr1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Al5Co2"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Pu1Th1Co1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound V1Ga2Tc1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Zn10Pd3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Dy2Y1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba1V1B1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Y1Al1Co1Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Co7Sn1N6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound K1Sr1Ta1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cu1C2N2Cl4 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sm1Si1Sb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Gd1Fe2Pb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Tb1Eu2Ti1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ba16Zn9Ge80Pd3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Li2Co1Pd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cs1Rb1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li1Ga1Pd1Pt1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ti1Zn2Fe1Cu4"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Rb1U1Cr1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li6V3W3O16 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound La1Er1Sn2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Be1In1Pb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Rb2Ni1H6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Np2Te1Pb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound La1Pm2Ni1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pm1Hg2Rh1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Li7Mn4P8O28"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Rb1U1As1O9"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound K2Ac1Au1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Na1Yb1Ga1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cs1Mg1Te1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Y1Er1Sc1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Dy2Ni7Sn3 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound La1B3F12 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sc1Hg1O3 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca1W6N1Cl18"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ba1Cd1Sn2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Yb1Dy2Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Hf1Ta2As2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Na2Cr1Co1F7"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Fe2Sn1Ge1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Te2Os1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Gd1Th2Pd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ag1W1O3 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Li1Eu1Os2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Mn1V1Hg1Ge1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Rb3La1N6 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Co1Si1Mo1Os1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pu1Ta2V1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca5Ti2N6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Eu2V1Ru1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pa1Os1Pd1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Mn1V2Mo1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Li2Sm1O3 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sb1Mo2Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cs3Eu1F6 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Mg2Ti1Sb1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pm2Mg1Cr1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ho2Np1U1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Co2Ge3S3 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Li4V3Fe2O12"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ca1Yb1Er1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Hf2Th1Ag1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Al1B3N4"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pr1Y2Ho1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Tl1Ag1Sn2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cr2Rh2C1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound U2Be2O5 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Lu2In1Pd2 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sr1Ac1Sc2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound K1Er2Sb1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Mg1Sn3O7 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound K1Cu3 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ba1Li1Pu2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Np1Ir1Au2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Rb2Ag4S3 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound Yb1Zn1Si1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li1Pb1N1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Rb1Bi3F10 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Li1Rh1W2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Li2Mn1Sb1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Np1Mo1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Dy1Ho1Ge1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? La1Nd2Nb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Y2In1Tc1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Rb1Be1Re1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ti2Sn1Mo1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Sm1Be1Si2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound K1Sb1P2O8 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ta1In1Tc1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Th1Sb1O3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Pa1Zn2Co1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Na1Th1Tl1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Lu1Ti1Cu1Pd1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Pm1Ta1B2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Yb1N3O14"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ba1Li1As1 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Li1P1H2O3"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ac1La1Ni1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ge2Bi1Te1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cs2Ca1Te1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y2U1Pa1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Rb2Se2O7 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Lu1Cr1Pb1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound La1Ho1Co2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Tm1W2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cs1Ho1Zn1Te3 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound Tb2Pm1Ta1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Zn1Ni3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Nd1Be1Mo2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Rb4In2S5 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca1Pa2Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? K1Nb1Au2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Nb2Sn3Pt2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ho1Cu2Bi1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Mo1Pd1W2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Lu1Ti1V1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y1Nb2Fe1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ho1Fe1Au1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Mg2Te1Ru1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Yb2Nd1Pu1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ca1Pr1Cr2O6"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na1Li3Ti2Al2P6O24"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Mg1Tc1Hg1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Mg1Sc2V1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ta1Nb1Fe1Si1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sm1Cd1Pt2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound K1C2S2N1O4F6 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Th1Ga1Bi1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Pr1V2Ga1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Gd1C6N9"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Li1Fe1Sb1Pb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Zr1Ag1Hg1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Gd1Al9Ni3 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Hf1V1Si1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Pu1Sc1Sb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ti2Cd1Ni1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Gd1Si2Ge1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Tb1Zn1Sn1 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound C1I1N2O7 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Nd1Co1Sn2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y2Ho1Re1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Zn1Co1Cu1Re1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pu1Ti1Sn2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? K1Mg1Ir2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ba3In1Ir2O9 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Zr1In2Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Rh3S4"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Y1Zr1Pa2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Lu1Zr1Re2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cr2Ir1Os1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Pa2Ni1Bi1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? La2Hf1Ti1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Be1V2Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Yb1Al3C3 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Gd1Ti1Ru2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Zn2Bi1O4 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cu1Ni2Pt1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Na1Cr1P2S6 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Li1Ce2Fe1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ca3Br1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ba1Hf2Ru1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Be1Al1Cu1Mo1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Yb1Ho1Mg2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Li1Fe1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na2Hf1Np1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Eu1W2O4 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Gd2Pu1Os1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Si2Cl1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Lu1Be1Re1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ac2Ho1Al1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Co1Cu1Pb1W1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pr1Eu1Ru2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ti1Nb1Os2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Pr4Mg1Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y1Al1Fe1Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ba2Sc1Mo1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Th2Pd1Rh1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Th1Al1Sb1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound La2Tl1B1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Nd2Bi1Pd1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ba2V1Ru1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Na1Ge2Au2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ce1Cu1S2 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sc1Si2Ge1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Nd1Mo2Pd1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Cu1Ge1As1Os1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Pm1Tl2W1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Ac1Th1Mg2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound K1Sm2B1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Er1Lu1Bi1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ce1Sm1W1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Tb2Au5F21"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ho1Be2In1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ac1Si1Ni1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Nb1V1Cr1Ga1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Na2Ni2B12O21"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cd1Ga1Ir1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Yb2Zr1V1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Mg5Hg3 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sm1Sn2Os1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Lu1Mn1In1Os1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Be1Cd1Pt1Pb1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Tm1Nb1Re2 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Li2Hf1Sc1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ce1Tc2Os1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Nd2Ti1Nb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Sm2Gd1Tl1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound U2Fe15Ge2 be made?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Np2Sn1Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Nd1Ho1Au2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Pm2Tl1Cu1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Mg1Mn1Cu1Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Na1Al1Sn1Pd1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Gd2Tm1Ga1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound K1Cd1In1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Yb2Th1W1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Sm3P6Pd20"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ca3Mg2As3O12 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Y1Th2Ga1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Al1Ni1Ru1Rh1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Mg1Pb2N2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Mg2Ni1Ag1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pm2Mg1Te1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Rb1Nd2Sm1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Se1Cl3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Pu1U1Ge2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Na2Fe1S2O10 synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Yb3As1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ho1Ti1Ir1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Rb1Sn2I5 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Hf2Mg1Zr1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Sr1Bi2Pb1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ga1As1Au1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound K1Ta1Ge1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sc1In2Sn1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Ba3Pt2O7 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Ba1Bi2Au1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Cs2Al1In1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Hf2Se1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Np1Tc1Bi2 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Na2Sr1Pm1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? K1Na1Mo1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Yb1Mg17Al11"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound Cs3Se1 is synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na2Y1H1C2O7"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Zn1Cu1Tc1Sn1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Al1V1Hg2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Sr1Li1Mo1Rh1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Ce9Sm1O20"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the compound K1In1Te2O6 is synthesizable?"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Can the compound Zr1Al1Co4 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Hf1Tc2Pt1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Na2Dy1Te1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound La1Eu1Mn1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Th1Te1"},{"role":"assistant","content":"P"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound Cs1Np1Tc2 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Ba1Bi2Pb2"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? Li2Lu1Tc1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Nd1C3"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is it likely that the following compound can be made? La1In1Cu1Ag1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the inorganic compound In2As1P1 synthesizable?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the compound Gd1Nb1B1 be made?"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Is the following inorganic compound synthesizable? Tb1Ho1Hg1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Ba1Th2Sb1"},{"role":"assistant","content":"U"}]}
+{"messages":[{"role":"user","content":"Can the following compound be made? Co1Ir2O4"},{"role":"assistant","content":"U"}]}
