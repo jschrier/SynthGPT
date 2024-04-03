@@ -28,14 +28,18 @@ formatExample[target_String->multiplePrecursors_List]:= With[
 
 (* formatting for PU learning *)
 formatExample[target_String->label_String]:=With[
-	{phrases={
+(*	{phrases={
 		StringTemplate["Is the following inorganic compound synthesizable? ``"],
 		StringTemplate["Is the inorganic compound `` synthesizable?"],
 		StringTemplate["Is it likely that the compound `` is synthesizable?"],
 		StringTemplate["Is it likely that the following compound can be made? ``"],
 		StringTemplate["Can the compound `` be made?"],
-		StringTemplate["Can the following compound be made? ``"]}},
-	openAIFineTuneMessage[RandomChoice[phrases][target], label]]
+		StringTemplate["Can the following compound be made? ``"]}}
+		
+	openAIFineTuneMessage[RandomChoice[phrases][target], label]*)
+	{prompt = StringTemplate["You are an expert inorganic chemist.  Determine if the following compound is likely to be synthesizable based on its composition, answering only \"P\" (for positive or possible) and \"U\" (for unknown or unlikely): ``"]},
+	openAIFineTuneMessage[prompt[target], label]
+	]
 	
 
 (* provide a filename and a list of examples to generate a jsonLD-style file *)

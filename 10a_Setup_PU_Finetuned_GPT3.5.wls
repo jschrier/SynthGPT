@@ -7,12 +7,14 @@ SetDirectory@NotebookDirectory[];
 {positive, unlabeled} = Lookup[{"positive", "unlabeled"}]@ Lookup["train"]@
 	Import["./data_MP/PU_train_test.json"];
 
+(* create a balanced dataset of positive and unlabeled results*)
 RandomSeed[2024];
 data = With[
-	{p = (#->"P")&/@ positive[[1;;100]],
-	 u = (#->"U")&/@ unlabeled[[1;;860]]},
+	{p = (#->"P")&/@ positive,
+	 u = (#->"U")&/@ unlabeled[[;;Length[positive]]]},
 	RandomSample@ Join[p, u]];
 
+(* create training and validation JSONL files for use with OpenAI fine-tuning *)
 MapThread[
 	generateFineTuningData,
 	{{"./data_MP/finetuning/validate_pu.jsonl", "./data_MP/finetuning/train_pu.jsonl"},
