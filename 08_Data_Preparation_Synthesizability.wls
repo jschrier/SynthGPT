@@ -15,3 +15,17 @@ d = RandomSample/@ d; (*shuffle train and test*)
 Export["./data_MP/PU_train_test.json",
 	<|"train"-><|"positive"->pTrain, "unlabeled"->uTrain|>,
 	  "test"-> <|"positive"->pTest,  "unlabeled"->uTest|>|>]
+
+
+(* setup data for evaluations;
+   it is too slow to evaluate all 78k P+U entries with GPT, 
+   so we generate sub-samples with the same proportion as the test set *)
+test = With[
+	{p = (#->"P")&/@ pTest,
+	 u = (#->"U")&/@ uTest},
+	RandomSample@ Join[p, u]];
+
+(* these are saved in a binary format for convenience, and not synced with Github *)
+MapIndexed[
+	Export["./data_MP/test_batch/batch"<>IntegerString[First[#2], 10, 2]<>".mx", #1]&,
+	Take[#, 10]&@ Partition[test, UpTo[2000]]]
