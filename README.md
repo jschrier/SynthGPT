@@ -14,3 +14,16 @@ Evaluation on getting all precursors correct, given target, evaluated on 2109 ta
 | GPT-4 (zero shot) | $63 | 0.40 | 0.51 |
 | ElemWise |       |  0.76  |        0.85  |
 | Hypothetical perfect Elemwise |   | 0.86  |  -- |
+
+
+# Synthesizability prediction result (Preliminary result)
+To evaluate synthesizability prediction task, we can calculate true positive rate (TPR) or recall.
+The other metrics such as false positive rate (FPR) and precision (PREC) can be measured by alpha estimation.
+
+| Method          | Cost (USD) | TPR | FPR* | PREC* |
+| :-----           | :-------  | ----: |-----: |-----: |
+| GPT-3.5 (zero shot)|   |  |  |
+| GPT-3.5 (fine tuned)|   |  |  |
+| stoi-CGNF |   | 0.82 | 0.02 | 0.82 |
+
+(FPR* and PREC* are estimated values.)
