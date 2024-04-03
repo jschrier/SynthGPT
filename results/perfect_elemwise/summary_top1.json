@@ -1,32 +1,32 @@
 [
-	{
-		"dataset":".\/data\/cross_validation\/random_cv1.json",
-		"accuracy":0.9777145566619251,
-		"n_correct":2062,
-		"n_test":2109
-	},
-	{
-		"dataset":".\/data\/cross_validation\/random_cv2.json",
-		"accuracy":0.9777145566619251,
-		"n_correct":2062,
-		"n_test":2109
-	},
-	{
-		"dataset":".\/data\/cross_validation\/random_cv3.json",
-		"accuracy":0.9819819819819819,
-		"n_correct":2071,
-		"n_test":2109
-	},
-	{
-		"dataset":".\/data\/cross_validation\/random_cv4.json",
-		"accuracy":0.9829302987197724,
-		"n_correct":2073,
-		"n_test":2109
-	},
-	{
-		"dataset":".\/data\/cross_validation\/random_cv5.json",
-		"accuracy":0.9814990512333965,
-		"n_correct":2069,
-		"n_test":2108
-	}
+    {
+        "dataset": "random_cv1.json",
+        "accuracy": 0.8568,
+        "n_correct": 1807,
+        "n_test": 2109
+    },
+    {
+        "dataset": "random_cv2.json",
+        "accuracy": 0.845,
+        "n_correct": 1782,
+        "n_test": 2109
+    },
+    {
+        "dataset": "random_cv3.json",
+        "accuracy": 0.8592,
+        "n_correct": 1812,
+        "n_test": 2109
+    },
+    {
+        "dataset": "random_cv4.json",
+        "accuracy": 0.8696,
+        "n_correct": 1834,
+        "n_test": 2109
+    },
+    {
+        "dataset": "random_cv5.json",
+        "accuracy": 0.8548,
+        "n_correct": 1802,
+        "n_test": 2108
+    }
 ]
