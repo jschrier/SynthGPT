@@ -20,10 +20,12 @@ Evaluation on getting all precursors correct, given target, evaluated on 2109 ta
 To evaluate synthesizability prediction task, we can calculate true positive rate (TPR) or recall.
 The other metrics such as false positive rate (FPR) and precision (PREC) can be measured by alpha estimation.
 
-| Method          | Cost (USD) | TPR | FPR* | PREC* |
-| :-----           | :-------  | ----: |-----: |-----: |
-| GPT-3.5 (zero shot)|   |  |  |
-| GPT-3.5 (fine tuned)|   |  |  |
-| stoi-CGNF |   | 0.82 | 0.02 | 0.82 |
+| Method              | Threshold  | Cost (USD) |  TPR | FPR* | PREC* |
+| :-----              | :-------   | :-------   | ----:| ----:| ----: |
+| GPT-3.5 (zero shot) |            |            |      |      |       |
+| GPT-3.5 (fine tuned)| 0.86       |            | 0.74 | 0.02 |  0.75 |
+| stoi-CGNF           | 0.75       |            | 0.82 | 0.02 |  0.82 |
+| GPT-3.5 (fine tuned)| 0.50       |            | 0.95 | 0.12 |  0.41 |
+| stoi-CGNF           | 0.50       |            | 0.94 | 0.08 |  0.50 |
 
 (FPR* and PREC* are estimated values.)
