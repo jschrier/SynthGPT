@@ -25,7 +25,7 @@ test = With[
 	 u = (#->"U")&/@ uTest},
 	RandomSample@ Join[p, u]];
 
-(* these are saved in a binary format for convenience, and not synced with Github *)
+(* these are saved in a binary format for convenience, and folder not synced with Github *)
 MapIndexed[
 	Export["./data_MP/test_batch/batch"<>IntegerString[First[#2], 10, 2]<>".mx", #1]&,
-	Take[#, 10]&@ Partition[test, UpTo[2000]]]
+	Partition[test, UpTo[5000]]]
