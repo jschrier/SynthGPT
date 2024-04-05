@@ -27,5 +27,6 @@ The other metrics such as false positive rate (FPR) and precision (PREC) can be 
 | stoi-CGNF           | 0.75       |            | 0.82 | 0.02 |  0.82 |
 | GPT-3.5 (fine tuned)| 0.50       |            | 0.95 | 0.12 |  0.41 |
 | stoi-CGNF           | 0.50       |            | 0.94 | 0.08 |  0.50 |
+| stoi-similarity baseline  |  -   |            | 0.61 | 0.03 |  0.61 |
 
 (FPR* and PREC* are estimated values.)
