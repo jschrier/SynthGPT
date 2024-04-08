@@ -23,10 +23,10 @@ The other metrics such as false positive rate (FPR) and precision (PREC) can be 
 | Method              | Threshold  | Cost (USD) |  TPR | FPR* | PREC* |
 | :-----              | :-------   | :-------   | ----:| ----:| ----: |
 | GPT-3.5 (zero shot) |            |            |      |      |       |
-| GPT-3.5 (fine tuned)| 0.86       |            | 0.74 | 0.02 |  0.75 |
-| stoi-CGNF           | 0.75       |            | 0.82 | 0.02 |  0.82 |
-| GPT-3.5 (fine tuned)| 0.50       |            | 0.95 | 0.12 |  0.41 |
-| stoi-CGNF           | 0.50       |            | 0.94 | 0.08 |  0.50 |
-| stoi-similarity baseline  |  --  |            | 0.61 | 0.03 |  0.61 |
+| GPT-3.5 (fine tuned)| 0.85       |            | 0.77 | 0.02 |  0.77 |
+| stoi-CGNF           | 0.72       |            | 0.84 | 0.02 |  0.84 |
+| GPT-3.5 (fine tuned)| 0.50       |            | 0.95 | 0.12 |  0.45 |
+| stoi-CGNF           | 0.50       |            | 0.94 | 0.08 |  0.54 |
+| stoi-similarity baseline  |  --  |            | 0.65 | 0.04 |  0.64 |
 
 (FPR* and PREC* are estimated values.)
