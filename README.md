@@ -12,7 +12,7 @@ Evaluation on getting all precursors correct, given target, evaluated on 2109 ta
 | GPT-3.5 (zero shot) | $4  |  0.37 | 0.48  |
 | GPT-3.5 (fine tuned)| $10 training + $15 eval | 0.59* | 0.65* |
 | GPT-4 (zero shot) | $63 | 0.40 | 0.51 |
-| ElemWise |       |  0.76  |        0.85  |
+| Elemwise |       |  0.76  |        0.85  |
 | Hypothetical perfect Elemwise |   | 0.86  |  -- |
 
 
@@ -23,7 +23,7 @@ The other metrics such as false positive rate (FPR) and precision (PREC) can be 
 | Method              | Threshold  | Cost (USD) |  TPR | FPR* | PREC* |
 | :-----              | :-------   | :-------   | ----:| ----:| ----: |
 | GPT-3.5 (zero shot) |            |            |      |      |       |
-| GPT-3.5 (fine tuned)| 0.85       |            | 0.77 | 0.02 |  0.77 |
+| GPT-3.5 (fine tuned)| 0.84       |            | 0.77 | 0.02 |  0.77 |
 | stoi-CGNF           | 0.72       |            | 0.84 | 0.02 |  0.84 |
 | GPT-3.5 (fine tuned)| 0.50       |            | 0.95 | 0.12 |  0.45 |
 | stoi-CGNF           | 0.50       |            | 0.94 | 0.08 |  0.54 |
