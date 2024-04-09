@@ -33,4 +33,4 @@ summarize[f_?FileExistsQ]:= With[
 (*  compute the summary statistics, saving result into file  *)
 SetDirectory@NotebookDirectory[];
 
-summarize/@ {"./results_MP/gpt-3.5", "./results_MP/gpt-3.5_finetune"}
+summarize/@ {"./results_MP/gpt-3.5", "./results_MP/gpt-3.5_finetune", "./results_MP/gpt-4"}

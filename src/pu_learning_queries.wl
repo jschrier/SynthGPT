@@ -16,10 +16,6 @@ puPrediction[target_->answer_, model_:"gpt-3.5-turbo", temperature_:0]:= With[
 		"p(P)" -> Lookup[response, "P", 0],
 		"p(U)" -> Lookup[response, "U", 0]|>]]
 
-(* overloaded version which takes a lists and parallelizes the query *)
-puPrediction[examples_List, model_:"gpt-3.5-turbo", temperature_:0]:= 
-
-
 
 (* extract the log-prob information returned by OpenAI and convert to probability *)
 extractProbabilities[response_Association]:= With[
