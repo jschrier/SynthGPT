@@ -42,7 +42,10 @@ formatExample[target_String->label_String]:=With[
 	]
 	
 
-(* provide a filename and a list of examples to generate a JSONL-style file *)
+(* 
+provide a filename and a list of examples to generate a JSONL-style file
+see specification at: https://jsonlines.org 
+ *)
 generateFineTuningData[filename_, examples_]:=
 	Export[filename, #, "Text"]&@ StringRiffle[#,"\n"]&@ Map[formatExample]@ examples
 
