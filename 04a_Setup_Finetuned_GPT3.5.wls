@@ -4,7 +4,7 @@
 SetDirectory@NotebookDirectory[];
 <<"./src/fine_tuning.wl"
 
-(* generate JSON-LD files to upload to the OpenAI website *)
+(* generate JSONL files to upload to the OpenAI website *)
 
 fineTuneSplit[f_?FileExistsQ]:= With[
 	{trainFile = StringTemplate["./data/finetuning/train_``.jsonl"]@ FileBaseName[f],
