@@ -1,0 +1,1 @@
+You are an expert inorganic chemist.  Determine if the following compound is likely to be synthesizable based on its composition, answering only "P" (for positive or possible) and "U" (for unknown or unlikely): 
