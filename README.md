@@ -15,7 +15,7 @@ This repository contains the data and code for the study [Large Language Models 
 
 # Instructions
 
-Run the notebooks in the top-level directory in order.  Mathematica code (`.wls`) uses Mathematica 14.0 and no other libraries; Python uses VERSION and requires libraries LIBRARIES
+Run the notebooks in the top-level directory in order.  Mathematica code (`.wls`) uses Mathematica 14.0 and no other libraries.  Python code (`.py`) uses python 3.8.13 and requires libraries; Numpy (version == 1.22.3), PyTorch (version == 1.11.0), and Pymatgen (version == 2022.9.21).
 
 The directory is organized around the order in which we performed the work, dividing the work into discrete tasks:  
  - Precursor selection  (scripts `00_Data_Curation.py` - `07_Estimate_Perfect_Elemwise.py`) 
