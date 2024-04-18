@@ -1,6 +1,6 @@
 # SynthGPT
 
-This repository contains the data and code for the study **  Inorganic Synthesizability Prediction and Precursor Selection with Fine-Tuned Large Language Models** by [Seongmin Kim](https://scholar.google.com/citations?user=HXcbuWQAAAAJ&hl=en&oi=ao), [Joshua Schrier](https://scholar.google.com/citations?user=zJC_7roAAAAJ&hl=en), and [Yousung Jung](https://scholar.google.com/citations?user=y8D-JCAAAAAJ&hl=en&oi=ao)
+This repository contains the data and code for the study [Large Language Models for Inorganic Synthesis Predictions](insert-chemrxiv-link-here) by [Seongmin Kim](https://scholar.google.com/citations?user=HXcbuWQAAAAJ&hl=en&oi=ao), [Yousung Jung](https://scholar.google.com/citations?user=y8D-JCAAAAAJ&hl=en&oi=ao), and [Joshua Schrier](https://scholar.google.com/citations?user=zJC_7roAAAAJ&hl=en).
 
 # Organization
 
