@@ -10,12 +10,12 @@ This repository contains the data and code for the study **  Inorganic Synthesiz
 
 **Prompts** for the LLM are in the `prompts` folder as plain text files;  they can also be found in the online Supporting Information file.
 
-**Source code** is in the `src` folder; some haphazard tests are in `tests`.
+**Source code** is in the `src` folder; some haphazard tests are included in `tests`.
 
 
 # Instructions
 
-Run the notebooks in the top directory in order.  Mathematica code (`.wls`) uses Mathematica 14.0 and no other libraries; Python uses VERSION and requires libraries LIBRARIES
+Run the notebooks in the top-level directory in order.  Mathematica code (`.wls`) uses Mathematica 14.0 and no other libraries; Python uses VERSION and requires libraries LIBRARIES
 
 The directory is organized around the order in which we performed the work, dividing the work into discrete tasks:  
  - Precursor selection  (scripts `00_Data_Curation.py` - `07_Estimate_Perfect_Elemwise.py`) 
