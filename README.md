@@ -1,6 +1,8 @@
 # SynthGPT
 
-This repository contains the data and code for the study [Large Language Models for Inorganic Synthesis Predictions](insert-chemrxiv-link-here) by [Seongmin Kim](https://scholar.google.com/citations?user=HXcbuWQAAAAJ&hl=en&oi=ao), [Yousung Jung](https://scholar.google.com/citations?user=y8D-JCAAAAAJ&hl=en&oi=ao), and [Joshua Schrier](https://scholar.google.com/citations?user=zJC_7roAAAAJ&hl=en).
+This repository contains the data and code for the study [Large Language Models for Inorganic Synthesis Predictions](https://doi.org/10.26434/chemrxiv-2024-9bmfj) by [Seongmin Kim](https://scholar.google.com/citations?user=HXcbuWQAAAAJ&hl=en&oi=ao), [Yousung Jung](https://scholar.google.com/citations?user=y8D-JCAAAAAJ&hl=en&oi=ao), and [Joshua Schrier](https://scholar.google.com/citations?user=zJC_7roAAAAJ&hl=en).
+
+![graphical table of contents](figures/gtoc.png)
 
 # Organization
 
@@ -22,8 +24,8 @@ The directory is organized around the order in which we performed the work, divi
 - Synthesizability prediction (`08_Data_Preparation_Synthesizability.wls` - `11_Score_GPT_Outputs_Synthesizability.wls`)
 - Rescoring results with GPT-4 (`12a_SetupData_Combined.wls` and `12b_Evaluate_Combined.wls` )
 
-Yes, this is different from the order the paper.  "Life can only be understood backwards; but it must be lived forwards." --[Soren Kierkegaard](https://en.wikipedia.org/wiki/Søren_Kierkegaard) 
+Yes, this is different from the order the paper.  "Life can only be understood backwards; but it must be lived forwards." --[Søren Kierkegaard](https://en.wikipedia.org/wiki/Søren_Kierkegaard) 
 
 # Cite
 
-A preprint appears at...
+A preprint appears on the [ChemRXiv](https://doi.org/10.26434/chemrxiv-2024-9bmfj) as `doi:10.26434/chemrxiv-2024-9bmfj`  

@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Kim"
+  given-names: "Seongmin"
+  orcid: "https://orcid.org/0000-0002-2133-147X"
+- family-names: "Jung"
+  given-names: "Yousung"
+  orcid: "https://orcid.org/0000-0003-2615-8394"
+- family-names: "Schrier"
+  given-names: "Joshua"
+  orcid: "https://orcid.org/0000-0002-2071-1657"
+title: "SynthGPT"
+url: "https://github.com/jschrier/SynthGPT"
+preferred-citation:
+  type: article
+- family-names: "Kim"
+  given-names: "Seongmin"
+  orcid: "https://orcid.org/0000-0002-2133-147X"
+- family-names: "Jung"
+  given-names: "Yousung"
+  orcid: "https://orcid.org/0000-0003-2615-8394"
+- family-names: "Schrier"
+  given-names: "Joshua"
+  orcid: "https://orcid.org/0000-0002-2071-1657"
+  doi: "10.26434/chemrxiv-2024-9bmfj"
+  journal: "ChemRXiv"
+  title: "Large Language Models for Inorganic Synthesis Predictions"
+  year: 2024
