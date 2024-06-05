@@ -1,0 +1,10 @@
+[
+	{
+		"dataset":".\/data_MP\/test_batch\/batch01.mx",
+		"accuracy":0.8568,
+		"recall":0.9547169811320755,
+		"mcc":0.5768950375546991,
+		"n_correct":4284,
+		"n_test":5000
+	}
+]
