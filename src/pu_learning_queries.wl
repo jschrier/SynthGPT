@@ -57,3 +57,29 @@ evaluatePUPrediction[
 				"date" -> DateString["ISODateTime"],
 				"notes" -> "t.b.d"|>},
 	Export[outputFile, <|"metadata"->metadata, "results"->results|>, "Compact"->2];]
+
+
+(*** define functions for summarization ***)
+
+Clear[summarize]
+(* map over files in a particular folder  *)
+summarize[folder_?DirectoryQ]:= With[
+	{files = FileNames["batch*.json", folder],
+	outputFile = folder<>"/summary.json"},
+	Export[outputFile, #, "Compact"->2]&@ Map[summarize]@ files;]
+	
+(* summarize results from one CV run *)
+summarize[f_?FileExistsQ]:= With[
+	{d = Import[f, "RawJSON"]},
+	With[
+		{measurements = ClassifierMeasurements[
+			Query["results", All, "prediction"]@d, 
+			Query["results", All, "answer"]@d]},
+			
+		<|"dataset" -> Query["metadata", "datasource"]@ d,
+		"accuracy" -> measurements["Accuracy"],
+		"recall"-> measurements["Recall"->"P"],
+		"mcc"->measurements["MatthewsCorrelationCoefficient"->"P"],
+		"n_correct" -> Total@ Boole@ Query["results", All, "correctQ"]@ d,
+		"n_test" -> Query["results", Length]@ d|>]]
+
