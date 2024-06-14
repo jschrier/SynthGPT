@@ -7,7 +7,7 @@ SetDirectory@ NotebookDirectory[];
 
 FileSystemScan[
 	evaluatePUPrediction[
-	"ft:gpt-3.5-turbo-0125:fordham-university:synthesizability:99otCcgz",
+	"ft:gpt-3.5-turbo-0125:fordham-university:redopu:9X5R5W5W",
 	 0, "./results_MP/gpt-3.5_finetune"],
 	"./data_MP/test_batch",
 	FileNameForms->"*.mx"]

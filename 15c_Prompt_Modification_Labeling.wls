@@ -29,11 +29,21 @@ evaluatePUPrediction["gpt-4-0125-preview", 0,
 	"./data_MP/test_batch/batch01.mx"
 
 
-
 evaluatePUPrediction[
 	"ft:gpt-3.5-turbo-0125:fordham-university:prompt-mod:9WQd847W", 0, 
 	 "./results_MP/prompt_modification/pu_prompting/gpt-3.5_finetune"]@
 	"./data_MP/test_batch/batch01.mx"
+
+
+(* optional: evaluate all test items *)
+(*
+FileSystemScan[
+	evaluatePUPrediction[
+		"ft:gpt-3.5-turbo-0125:fordham-university:prompt-mod:9WQd847W", 0, 
+		"./results_MP/prompt_modification/pu_prompting/gpt-3.5_finetune"],
+	"./data_MP/test_batch/",
+	FileNameForms->"*.mx"]
+*)
 
 
 summarize/@ 

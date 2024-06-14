@@ -36,6 +36,20 @@ evaluatePUPrediction[
 	"./data_MP/test_batch/batch01.mx"
 
 
+
+(* optional: evaluate all test items *)
+(* 
+
+FileSystemScan[
+	evaluatePUPrediction[
+	"ft:gpt-3.5-turbo-0125:fordham-university:ceramic:9WQNUhTD", 0, 
+	 "./results_MP/prompt_modification/oxide/gpt-3.5_finetune"],
+	"./data_MP/test_batch/",
+	FileNameForms->"*.mx"]
+*)
+
+
+
 summarize/@ 
 	{"./results_MP/prompt_modification/oxide/gpt-3.5", 
 	"./results_MP/prompt_modification/oxide/gpt-4", 
