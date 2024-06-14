@@ -12,8 +12,10 @@ authors:
   orcid: "https://orcid.org/0000-0002-2071-1657"
 title: "SynthGPT"
 url: "https://github.com/jschrier/SynthGPT"
+license: MIT
 preferred-citation:
   type: article
+  authors:
   - family-names: "Kim"
     given-names: "Seongmin"
     orcid: "https://orcid.org/0000-0002-2133-147X"
@@ -27,4 +29,3 @@ preferred-citation:
   journal: "ChemRXiv"
   title: "Large Language Models for Inorganic Synthesis Predictions"
   year: 2024
-  
