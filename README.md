@@ -1,6 +1,6 @@
 # SynthGPT
 
-This repository contains the data and code for [Large Language Models for Inorganic Synthesis Predictions](https://doi.org/10.26434/chemrxiv-2024-9bmfj) by [Seongmin Kim](https://scholar.google.com/citations?user=HXcbuWQAAAAJ&hl=en&oi=ao), [Yousung Jung](https://scholar.google.com/citations?user=y8D-JCAAAAAJ&hl=en&oi=ao), and [Joshua Schrier](https://scholar.google.com/citations?user=zJC_7roAAAAJ&hl=en).
+This repository contains the data and code for [Large Language Models for Inorganic Synthesis Predictions](https://pubs.acs.org/doi/full/10.1021/jacs.4c05840) by [Seongmin Kim](https://scholar.google.com/citations?user=HXcbuWQAAAAJ&hl=en&oi=ao), [Yousung Jung](https://scholar.google.com/citations?user=y8D-JCAAAAAJ&hl=en&oi=ao), and [Joshua Schrier](https://scholar.google.com/citations?user=zJC_7roAAAAJ&hl=en).
 
 ![graphical table of contents](figures/gtoc.png)
 
@@ -29,4 +29,5 @@ Yes, this is different from the order the paper.  "Life can only be understood b
 
 # Cite
 
-A preprint appears on the [ChemRXiv](https://doi.org/10.26434/chemrxiv-2024-9bmfj) as `doi:10.26434/chemrxiv-2024-9bmfj`  
+A publication appears on the [Journal of the American Chemical Society](https://pubs.acs.org/doi/full/10.1021/jacs.4c05840) as `doi:10.1021/jacs.4c05840`  
+
